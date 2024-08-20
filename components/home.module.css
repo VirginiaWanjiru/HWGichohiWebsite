@@ -1,0 +1,9 @@
+.content {
+    max-width: var(--max-width);
+    width: 100%;
+}
+.landing {
+    background: url("../public/images/landing.png");
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(194, 172, 172, 0.31);
+}
