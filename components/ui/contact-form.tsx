@@ -5,7 +5,7 @@ import React, {useState} from "react";
 
 function SubmitButton(){
     return (
-        <button type="submit" className="text-[#FFFFFF] bg-[#C00000] uppercase py-4 rounded-3xl">
+        <button type="submit" className="text-[#FFFFFF] bg-[#C00000] uppercase py-4 px-1 rounded-2xl">
             Submit
         </button>
     )

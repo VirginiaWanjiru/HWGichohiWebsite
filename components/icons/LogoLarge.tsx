@@ -1,7 +1,7 @@
 export default function LogoLarge(){
     return (
         <svg className="hidden md:block" width="508" height="93" viewBox="0 0 508 93" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-            <rect width="508" height="93" fill="url(#pattern0_23_71)"/>
+            <rect width="340" height="70" fill="url(#pattern0_23_71)"/>
             <defs>
                 <pattern id="pattern0_23_71" patternContentUnits="objectBoundingBox" width="1" height="1">
                     <use xlinkHref="#image0_23_71" transform="matrix(0.00229885 0 0 0.0125572 0 -0.00228649)"/>

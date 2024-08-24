@@ -23,10 +23,11 @@ export default function Navbar() {
     ];
 
     return (
-        <nav className="px-10 py-5 flex md:gap-[24%] md:justify-stretch justify-between">
+        <nav className="px-10 py-5 flex md:gap-[26%] md:justify-stretch justify-between">
             <Link href={"/"} id="logo" className="flex align-middle">
                 <Logo/>
             </Link>
+            
             {/*Desktop navigation*/}
             <ul className="pt-2 list-none hidden md:flex gap-20 text-sm font-semibold">
                 {navItems.map(item => (

@@ -19,32 +19,32 @@ const services = [
         id:1,
         name: "Accounting",
         image: Accounting,
-        description: "H.Gichohi is the CEO of the company. He is a seasoned professional with over 10 years of experience in the industry. He has a proven track record of delivering results and has a passion for helping clients achieve their goals.",
+        description: " Our services are intended both for individuals who need to file an annual income tax return, and private entrepreneurs who are to keep accounting records and books, file annual accounting reports, and public organizations, as well as large and small businesses that use a range of different services from bookkeeping, payroll administration to business planning. In short, H. W. Gichohi & Company CPA (K) works with everyone and is ready to help anyone!",
     },
     {
         id:2,
         name: "Assurance",
         image: Assurance,
-        description: "Amos Kiragu is a partner at the company. He has over 5 years of experience in the industry and has a strong background in business development and marketing. He is passionate about helping clients grow their businesses and achieve their goals.",
+        description: "Assurance services offer peace of mind by validating the accuracy and reliability of financial information. Through rigorous evaluation, assurance provides stakeholders with the confidence they need to make informed decisions, ensuring that financial statements are trustworthy and compliant with regulations. It’s about instilling trust and enhancing the credibility of your business.",
     },
     {
         id:3,
         name: "Tax Planning and Advisory",
         image: Tax,
-        description: "Isaac Mwangi is a partner at the company. He has over 5 years of experience in the industry and has a strong background in software development and technology. He is passionate about helping clients leverage technology to achieve their goals.",
+        description: "H. W. Gichohi & Company is one of the leading Tax Planning & Advisory Services firms in Kenya today. We understand that taxes are about a lot more than writing a check. Tax planning is about planning for growth and investment, protecting wealth for future generations and exploring all options on the path to business success. We offer a full range of TAX PLANNING, PREPARATION and COMPLIANCE SERVICES. Whether you are just starting a business, expanding a successful business, or getting ready to pass your business on to the next generation, H. W. Gichohi & Company’s business tax services team will professionally help you achieve your goals.",
     },
     {
         id:4,
         name: "Consulting",
         image: Consulting,
-        description: "Karanja Mwaura is a partner at the company. He has over 5 years of experience in the industry and has a strong background in finance and accounting. He is passionate about helping clients manage their finances and achieve their goals.",
+        description: "HW Gichohi is a trusted name in consulting within audit services, known for delivering expert guidance and innovative solutions that enhance financial transparency and operational efficiency. With a deep understanding of regulatory requirements and industry best practices, at H W Gichohi we help organizations navigate complex financial landscapes, ensuring compliance while driving sustainable growth. Our commitment to excellence in audit consulting empowers businesses to achieve their strategic objectives with confidence.",
     }
 ]
 
 export default function Services() {
   return (
     <>
-      <div style={{ height: "60vh", position: "relative" }}>
+      <div style={{ height: "85vh", position: "relative" }}>
         <Image src={Banner} alt="Services" layout="fill" objectFit="cover" />
         <div style={{
           position: 'absolute',
@@ -52,19 +52,23 @@ export default function Services() {
           left: 0,
           height: '100%',
           width: '100%',
-            display: "flex",
+            display: "flex-col ",
             alignItems: "center",
             justifyContent: "center",
           backgroundColor: 'rgba(0, 0, 0, 0.5)' // Adjust the color and opacity as needed
         }}  >
-          
-            <h1 className="text-white text-center text-7xl tracking-wide">WE PROVIDE PROPER AUDIT SOLUTIONS</h1>
-            <p className="text-black text-center text-4l mt-30 tracking-wide font-serif ">Here we are</p>
+          <h1 className="text-white text-center text-5xl tracking-wide font-serif flex flex-col mt-64">WE PROVIDE PROPER AUDIT SOLUTIONS</h1> 
+          <br></br>
+          <p className="text-white text-center font-serif"> "Uncovering Insights, Ensuring Integrity" </p>
             
             
             
         </div>
+        
       </div>
+      <hr/>
+<br></br>
+      <h2 className="text-center font-sans"> Our Services</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 p-6 mt-10">
             {services.map((member) => (
                 <Card key={member.id} className="w-full p-4 bg-white rounded-lg shadow-lg relative">
