@@ -1,4 +1,4 @@
-import Banner from "@/public/images/2.jpg";
+import Banner from "@/public/images/aboutus.jpg";
 import Image from "next/image";
 import {
     Card,
