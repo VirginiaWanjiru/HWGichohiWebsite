@@ -17,15 +17,19 @@ export default function ContactForm() {
         message: ""
     });
 
-    const handleOnChange = (values:any, handleOnChange:any, SubmitButton:any)=>{
-       
+    const handleOnChange = (value: string, e: React.ChangeEvent<HTMLFormElement>)=>{
+        setValues(prevState => ({
+            ...prevState,
+            [value]: e.target.value
+        }))
+    }
     return (
         <form className="flex flex-col w-full h-full justify-center gap-12">
             <TextField
                 variant="outlined"
                 fullWidth
                 label="Name"
-                onChange={(e)=>handleOnChange('name', e.target.value )}
+                
                 value={values.name}
                 size="small"
             />
@@ -34,7 +38,7 @@ export default function ContactForm() {
                 fullWidth
                 label="Email"
                 type="email"
-                onChange={(e)=>handleOnChange('email', e)}
+                
                 value={values.email}
                 size="small"
             />
@@ -42,7 +46,7 @@ export default function ContactForm() {
                 variant="outlined"
                 fullWidth
                 label="Message"
-                onChange={(e)=>handleOnChange('message', e.target.value)}
+                
                 value={values.message}
                 multiline
                 rows={4}
@@ -50,5 +54,5 @@ export default function ContactForm() {
             <SubmitButton/>
         </form>
 
-    )}
+    )
 }
