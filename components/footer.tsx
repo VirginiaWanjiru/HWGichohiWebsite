@@ -12,12 +12,17 @@ export default function Footer() {
           </div>
         </div>
         <div> </div>
-        <div className="md:mr-2 font-serif mt-4 font-size-10">
+        <div className="md:mr-2 font-serif mt-4 font-size-7">
           <p>
             ©H.W Gichohi and Co. All rights reserved. H.W Gichohi and Co refers
             to the H.W Gichohi and Co network and/or one or more of its member
             firms, each of which is a separate legal entity.
+
+            
           </p>
+          
+          <br></br>
+          <p>hwgichohiandcompany@gmail.com</p>
         </div>
       </div>
     </footer>
