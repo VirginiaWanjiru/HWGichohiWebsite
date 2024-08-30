@@ -43,17 +43,17 @@ export default function Home() {
             <div>
               <p>
                 {" "}
-                H. W. GICHOHI & COMPANY CPA (K) is an{" "}
+                H. W. GICHOHI & COMPANY CPA (K) is a leading {" "}
                 <span className="text-[#C00000] font-bold text-2xl">
                   {" "}
-                  accountancy, audit{" "}
+                  advisory, accountancy, audit{" "}
                 </span>{" "}
                 <span> & </span>{" "}
                 <span className="text-[#C00000] font-bold">
                   {" "}
                   consulting firm{" "}
                 </span>{" "}
-                <span> registered in Kenya for the last </span>
+                <span> (AAAC) registered in Kenya for the last </span>
                 <span className="text-[#C00000] font-bold"> 43+</span>, years
                 with expertise in Accounting, Tax Matters, Audit & Business
                 Advisory Services, Forensic Services, Human Resources &
@@ -134,7 +134,7 @@ export default function Home() {
             <div className="w-full md:w-2/5 h-full">
 
               <ContactForm />
-              
+
             </div>
             <div className="w-full md:w-3/5 h-full">
               <ContactMap />
