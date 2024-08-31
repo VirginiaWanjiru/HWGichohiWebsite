@@ -19,14 +19,14 @@ const teamMembers = [
     { 
         id:1,
         name: "CPA ISAAC M. KIRAGU - MANAGING PARTNER",
-        position: "You must be the change you want to see",
+        position: "'You must be the change you want to see'",
         image: Gichohi,
-        description: "Isaac M. Kiragu holds Bachelor of Commerce (BCOM Hons) and MBA (University of Nairobi), CPA (K), MKIM, AFCE, EIA (Lead Expert). He has spent over 30 years of his professional life in Banking, Accountancy, and Taxation, Audit and Assurance and, Human Resource Management fields.",
+        description: "Isaac M. Kiragu holds Bachelor of Commerce (BCOM Hons) and MBA (University of Nairobi), CPA (K), MKIM, AFCE, EIA (Lead Expert). He has spent over 30 years of his professional life in Banking, Accountancy, and Taxation, Audit and Assurance and, Human Resource Management fields. His specialties include: Auditing, Accounting, Taxation, Forensic Accounting, Corporate Financial Advisory, Management Consultancy, Training, Strategic Planning, Corporate Re-Construction & Insolvency, Human Resources and Financial Advisory Services, Legal & Mediation, Bookkeeping and Accounting Services, and Secretarial Services.",
     },
     {
         id:2,
         name: "MR J. N. KARIUKI – ASSOCIATE PARTNER",
-        position: "The best way to predict a future is to create it",
+        position: "'The best way to predict a future is to create it'",
         image: Amos,
         description: "Mr J N Kariuki holds a MBA (Moi University), CPA (K), CPS (K). He is an Associate member of both the Certified Public Accountants of Kenya (CPA) and Certified Public Secretaries of Kenya (CPS). Mr J. N. Kariuki has over fifteen (17) years experience in the Financial Services Sector which span through Accounting & Auditing, Investigation, Financial Advisory Services, Forensic Accounting Investigations, Management Consultancy, Public Sector Advisory, Corporate Finance, Project Finance and Management, Portfolio Management, Investment Advisory and Business Development.",
     },
@@ -34,7 +34,7 @@ const teamMembers = [
     {
         id:4,
         name: "MR H W GICHOHI – CONSULTING PARTNER. ",
-        position: "Innovation, Integrity, and Excellence – These are the pillars of our success. Together, we build a future where businesses thrive, and communities prosper.",
+        position: "'Innovation, Integrity, and Excellence – These are the pillars of our success. Together, we build a future where businesses thrive, and communities prosper.'",
         image: Karanja,
         description: "Mr H. W. Gichohi is a Consulting Partner at H. W. Gichohi & Company. He has over 43 years of experience in Accounting, Tax Practice, Auditing, Financial Consulting & Controls, Forensic Accounting, Corporate Financial Advisory, Management Consultancy, Business Modelling & Training, Strategic Planning, Corporate Re-Construction & Insolvency, Human Resources and Financial Advisory Services, Legal & Mediation, and Secretarial Services.",
     }
