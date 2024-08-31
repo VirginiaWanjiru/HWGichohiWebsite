@@ -16,14 +16,14 @@ export default function Navbar() {
     };
     const navItems = [
         { name: 'Home', path: '/' },
-        { name: 'About', path: '/about' },
+        { name: 'About Us', path: '/about' },
         { name: 'Services', path: '/services' },
         { name: 'Industry', path: '/#industry' },
         { name: 'Contact Us', path: '/#contact-us' }
     ];
 
     return (
-        <nav className="px-10 py-5 flex md:gap-[26%] md:justify-stretch justify-between">
+        <nav className=" flex-no-wrap px-10 py-3 fixed top-0 z-10 w-full flex md:gap-[26%] md:justify-stretch justify-between bg-neutral-100 ">
             <Link href={"/"} id="logo" className="flex align-middle">
                 <Logo/>
             </Link>

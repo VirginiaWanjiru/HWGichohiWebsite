@@ -1,5 +1,7 @@
 import Banner from "@/public/images/aboutus.jpg";
 import Image from "next/image";
+import auditImage from "@/public/images/audit.png";
+
 import {
     Card,
     CardContent,
@@ -41,7 +43,7 @@ const teamMembers = [
 export default function Team() {
   return (
     <>
-      <div style={{ height: "85vh", position: "relative" }}>
+      <div style={{ height: "98vh", position: "relative" }}>
         <Image src={Banner} alt="Teamwork" layout="fill" objectFit="cover" />
         <div style={{
           position: 'absolute',
@@ -52,12 +54,107 @@ export default function Team() {
           backgroundColor: 'rgba(0, 0, 0, 0.5)' // Adjust the color and opacity as needed
         }}>
           
-          <h1 className="text-white text-center text-5xl tracking-wide font-serif flex flex-col mt-64">MEET THE TEAM </h1> 
+          <h1 className="text-white text-center text-5xl tracking-wide font-serif flex flex-col mt-72">About H.W Gichohi  </h1> 
           <br></br>
           <p className="text-white text-center font-serif"> "Uncovering Insights, Ensuring Integrity" </p>
 
         </div>
       </div>
+      <hr />
+ 
+<div  className="m-10 flex flex-col gap-14  " id="about-us">
+          <h2 className="text-center font-sans  ">Meet the team</h2>
+          <div className="flex justify-between gap-5 font-roboto">
+            <div>
+              <p>
+              Our competencies are anchored on the combination of our EXPERTISE, TECHNICAL KNOW-HOW, continual TRAINING and PROFESSIONALISM
+              in delivering all services expected of a Certified Public Accounting firm and cater for the needs of clients; including individuals,
+                businesses and all types of organizations; by providing integrated and holistic solutions through personalized services.
+                <br />
+                <br/>
+              </p>
+
+
+              <p className="text-[#C00000] font-bold underline">
+              OUR SERVICES
+              </p>
+              <br></br>
+              <ul className="list-disc ml-8">
+
+                <li>
+                  <p>
+                  Audit & Business Advisory Services
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                  Accountancy
+                  
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                  Tax Services
+                  
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                  Secretarial Services
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                  Legal & Mediation Support
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    
+                  Forensic Investigation
+                 
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                  Management Consultancy Services
+                  </p>
+                </li>
+
+                
+                <li>
+                  <p>
+                  Human Resource & Personnel Services
+                  
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                  Dispute Mediation Consultancy Services
+                  
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                  Corporate Re-Construction & Insolvency Advisory Services
+                
+                  </p>
+                </li>
+
+              </ul>
+            </div>
+           
+          </div>
+          
+        </div>
 
       <hr/>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 p-6 mt-10">

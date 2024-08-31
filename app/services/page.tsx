@@ -17,9 +17,9 @@ import {
 const services = [
     { 
         id:1,
-        name: "Accounting",
-        image: Accounting,
-        description: " Our services are intended both for individuals who need to file an annual income tax return, and private entrepreneurs who are to keep accounting records and books, file annual accounting reports, and public organizations, as well as large and small businesses that use a range of different services from bookkeeping, payroll administration to business planning. In short, H. W. Gichohi & Company CPA (K) works with everyone and is ready to help anyone!",
+        name: "Tax Planning and Advisory",
+        image: Tax,
+        description: "H. W. Gichohi & Company is one of the leading Tax Planning & Advisory Services firms in Kenya today. We understand that taxes are about a lot more than writing a check. Tax planning is about planning for growth and investment, protecting wealth for future generations and exploring all options on the path to business success. We offer a full range of TAX PLANNING, PREPARATION and COMPLIANCE SERVICES. Whether you are just starting a business, expanding a successful business, or getting ready to pass your business on to the next generation, H. W. Gichohi & Company’s business tax services team will professionally help you achieve your goals.",
     },
     {
         id:2,
@@ -29,9 +29,10 @@ const services = [
     },
     {
         id:3,
-        name: "Tax Planning and Advisory",
-        image: Tax,
-        description: "H. W. Gichohi & Company is one of the leading Tax Planning & Advisory Services firms in Kenya today. We understand that taxes are about a lot more than writing a check. Tax planning is about planning for growth and investment, protecting wealth for future generations and exploring all options on the path to business success. We offer a full range of TAX PLANNING, PREPARATION and COMPLIANCE SERVICES. Whether you are just starting a business, expanding a successful business, or getting ready to pass your business on to the next generation, H. W. Gichohi & Company’s business tax services team will professionally help you achieve your goals.",
+        name: "Accounting",
+        image: Accounting,
+        description: " Our services are intended both for individuals who need to file an annual income tax return, and private entrepreneurs who are to keep accounting records and books, file annual accounting reports, and public organizations, as well as large and small businesses that use a range of different services from bookkeeping, payroll administration to business planning. In short, H. W. Gichohi & Company CPA (K) works with everyone and is ready to help anyone!",
+       
     },
     {
         id:4,
@@ -44,7 +45,7 @@ const services = [
 export default function Services() {
   return (
     <>
-      <div style={{ height: "85vh", position: "relative" }}>
+      <div style={{ height: "99vh", position: "relative" }}>
         <Image src={Banner} alt="Services" layout="fill" objectFit="cover" />
         <div style={{
           position: 'absolute',
@@ -57,7 +58,7 @@ export default function Services() {
             justifyContent: "center",
           backgroundColor: 'rgba(0, 0, 0, 0.5)' // Adjust the color and opacity as needed
         }}  >
-          <h1 className="text-white text-center text-5xl tracking-wide font-serif flex flex-col mt-64">WE PROVIDE PROPER AUDIT SOLUTIONS</h1> 
+          <h1 className="text-white text-center text-5xl tracking-wide font-serif flex flex-col mt-72">WE PROVIDE PROPER AUDIT SOLUTIONS</h1> 
           <br></br>
           <p className="text-white text-center font-serif"> "Uncovering Insights, Ensuring Integrity" </p>
             

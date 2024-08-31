@@ -15,14 +15,14 @@ import IndustryCarousel from "@/components/ui/industry-carousel";
 export default function Home() {
   const router = useRouter();
   return (
-    <div className="flex flex-col items-center my-2">
+    <div className="flex flex-col items-center ">
       <div
-        className={`${styles.landing} flex items-center h-full w-full md:min-h-[80vh] lg:min-h-[90vh]`}
+        className={`${styles.landing} flex items-center h-full w-full md:min-h-[85vh] lg:min-h-[99vh]`}
         id="landing"
       >
-        <span className="flex flex-col w-full h-full px-6 md:px-12 my-8 gap-8 md:max-w-4xl md:gap-8 text-[#FFFFFF]">
-          <h1 className="text-center md:text-start text-5xl md:text-7xl font-serif ">
-            Delivering Results in Compliance
+        <span className="flex flex-col w-full h-full  px-8  md:px-8  gap-8 md:max-w-4xl md:gap-8 text-[#FFFFFF]">
+          <h1 className=" md:text-start mt-24 md:text-6xl font-serif ">
+            Delivering Results in Assurance, Advisory and Compliance
           </h1>
           <p className="font-serif">
             Excellence, Integrity, Growth: Partnering for Success
@@ -91,29 +91,44 @@ export default function Home() {
             </div>
             <Image className="hidden md:block" src={auditImage} alt={"audit"} />
           </div>
+
+          <button
+            onClick={() => router.push("/about")}
+            className="text-[#FFFFFF] bg-[#C00000] rounded-2xl uppercase text-2l py-4 px-8 font-extrabold  self-center"
+          >
+            Learn More
+          </button>
+
           <hr />
         </div>
+
         <div className="m-9 flex flex-col gap-14" id="our-services">
           <h2 className="text-center font-sans">Our Services</h2>
+
           <div className="flex flex-col md:flex-row justify-between mx-11">
-            <div className="flex flex-1 flex-col items-center gap-14">
-              <AccountingIcon />
-              <p className="text-xl font-roboto">Accounting</p>
-            </div>
-            <div className="flex flex-col flex-1 items-center gap-14">
-              <ConsultingIcon />
-              <p className="text-xl font-roboto">Consulting</p>
-            </div>
-            <div className="flex flex-col flex-1 items-center gap-14">
-              <AssuranceIcon />
-              <p className="text-xl font-roboto">Assurance</p>
-            </div>
-            <div className="flex flex-col flex-1 items-center gap-14">
+
+          <div className="flex flex-col flex-1 items-center gap-14">
               <TaxIcon />
               <p className="w-2/3 text-center text-xl">
                 Tax Planning and Advisory
               </p>
             </div>
+
+            <div className="flex flex-1 flex-col items-center gap-14">
+              <AccountingIcon />
+              <p className="text-xl font-roboto">Accounting</p>
+            </div>
+           
+            <div className="flex flex-col flex-1 items-center gap-14">
+              <AssuranceIcon />
+              <p className="text-xl font-roboto">Assurance</p>
+            </div>
+
+            <div className="flex flex-col flex-1 items-center gap-14">
+              <ConsultingIcon />
+              <p className="text-xl font-roboto">Consulting</p>
+            </div>
+            
           </div>
           <button
             className="text-[#FFFFFF] bg-[#C00000] rounded-2xl uppercase text-2l py-4 px-8 font-extrabold  self-center"
@@ -126,10 +141,11 @@ export default function Home() {
         <div className="m-9 flex flex-col gap-7" id="industry">
           <h2 className="text-center font-sans">Industry</h2>
           <IndustryCarousel />
-          <hr />
-        </div>
-        <div className="m-9 flex flex-col gap-7" id="contact-us">
-          <h2 className="text-center font-sans">Contact Us</h2>
+          
+          <hr  />
+        </div >
+        <div id="contact-us" className="m-9 flex flex-col gap-7" >
+          <h2 className="text-center font-sans" > Contact Us</h2>
           <div className="flex flex-col-reverse h-full w-full items-center gap-6 md:flex-row md:h-[33.875rem] md:pl-8">
             <div className="w-full md:w-2/5 h-full">
 
