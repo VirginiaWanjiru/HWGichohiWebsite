@@ -2,6 +2,8 @@
 
 import TextField from "@mui/material/TextField";
 import React, {useState} from "react";
+import {useRef} from'react';
+import emailjs from '@emailjs/browser';
 
 function SubmitButton(){
     return (
@@ -10,49 +12,70 @@ function SubmitButton(){
         </button>
     )
 }
-export default function ContactForm() {
-    const [values, setValues] = useState({
-        name: "",
-        email: "",
-        message: ""
-    });
 
-    const handleOnChange = (value: string, e: React.ChangeEvent<HTMLFormElement>)=>{
-        setValues(prevState => ({
-            ...prevState,
-            [value]: e.target.value
-        }))
-    }
+
+
+    
+
+const Contact = () => {
+    const form = useRef<HTMLFormElement | any >();
+    const sendEmail = (e: any) => {
+        e.preventDefault();
+    
+        emailjs
+          .sendForm('service_5wni69g', 'template_3x83o0c', form.current, {
+            publicKey: 'ej7XtOMqIQhyLxg5q',
+          })
+          .then(
+            () => {
+              console.log('SUCCESS!');
+            },
+            (error) => {
+              console.log('FAILED...', error.text);
+            },
+          );
+
+          e.target.reset()
+      };
+
     return (
-        <form className="flex flex-col w-full h-full justify-center gap-12">
-            <TextField
-                variant="outlined"
-                fullWidth
-                label="Name"
+        <form  
+        
+        ref={form}
+        onSubmit ={sendEmail}
+
+
+        className="flex flex-col w-full h-full justify-center gap-12">
+
+          <h2 className=" text-[#C00000] text-xl font-serif">Send us a message </h2>
+            <input
+                type="text"
+                placeholder="Name"
+                className="text-[#C00000] text-2l py-4 px-1"
+                name='user_name'
+              
+                required
                 
-                value={values.name}
-                size="small"
             />
-            <TextField
-                variant="outlined"
-                fullWidth
-                label="Email"
+           <input
                 type="email"
+                placeholder="Email"
+                className="text-[#C00000] text-2l py-4 px-1"
+                name='email'
+                required
                 
-                value={values.email}
-                size="small"
             />
-            <TextField
-                variant="outlined"
-                fullWidth
-                label="Message"
+            <textarea
+               
+                placeholder="Message"
+                className="text-[#C00000] text-2l py-4 px-1"
+                name='message'
+                required
                 
-                value={values.message}
-                multiline
-                rows={4}
             />
             <SubmitButton/>
         </form>
 
     )
 }
+export default Contact;
