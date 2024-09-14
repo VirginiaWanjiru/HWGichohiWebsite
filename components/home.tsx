@@ -11,6 +11,11 @@ import Image from "next/image";
 import ContactForm from "@/components/ui/contact-form";
 import ContactMap from "@/components/ui/contact-map";
 import IndustryCarousel from "@/components/ui/industry-carousel";
+import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
+import { ChevronDownIcon } from '@heroicons/react/20/solid';
+
+
+
 
 export default function Home() {
   const router = useRouter();
@@ -39,17 +44,17 @@ export default function Home() {
       <div className={styles.content}>
         <div className="m-9 flex flex-col gap-14" id="about-us">
           <h2 className="text-center font-sans">About Us</h2>
-          <div className="flex justify-between gap-8 font-roboto">
+          <div className="flex justify-between gap-8 font-serif text-md">
             <div>
               <p>
                 {" "}
                 H. W. GICHOHI & COMPANY CPA (K) is a leading {" "}
-                <span className="text-[#C00000] font-bold text-2xl">
+                <span className="text-[#C00000] font-bold text-2l">
                   {" "}
                   advisory, accountancy, audit{" "}
                 </span>{" "}
                 <span> & </span>{" "}
-                <span className="text-[#C00000] font-bold">
+                <span className="text-[#C00000] font-bold font-serif ">
                   {" "}
                   consulting firm{" "}
                 </span>{" "}
@@ -61,12 +66,14 @@ export default function Home() {
                 Re-Construction & Insolvency Services, Financial Advisory
                 Services, Company Secretarial Services, and Dispute Mediation
                 Services.
+               
+                <br />
                 <br />
               </p>
-              <p className="text-[#C00000] font-bold underline">
+              <p className="text-[#C00000] font-bold font-sans underline">
                 Why Choose Us:
               </p>
-              <br></br>
+              <br/>
               <ul className="list-disc ml-8">
                 <li>
                   <p>
@@ -109,25 +116,289 @@ export default function Home() {
 
           <div className="flex flex-col flex-1 items-center gap-14">
               <TaxIcon />
-              <p className="w-2/3 text-center text-xl">
-                Tax Planning and Advisory
-              </p>
-            </div>
+
+              <Menu as="div" className="relative inline-block text-left">
+      <div>
+        <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-gray-900 px-3 py-2 text-lg text-white font-semibold text-white-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-400">
+          Advisory
+          <ChevronDownIcon aria-hidden="true" className="-mr-1 h-5 w-5 text-gray-400 " />
+        </MenuButton>
+      </div>
+
+      <MenuItems
+        transition
+        className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
+      >
+        <div className="py-1">
+          <MenuItem>
+            <a
+              href="#"
+              className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+            >
+              Assurance
+            </a>
+          </MenuItem>
+          <MenuItem>
+            <a
+              href="#"
+              className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+            >
+              Accounting
+            </a>
+          </MenuItem>
+          <MenuItem>
+            <a
+              href="#"
+              className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+            >
+              Consultancy
+            </a>
+          </MenuItem>
+          <form action="#" method="POST">
+            <MenuItem>
+              <button
+                type="submit"
+                className="block w-full px-4 py-2 text-left text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+              >
+                Sign out
+              </button>
+            </MenuItem>
+          </form>
+        </div>
+      </MenuItems>
+    </Menu>
+
+              </div>
 
             <div className="flex flex-1 flex-col items-center gap-14">
               <AccountingIcon />
-              <p className="text-xl font-roboto">Accounting</p>
+
+              <Menu as="div" className="relative inline-block text-left">
+      <div>
+        <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-gray-900 px-3 py-2 text-lg text-white font-semibold text-white-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-400">
+          Advisory
+          <ChevronDownIcon aria-hidden="true" className="-mr-1 h-5 w-5 text-gray-400 " />
+        </MenuButton>
+      </div>
+
+      <MenuItems
+        transition
+        className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
+      >
+        <div className="py-1">
+          <MenuItem>
+            <a
+              href="#"
+              className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+            >
+              Assurance
+            </a>
+          </MenuItem>
+          <MenuItem>
+            <a
+              href="#"
+              className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+            >
+              Accounting
+            </a>
+          </MenuItem>
+          <MenuItem>
+            <a
+              href="#"
+              className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+            >
+              Consultancy
+            </a>
+          </MenuItem>
+          <form action="#" method="POST">
+            <MenuItem>
+              <button
+                type="submit"
+                className="block w-full px-4 py-2 text-left text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+              >
+                Sign out
+              </button>
+            </MenuItem>
+          </form>
+        </div>
+      </MenuItems>
+    </Menu>
+
+              
             </div>
            
             <div className="flex flex-col flex-1 items-center gap-14">
               <AssuranceIcon />
-              <p className="text-xl font-roboto">Assurance</p>
+
+              <Menu as="div" className="relative inline-block text-left">
+      <div>
+        <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-gray-900 px-3 py-2 text-lg text-white font-semibold text-white-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-400">
+          Advisory
+          <ChevronDownIcon aria-hidden="true" className="-mr-1 h-5 w-5 text-gray-400 " />
+        </MenuButton>
+      </div>
+
+      <MenuItems
+        transition
+        className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
+      >
+        <div className="py-1">
+          <MenuItem>
+            <a
+              href="#"
+              className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+            >
+              Assurance
+            </a>
+          </MenuItem>
+          <MenuItem>
+            <a
+              href="#"
+              className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+            >
+              Accounting
+            </a>
+          </MenuItem>
+          <MenuItem>
+            <a
+              href="#"
+              className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+            >
+              Consultancy
+            </a>
+          </MenuItem>
+          <form action="#" method="POST">
+            <MenuItem>
+              <button
+                type="submit"
+                className="block w-full px-4 py-2 text-left text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+              >
+                Sign out
+              </button>
+            </MenuItem>
+          </form>
+        </div>
+      </MenuItems>
+    </Menu>
+
+              
             </div>
 
             <div className="flex flex-col flex-1 items-center gap-14">
               <ConsultingIcon />
-              <p className="text-xl font-roboto">Consulting</p>
+
+              <Menu as="div" className="relative inline-block text-left">
+      <div>
+        <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-gray-900 px-3 py-2 text-lg text-white font-semibold text-white-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-400">
+          Advisory
+          <ChevronDownIcon aria-hidden="true" className="-mr-1 h-5 w-5 text-gray-400 " />
+        </MenuButton>
+      </div>
+
+      <MenuItems
+        transition
+        className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
+      >
+        <div className="py-1">
+          <MenuItem>
+            <a
+              href="#"
+              className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+            >
+              Assurance
+            </a>
+          </MenuItem>
+          <MenuItem>
+            <a
+              href="#"
+              className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+            >
+              Accounting
+            </a>
+          </MenuItem>
+          <MenuItem>
+            <a
+              href="#"
+              className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+            >
+              Consultancy
+            </a>
+          </MenuItem>
+          <form action="#" method="POST">
+            <MenuItem>
+              <button
+                type="submit"
+                className="block w-full px-4 py-2 text-left text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+              >
+                Sign out
+              </button>
+            </MenuItem>
+          </form>
+        </div>
+      </MenuItems>
+    </Menu>
+
+              
             </div>
+
+            <div className="flex flex-col flex-1 items-center gap-14">
+              <ConsultingIcon />
+
+              <Menu as="div" className="relative inline-block text-left">
+      <div>
+        <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-gray-900 px-3 py-2 text-lg text-white font-semibold text-white-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-400">
+          Advisory
+          <ChevronDownIcon aria-hidden="true" className="-mr-1 h-5 w-5 text-gray-400 " />
+        </MenuButton>
+      </div>
+
+      <MenuItems
+        transition
+        className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
+      >
+        <div className="py-1">
+          <MenuItem>
+            <a
+              href="#"
+              className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+            >
+              Assurance
+            </a>
+          </MenuItem>
+          <MenuItem>
+            <a
+              href="#"
+              className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+            >
+              Accounting
+            </a>
+          </MenuItem>
+          <MenuItem>
+            <a
+              href="#"
+              className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+            >
+              Consultancy
+            </a>
+          </MenuItem>
+          <form action="#" method="POST">
+            <MenuItem>
+              <button
+                type="submit"
+                className="block w-full px-4 py-2 text-left text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
+              >
+                Sign out
+              </button>
+            </MenuItem>
+          </form>
+        </div>
+      </MenuItems>
+    </Menu>
+
+              
+            </div>
+
+            
             
           </div>
           <button
@@ -136,6 +407,8 @@ export default function Home() {
           >
             Learn More
           </button>
+
+          
           <hr />
         </div>
         <div className="m-9 flex flex-col gap-7" id="industry">
@@ -159,5 +432,8 @@ export default function Home() {
         </div>
       </div>
     </div>
+    
   );
+ 
 }
+

@@ -2,6 +2,7 @@
 
 import humanitarianAid from "@/public/images/humanitarian_aid.jpg";
 import financialServices from "@/public/images/financial_services.jpg";
+import soleProprietorship from "@/public/images/sole.jpg";
 import manufacturingSector from "@/public/images/manufacturing_sector.jpg";
 import cafeteria from "@/public/images/cafeteria.png";
 import agriculture from "@/public/images/agriculture.png";
@@ -14,9 +15,9 @@ import {useState, useEffect} from "react";
 const industryItems = [
     {
         id: 1,
-        title: "Individuals",
-        image: humanitarianAid,
-        description: "Our The audit client in the International Development and Humanitarian Aid sector are  typically a non-profit organizations and  governmental agency involved in providing aid and development assistance in the East Africa  region.",
+        title: "Sole Proprietorship & Individuals",
+        image: soleProprietorship,
+        description: "Our clients in this category enjoy the advantage of tailor-made services designed to meet both their personal and business needs. We offer a comprehensive range of services that include audit and assurance, maintaining and managing business accounting records, and providing strategic tax planning and VAT consultancy.",
     },
     {
         id: 2,
@@ -85,7 +86,7 @@ export default function IndustryCarousel(){
             {industryItems.slice(left, right).map(item => (
                 <Card key={item.id} className="flex-1 w-full min-h-[32rem] p-0 bg-white rounded-lg shadow-lg relative hover:scale-95">
                     <CardHeader className="flex flex-col items-center">
-                        <Image src={item.image} alt={item.title} width={250} height={250} className="rounded-md mb-3" />
+                        <Image src={item.image} alt={item.title} width={250} height={150} className="rounded-md mb-3" />
                         <CardTitle className="text-2xl font-extrabold">{item.title}</CardTitle>
                     </CardHeader>
                     <CardContent className="text-justify mt-1 mb-1">

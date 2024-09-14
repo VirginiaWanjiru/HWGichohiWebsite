@@ -90,6 +90,8 @@ export default function Services() {
       </div>
       <hr />
       <br />
+
+
       <h2 className="text-center font-sans">Our Services</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 p-6 mt-10">
         {services.map((service) => (
@@ -115,6 +117,8 @@ export default function Services() {
           </Card>
         ))}
       </div>
+
+      
     </>
   );
 }
