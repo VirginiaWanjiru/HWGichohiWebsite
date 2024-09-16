@@ -40,21 +40,21 @@ export default function Home() {
           </button>
         </span>
       </div>
-      <hr />
+     
       <div className={styles.content}>
-        <div className="m-9 flex flex-col gap-14" id="about-us">
-          <h2 className="text-center font-sans">About Us</h2>
-          <div className="flex justify-between gap-8 font-serif text-md">
+        <div className="m-9 flex flex-col gap-14 " id="about-us">
+          <h2 className="text-center font-sans">Who we are </h2>
+          <div className="flex justify-between gap-8 ">
             <div>
-              <p>
+              <p className="text-lg">
                 {" "}
                 H. W. GICHOHI & COMPANY CPA (K) is a leading {" "}
-                <span className="text-[#C00000] font-bold text-2l">
+                <span className="text-[#C00000] font-bold ">
                   {" "}
                   advisory, accountancy, audit{" "}
                 </span>{" "}
                 <span> & </span>{" "}
-                <span className="text-[#C00000] font-bold font-serif ">
+                <span className="text-[#C00000] font-bold  ">
                   {" "}
                   consulting firm{" "}
                 </span>{" "}
@@ -74,21 +74,21 @@ export default function Home() {
                 Why Choose Us:
               </p>
               <br/>
-              <ul className="list-disc ml-8">
+              <ul className="list-disc ml-8 ">
                 <li>
-                  <p>
+                  <p className="text-lg">
                     Holistic solutions that address the unique requirements of
                     individuals, businesses, and organizations.
                   </p>
                 </li>
                 <li>
-                  <p>
+                  <p className="text-lg">
                     A one-stop solution for comprehensive support across various
                     disciplines.
                   </p>
                 </li>
                 <li>
-                  <p>
+                  <p className="text-lg">
                     Dedication to delivering value-added services that drive
                     success and help navigate today's complex business
                     environment
@@ -96,7 +96,7 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <Image className="hidden md:block" src={auditImage} alt={"audit"} />
+            <Image className="hidden md:block h-full" src={auditImage} alt={"audit"} />
           </div>
 
           <button
@@ -106,7 +106,7 @@ export default function Home() {
             Learn More
           </button>
 
-          <hr />
+          
         </div>
 
         <div className="m-9 flex flex-col gap-14" id="our-services">
@@ -409,13 +409,13 @@ export default function Home() {
           </button>
 
           
-          <hr />
+         
         </div>
         <div className="m-9 flex flex-col gap-7" id="industry">
           <h2 className="text-center font-sans">Industry</h2>
           <IndustryCarousel />
           
-          <hr  />
+          
         </div >
         <div id="contact-us" className="m-9 flex flex-col gap-7" >
           <h2 className="text-center font-sans" > Contact Us</h2>

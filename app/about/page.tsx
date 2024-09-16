@@ -60,7 +60,7 @@ export default function Team() {
 
         </div>
       </div>
-      <hr />
+      
  
 <div  className="m-10 flex flex-col gap-14  " id="about-us">
           <h2 className="text-center font-sans  ">Meet the team</h2>
@@ -156,7 +156,7 @@ export default function Team() {
           
         </div>
 
-      <hr/>
+   
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 p-6 mt-10">
             {teamMembers.map((member) => (
                 <Card key={member.id} className="w-full p-4 bg-white rounded-lg shadow-lg relative">

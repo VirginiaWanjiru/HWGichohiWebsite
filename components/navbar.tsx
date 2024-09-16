@@ -16,14 +16,15 @@ export default function Navbar() {
     };
     const navItems = [
         { name: 'Home', path: '/' },
-        { name: 'About Us', path: '/about' },
-        { name: 'Services', path: '/services' },
-        { name: 'Industry', path: '/#industry' },
-        { name: 'Contact Us', path: '/#contact-us' }
+        { name: 'Who we are', path: '/about' },
+        { name: 'What we do', path: '/services' },
+        { name: 'Areas of practice', path: '/#industry' },
+        { name: 'Team', path: '/team' },
+        { name: 'Reach Us', path: '/#contact-us'}
     ];
 
     return (
-        <nav className=" flex-no-wrap px-10 py-3 fixed top-0 z-10 w-full flex md:gap-[26%] md:justify-stretch justify-between bg-neutral-100 ">
+        <nav className=" flex-no-wrap px-10 py-3 fixed top-0 z-10 w-full flex md:gap-[26%] md:justify-stretch justify-right bg-neutral-100 ">
             <Link href={"/"} id="logo" className="flex align-middle">
                 <Logo/>
             </Link>

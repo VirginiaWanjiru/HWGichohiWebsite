@@ -88,7 +88,7 @@ export default function Services() {
           <p className="text-white text-center font-serif">"Uncovering Insights, Ensuring Integrity"</p>
         </div>
       </div>
-      <hr />
+      
       <br />
 
 
