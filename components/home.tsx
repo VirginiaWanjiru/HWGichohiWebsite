@@ -109,8 +109,10 @@ export default function Home() {
           
         </div>
 
-        <div className="m-9 flex flex-col gap-14" id="our-services">
-          <h2 className="text-center font-sans">Our Services</h2>
+        <hr />
+
+        <div className="m-0 mt-5  flex flex-col gap-14 " id="our-services">
+          <h2 className="text-center font-sans">What we do</h2>
 
           <div className="flex flex-col md:flex-row justify-between mx-11">
 
@@ -119,7 +121,7 @@ export default function Home() {
 
               <Menu as="div" className="relative inline-block text-left">
       <div>
-        <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-gray-900 px-3 py-2 text-lg text-white font-semibold text-white-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-400">
+        <MenuButton className="inline-flex w-56 justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-lg text-black font-semibold text-white-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-400">
           Advisory
           <ChevronDownIcon aria-hidden="true" className="-mr-1 h-5 w-5 text-gray-400 " />
         </MenuButton>
@@ -154,16 +156,7 @@ export default function Home() {
               Consultancy
             </a>
           </MenuItem>
-          <form action="#" method="POST">
-            <MenuItem>
-              <button
-                type="submit"
-                className="block w-full px-4 py-2 text-left text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-              >
-                Sign out
-              </button>
-            </MenuItem>
-          </form>
+          
         </div>
       </MenuItems>
     </Menu>
@@ -175,7 +168,7 @@ export default function Home() {
 
               <Menu as="div" className="relative inline-block text-left">
       <div>
-        <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-gray-900 px-3 py-2 text-lg text-white font-semibold text-white-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-400">
+        <MenuButton className="inline-flex w-56 justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-lg text-black font-semibold text-white-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-400">
           Advisory
           <ChevronDownIcon aria-hidden="true" className="-mr-1 h-5 w-5 text-gray-400 " />
         </MenuButton>
@@ -210,16 +203,7 @@ export default function Home() {
               Consultancy
             </a>
           </MenuItem>
-          <form action="#" method="POST">
-            <MenuItem>
-              <button
-                type="submit"
-                className="block w-full px-4 py-2 text-left text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-              >
-                Sign out
-              </button>
-            </MenuItem>
-          </form>
+          
         </div>
       </MenuItems>
     </Menu>
@@ -232,7 +216,7 @@ export default function Home() {
 
               <Menu as="div" className="relative inline-block text-left">
       <div>
-        <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-gray-900 px-3 py-2 text-lg text-white font-semibold text-white-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-400">
+        <MenuButton className="inline-flex w-56 justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-lg text-black font-semibold text-white-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-400">
           Advisory
           <ChevronDownIcon aria-hidden="true" className="-mr-1 h-5 w-5 text-gray-400 " />
         </MenuButton>
@@ -267,16 +251,7 @@ export default function Home() {
               Consultancy
             </a>
           </MenuItem>
-          <form action="#" method="POST">
-            <MenuItem>
-              <button
-                type="submit"
-                className="block w-full px-4 py-2 text-left text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-              >
-                Sign out
-              </button>
-            </MenuItem>
-          </form>
+          
         </div>
       </MenuItems>
     </Menu>
@@ -289,7 +264,7 @@ export default function Home() {
 
               <Menu as="div" className="relative inline-block text-left">
       <div>
-        <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-gray-900 px-3 py-2 text-lg text-white font-semibold text-white-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-400">
+        <MenuButton className="inline-flex w-56 justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-lg text-black font-semibold text-white-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-400">
           Advisory
           <ChevronDownIcon aria-hidden="true" className="-mr-1 h-5 w-5 text-gray-400 " />
         </MenuButton>
@@ -324,16 +299,7 @@ export default function Home() {
               Consultancy
             </a>
           </MenuItem>
-          <form action="#" method="POST">
-            <MenuItem>
-              <button
-                type="submit"
-                className="block w-full px-4 py-2 text-left text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-              >
-                Sign out
-              </button>
-            </MenuItem>
-          </form>
+          
         </div>
       </MenuItems>
     </Menu>
@@ -346,7 +312,7 @@ export default function Home() {
 
               <Menu as="div" className="relative inline-block text-left">
       <div>
-        <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-gray-900 px-3 py-2 text-lg text-white font-semibold text-white-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-400">
+        <MenuButton className="inline-flex w-56 justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-lg text-black font-semibold text-white-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-400">
           Advisory
           <ChevronDownIcon aria-hidden="true" className="-mr-1 h-5 w-5 text-gray-400 " />
         </MenuButton>
@@ -381,16 +347,7 @@ export default function Home() {
               Consultancy
             </a>
           </MenuItem>
-          <form action="#" method="POST">
-            <MenuItem>
-              <button
-                type="submit"
-                className="block w-full px-4 py-2 text-left text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-              >
-                Sign out
-              </button>
-            </MenuItem>
-          </form>
+          
         </div>
       </MenuItems>
     </Menu>
@@ -402,7 +359,7 @@ export default function Home() {
             
           </div>
           <button
-            className="text-[#FFFFFF] bg-[#C00000] rounded-2xl uppercase text-2l py-4 px-8 font-extrabold  self-center"
+            className="text-[#FFFFFF] bg-[#C00000] rounded-2xl uppercase text-2l py-4 px-8 font-extrabold  self-center mb-10"
             onClick={() => router.push("/services")}
           >
             Learn More
@@ -411,8 +368,9 @@ export default function Home() {
           
          
         </div>
-        <div className="m-9 flex flex-col gap-7" id="industry">
-          <h2 className="text-center font-sans">Industry</h2>
+        <hr  />
+        <div className="mt-7 flex flex-col gap-0  h-360" id="industry">
+          <h2 className="text-center font-sans text-black">Areas of Practice</h2>
           <IndustryCarousel />
           
           
