@@ -43,7 +43,7 @@ const teamMembers = [
 export default function Team() {
   return (
     <>
-      <div style={{ height: "98vh", position: "relative" }}>
+      <div style={{ height: "56vh", position: "relative" }}>
         <Image src={Banner} alt="Teamwork" layout="fill" objectFit="cover" />
         <div style={{
           position: 'absolute',
@@ -51,10 +51,10 @@ export default function Team() {
           left: 0,
           height: '100%',
           width: '100%',
-          backgroundColor: 'rgba(0, 0, 0, 0.5)' // Adjust the color and opacity as needed
+          backgroundColor: 'rgba(0, 0, 0, 0.7)' // Adjust the color and opacity as needed
         }}>
           
-          <h1 className="text-white text-center text-5xl tracking-wide font-serif flex flex-col mt-72">About H.W Gichohi  </h1> 
+          <h1 className="text-white text-center text-5xl tracking-wide font-serif flex flex-col mt-64">About H.W Gichohi  </h1> 
           <br></br>
           <p className="text-white text-center font-serif"> "Uncovering Insights, Ensuring Integrity" </p>
 
@@ -64,6 +64,23 @@ export default function Team() {
  
 <div  className="m-10 flex flex-col gap-14  " id="about-us">
           <h2 className="text-center font-sans  ">Meet the team</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 p-6 mt-10">
+            {teamMembers.map((member) => (
+                <Card key={member.id} className="w-full p-4 bg-white rounded-lg shadow-lg relative">
+                    <CardHeader className="flex flex-col items-center">
+                        <Image src={member.image} alt={member.name} width={250} height={250} className="rounded-md mb-3 transition-transform ease-in-out duration-300 hover:scale-95" />
+                        <CardTitle className="text-md font-bold">{member.name}</CardTitle>
+                        <p className="text-sm text-gray-500">{member.position}</p>
+                    </CardHeader>
+                    <CardContent className="text-justify mt-1 mb-1">
+                        <p className="text-sm italic hover:underline underline-offset-4 decoration-[#C00000]/30 decoration-4">{member.description}</p>
+                    </CardContent>
+                    
+                </Card>
+            ))}
+        </div>
+
           <div className="flex justify-between gap-5 font-roboto">
             <div>
               <p>
@@ -157,21 +174,7 @@ export default function Team() {
         </div>
 
    
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 p-6 mt-10">
-            {teamMembers.map((member) => (
-                <Card key={member.id} className="w-full p-4 bg-white rounded-lg shadow-lg relative">
-                    <CardHeader className="flex flex-col items-center">
-                        <Image src={member.image} alt={member.name} width={250} height={250} className="rounded-md mb-3 transition-transform ease-in-out duration-300 hover:scale-95" />
-                        <CardTitle className="text-md font-bold">{member.name}</CardTitle>
-                        <p className="text-sm text-gray-500">{member.position}</p>
-                    </CardHeader>
-                    <CardContent className="text-justify mt-1 mb-1">
-                        <p className="text-sm italic hover:underline underline-offset-4 decoration-[#C00000]/30 decoration-4">{member.description}</p>
-                    </CardContent>
-                    
-                </Card>
-            ))}
-        </div>
+     
     </>
   );
 }

@@ -19,7 +19,6 @@ export default function Navbar() {
         { name: 'Who we are', path: '/about' },
         { name: 'What we do', path: '/services' },
         { name: 'Areas of practice', path: '/#industry' },
-        { name: 'Team', path: '/team' },
         { name: 'Reach Us', path: '/#contact-us'}
     ];
 
