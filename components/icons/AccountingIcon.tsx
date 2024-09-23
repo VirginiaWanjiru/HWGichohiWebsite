@@ -1,6 +1,6 @@
 export default function AccountingIcon(){
     return (
-        <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+        <svg width="128" height="128" viewBox="0 0 128 128" fill="#C00000 " xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
             <rect width="128" height="128" fill="url(#pattern0_23_17)"/>
             <defs>
                 <pattern id="pattern0_23_17" patternContentUnits="objectBoundingBox" width="1" height="1">

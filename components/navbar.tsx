@@ -10,6 +10,7 @@ import Logo from "@/components/icons/Logo";
 export default function Navbar() {
     const pathname = usePathname();
     const [nav, setNav] = useState(false);
+    
 
     const handleNav = () => {
         setNav(!nav);
@@ -23,6 +24,8 @@ export default function Navbar() {
     ];
 
     return (
+
+        <>
         <nav className=" flex-no-wrap px-10 py-3 fixed top-0 z-10 w-full flex md:gap-[26%] md:justify-stretch justify-right bg-neutral-100 ">
             <Link href={"/"} id="logo" className="flex align-middle">
                 <Logo/>
@@ -74,6 +77,12 @@ export default function Navbar() {
                     </li>
                 ))}
             </ul>
+
+            
         </nav>
+        
+
+        </>
+        
     );
 }

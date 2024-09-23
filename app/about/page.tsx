@@ -1,6 +1,7 @@
 import Banner from "@/public/images/aboutus.jpg";
 import Image from "next/image";
 import auditImage from "@/public/images/audit.png";
+import ProgressBar from "@/components/ProgressBar/ProgressBar";
 
 import {
     Card,
@@ -43,6 +44,7 @@ const teamMembers = [
 export default function Team() {
   return (
     <>
+    <ProgressBar/>
       <div style={{ height: "56vh", position: "relative" }}>
         <Image src={Banner} alt="Teamwork" layout="fill" objectFit="cover" />
         <div style={{

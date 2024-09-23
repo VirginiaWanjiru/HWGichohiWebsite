@@ -7,6 +7,9 @@ import Assurance from "@/public/images/image 4.png";
 import Tax from "@/public/images/image 5.png";
 import Image from "next/image";
 
+import {useState} from "react";
+import ProgressBar from "@/components/ProgressBar/ProgressBar";
+
 import {
     Card,
     CardContent,
@@ -70,6 +73,8 @@ const services = [
 export default function Services() {
   return (
     <>
+
+    <ProgressBar/>
       <div style={{ height: "99vh", position: "relative" }}>
         <Image src={Banner} alt="Services" layout="fill" objectFit="cover" />
         <div style={{
