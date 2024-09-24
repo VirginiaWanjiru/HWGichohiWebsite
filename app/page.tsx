@@ -1,5 +1,5 @@
 
-import Home from "@/components/home";
+import Home from "@/app/home/home";
 
 export const metadata = {
   title: "Create Next App",

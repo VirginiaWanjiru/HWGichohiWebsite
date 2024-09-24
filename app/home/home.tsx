@@ -1,18 +1,18 @@
 "use client";
 
-import styles from "@/components/home.module.css";
-import auditImage from "@/public/images/audit.png";
+import styles from "@/app/home/home.module.css";
+
 import AccountingIcon from "@/components/icons/AccountingIcon";
 import ConsultingIcon from "@/components/icons/ConsultingIcon";
 import AssuranceIcon from "@/components/icons/AssuranceIcon";
 import TaxIcon from "@/components/icons/TaxIcon";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import {motion} from "framer-motion";
 import ProgressBar from "@/components/ProgressBar/ProgressBar";
+import Mission from "@/components/Mission/Mission"
 
 export default function Home() {
  
@@ -49,7 +49,8 @@ export default function Home() {
           </button>
         </span>
       </div>
-     
+     <hr/>
+
       <div className={styles.content}>
         <motion.div 
         initial={{ opacity:0}}
@@ -60,72 +61,19 @@ export default function Home() {
           <h2 className="text-center font-sans">Who we are </h2>
           <div className="flex justify-between gap-8 ">
             <div>
-              <p className="text-lg">
-                {" "}
-                H. W. GICHOHI & COMPANY CPA (K) is a leading {" "}
-                <span className="text-[#C00000] font-bold ">
-                  {" "}
-                  advisory, accountancy, audit{" "}
-                </span>{" "}
-                <span> & </span>{" "}
-                <span className="text-[#C00000] font-bold  ">
-                  {" "}
-                  consulting firm{" "}
-                </span>{" "}
-                <span> (AAAC) registered in Kenya for the last </span>
-                <span className="text-[#C00000] font-bold"> 43+</span>, years
-                with expertise in Accounting, Tax Matters, Audit & Business
-                Advisory Services, Forensic Services, Human Resources &
-                Personnel Services, Management Consultancy Services, Corporate
-                Re-Construction & Insolvency Services, Financial Advisory
-                Services, Company Secretarial Services, and Dispute Mediation
-                Services.
-               
-                <br />
-                <br />
-              </p>
-              <p className="text-[#C00000] font-bold font-sans underline">
-                Why Choose Us:
-              </p>
-              <br/>
-              <ul className="list-disc ml-8 ">
-                <li>
-                  <p className="text-lg">
-                    Holistic solutions that address the unique requirements of
-                    individuals, businesses, and organizations.
-                  </p>
-                </li>
-                <li>
-                  <p className="text-lg">
-                    A one-stop solution for comprehensive support across various
-                    disciplines.
-                  </p>
-                </li>
-                <li>
-                  <p className="text-lg">
-                    Dedication to delivering value-added services that drive
-                    success and help navigate today's complex business
-                    environment
-                  </p>
-                </li>
-              </ul>
+
+            <Mission/>
+              
+              
             </div>
-            <Image className="hidden md:block h-full" src={auditImage} alt={"audit"} />
+            
           </div>
 
-          <button
-            onClick={() => router.push("/about")}
-            className="text-[#FFFFFF] bg-[#C00000] rounded-2xl uppercase text-2l py-4 px-8 font-extrabold  self-center"
-          >
-            Learn More
-          </button>
-
-          
         </motion.div>
 
         <hr />
 
-        <div className="m-0 mt-5  flex flex-col gap-14 " id="our-services">
+        <div className="m-0 mt-0  flex flex-col gap-14" id="our-services">
           <h2 className="text-center font-sans">What we do</h2>
 
           <div className="flex flex-col md:flex-row justify-between mx-11">
