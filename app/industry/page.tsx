@@ -12,7 +12,7 @@ const industry = () => {
     <>
     <ProgressBar/>
     <div className="mt-20 mb-10 flex flex-col gap-0  h-360" id="industry">
-          <h2 className="text-center font-sans text-black">Industry</h2>
+          <h2 className="text-center font-sans text-black">Industries</h2>
           <IndustryCarousel />
           
           
