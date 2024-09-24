@@ -56,7 +56,7 @@ export default function Team() {
           backgroundColor: 'rgba(0, 0, 0, 0.7)' // Adjust the color and opacity as needed
         }}>
           
-          <h1 className="text-white text-center text-5xl tracking-wide font-serif flex flex-col mt-64">About H.W Gichohi  </h1> 
+          <h1 className="text-white text-center text-5xl tracking-wide font-serif flex flex-col mt-64">About H.W Gichohi CPA(K)  </h1> 
           <br></br>
           <p className="text-white text-center font-serif"> "Uncovering Insights, Ensuring Integrity" </p>
 
@@ -83,9 +83,9 @@ export default function Team() {
             ))}
         </div>
 
-          <div className="flex justify-between gap-5 font-roboto">
+          <div className="flex justify-between gap-5 ">
             <div>
-              <p>
+              <p className="text-md">
               Our competencies are anchored on the combination of our EXPERTISE, TECHNICAL KNOW-HOW, continual TRAINING and PROFESSIONALISM
               in delivering all services expected of a Certified Public Accounting firm and cater for the needs of clients; including individuals,
                 businesses and all types of organizations; by providing integrated and holistic solutions through personalized services.
@@ -94,7 +94,7 @@ export default function Team() {
               </p>
 
 
-              <p className="text-[#C00000] font-bold underline">
+              <p className="text-[#C00000] font-bold  text-md">
               OUR SERVICES
               </p>
               <br></br>

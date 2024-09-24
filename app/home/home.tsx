@@ -39,8 +39,13 @@ export default function Home() {
             Delivering Results in Assurance, Advisory and Compliance
           </h1>
           <p className="font-serif">
+            H. W Gichohi CPA(K)
+          </p>
+          
+          <p className="font-serif">
             Excellence, Integrity, Growth: Partnering for Success
           </p>
+          
           <button
             onClick={() => router.push("/#contact-us")}
             className="bg-[#C00000] py-4 font-extrabold uppercase md:w-1/3 max-w-[20rem] rounded-2xl md:text-2l hover:bg-sky-700"
@@ -71,7 +76,7 @@ export default function Home() {
 
         </motion.div>
 
-        <hr />
+        
 
         <div className="m-0 mt-0  flex flex-col gap-14" id="our-services">
           <h2 className="text-center font-sans">What we do</h2>
