@@ -17,10 +17,10 @@ export default function Navbar() {
     };
     const navItems = [
         { name: 'Home', path: '/' },
-        { name: 'Who we are', path: '/about' },
-        { name: 'What we do', path: '/services' },
-        { name: 'Areas of practice', path: '/#industry' },
-        { name: 'Reach Us', path: '/#contact-us'}
+        { name: 'About Us', path: '/about' },
+        { name: 'Our Services', path: '/services' },
+        { name: 'Industry', path: '/industry' },
+        { name: 'Contact Us', path: '/contact'}
     ];
 
     return (

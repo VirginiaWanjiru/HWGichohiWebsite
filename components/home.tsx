@@ -8,9 +8,7 @@ import AssuranceIcon from "@/components/icons/AssuranceIcon";
 import TaxIcon from "@/components/icons/TaxIcon";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import ContactForm from "@/components/ui/contact-form";
-import ContactMap from "@/components/ui/contact-map";
-import IndustryCarousel from "@/components/ui/industry-carousel";
+
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import {motion} from "framer-motion";
@@ -447,26 +445,7 @@ export default function Home() {
           
          
         </div>
-        <hr  />
-        <div className="mt-7 flex flex-col gap-0  h-360" id="industry">
-          <h2 className="text-center font-sans text-black">Areas of Practice</h2>
-          <IndustryCarousel />
-          
-          
-        </div >
-        <div id="contact-us" className="m-9 flex flex-col gap-7" >
-          <h2 className="text-center font-sans" > Contact Us</h2>
-          <div className="flex flex-col-reverse h-full w-full items-center gap-6 md:flex-row md:h-[33.875rem] md:pl-8">
-            <div className="w-full md:w-2/5 h-full">
 
-              <ContactForm />
-
-            </div>
-            <div className="w-full md:w-3/5 h-full">
-              <ContactMap />
-            </div>
-          </div>
-        </div>
       </div>
       
       </div>
