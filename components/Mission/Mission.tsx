@@ -93,24 +93,20 @@ const Mission = () => {
       </motion.div>
 
       {/* Final Image Section */}
-      <motion.div
-        initial={{ opacity:0}}
-        whileInView={{ opacity:1}}
-        
-        
-        >
-        
-        
-        <button
-          className="text-[#FFFFFF] bg-[#C00000] rounded-2xl uppercase text-2l py-4 px-8 font-extrabold   mb-10 flex justify-center"
-          onClick={() => router.push('/about')}
-          
-            
-          
-        >
-          Learn More
-        </button>
-      </motion.div>
+      
+<motion.div
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  className="flex justify-center items-end  mt-0"
+>
+  <button
+    className="text-white bg-[#C00000] border border-2 border-red-700 rounded-2xl uppercase text-2l py-4 px-8 font-extrabold mb-0"
+    onClick={() => router.push('/about')}
+  >
+    Learn More
+  </button>
+</motion.div>
+
     </div>
   );
 };

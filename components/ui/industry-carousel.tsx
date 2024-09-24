@@ -4,7 +4,7 @@ import humanitarianAid from "@/public/images/humanitarian_aid.jpg";
 import financialServices from "@/public/images/financial_services.jpg";
 import soleProprietorship from "@/public/images/sole.jpg";
 import manufacturingSector from "@/public/images/manufacturing_sector.jpg";
-import cafeteria from "@/public/images/cafeteria.png";
+import sme from "@/public/images/sme.jpg";
 import agriculture from "@/public/images/agriculture.png";
 import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
 import Image from "next/image";
@@ -34,7 +34,7 @@ const industryItems = [
     {
         id: 4,
         title: "Small and Medium-sized Enterprises",
-        image: cafeteria,
+        image: sme,
         description: "For SMEs (Small and Medium-sized Enterprises), our clients are typically a small or medium-sized businesses operating in various industries, including retail, services, or manufacturing."
     },
     {
