@@ -1,6 +1,5 @@
 import Banner from "@/public/images/aboutus.jpg";
 import Image from "next/image";
-import auditImage from "@/public/images/audit.png";
 import ProgressBar from "@/components/ProgressBar/ProgressBar";
 
 import {
@@ -13,7 +12,7 @@ import {
   } from "@/components/ui/card"
 
 import Amos from "@/public/images/Amos.jpg";
-import Isaac from "@/public/images/Amos.jpg";
+
 import Karanja from "@/public/images/Amos.jpg";
 import Gichohi from "@/public/images/Amos.jpg";
 const teamMembers = [
