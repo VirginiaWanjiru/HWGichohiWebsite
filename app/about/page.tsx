@@ -1,4 +1,4 @@
-import Banner from "@/public/images/aboutus.jpg";
+import Banner from "@/public/images/landing.png";
 import Image from "next/image";
 import ProgressBar from "@/components/ProgressBar/ProgressBar";
 
@@ -52,19 +52,21 @@ export default function Team() {
           left: 0,
           height: '100%',
           width: '100%',
-          backgroundColor: 'rgba(0, 0, 0, 0.7)' // Adjust the color and opacity as needed
+          backgroundColor: 'rgba(128, 128, 128, 0.7)' // Adjust the color and opacity as needed
         }}>
           
-          <h1 className="text-white text-center text-5xl tracking-wide font-serif flex flex-col mt-64">About H.W Gichohi CPA(K)  </h1> 
+          <p className=" text-center text-6xl font-serif font-bold flex flex-col mt-52 text-red-950">About us</p> 
           <br></br>
-          <p className="text-white text-center font-serif"> "Uncovering Insights, Ensuring Integrity" </p>
+          <p className=" text-center text-xl font-sans font-bold flex flex-col ">H W. GICHOHI CPA (K)</p> 
+          
 
         </div>
       </div>
+     
       
  
 <div  className="m-10 flex flex-col gap-14  " id="about-us">
-          <h2 className="text-center font-sans  ">Meet the team</h2>
+          
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 p-6 mt-10">
             {teamMembers.map((member) => (

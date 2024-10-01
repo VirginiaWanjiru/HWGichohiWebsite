@@ -1,6 +1,6 @@
 "use client";
 
-import Banner from "@/public/images/audit1.webp";
+import Banner from "@/public/images/landing.png";
 import Consulting from "@/public/images/image 2.png";
 import Accounting from "@/public/images/image 3.png";
 import Assurance from "@/public/images/image 4.png";
@@ -75,29 +75,28 @@ export default function Services() {
     <>
 
     <ProgressBar/>
-      <div style={{ height: "99vh", position: "relative" }}>
-        <Image src={Banner} alt="Services" layout="fill" objectFit="cover" />
+
+    <div style={{ height: "56vh", position: "relative" }}>
+        <Image src={Banner} alt="Teamwork" layout="fill" objectFit="cover" />
         <div style={{
           position: 'absolute',
           top: 0,
           left: 0,
           height: '100%',
           width: '100%',
-          display: "flex-col ",
-          alignItems: "center",
-          justifyContent: "center",
-          backgroundColor: 'rgba(0, 0, 0, 0.5)' // Adjust the color and opacity as needed
+          backgroundColor: 'rgba(128, 128, 128, 0.7)' // Adjust the color and opacity as needed
         }}>
-          <h1 className="text-white text-center text-5xl tracking-wide font-serif flex flex-col mt-72">WE PROVIDE PROPER AUDIT SOLUTIONS</h1> 
+      
+          <p className="text-center text-6xl font-serif font-bold flex flex-col mt-52 text-red-950">Services</p> 
           <br />
-          <p className="text-white text-center font-serif">"Uncovering Insights, Ensuring Integrity"</p>
+          <p className=" text-center text-xl font-sans font-bold flex flex-col ">H W. GICHOHI CPA (K)</p> 
         </div>
       </div>
       
       <br />
 
 
-      <h2 className="text-center font-sans">Our Services</h2>
+      
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 p-6 mt-10">
         {services.map((service) => (
           <Card key={service.id} className="w-full p-4 bg-white rounded-lg shadow-lg relative">
