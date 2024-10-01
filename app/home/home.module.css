@@ -2,25 +2,26 @@
     max-width: var(-max-width);
     width: 100%;
     background: url("/images/bg.jpg");
-    box-shadow: inset 0 0 0 1000px #ffffff;
+    box-shadow: inset 0 0 0 1000px #f2eeee;
 }
 
 .landing {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 100vh;
-    box-shadow: inset 0 0 0 1000px #413e3e;
+    height: 99vh;
+    box-shadow: inset 0 0 0 1000px #000000;
   }
   
   .carousel {
     display: flex;
     width: 100%; /* 4 slides */
+    height:100%;
     transition: transform 1s ease-in-out;
   }
   
   .slide {
-    flex: 1 0 100%;
+    flex:1 0 100%;
     width: 100%;
     height: 100%;
   }

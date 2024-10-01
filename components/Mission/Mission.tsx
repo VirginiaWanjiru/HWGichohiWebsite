@@ -1,6 +1,6 @@
 import React from 'react';
-import mission from '@/public/images/1.jpg';
-import vision from '@/public/images/2.jpg';
+import mission from '@/public/images/fraud.jpg';
+import vision from '@/public/images/tax2.jpg';
 import Image from 'next/image';
 
 import { useRouter } from "next/navigation";
@@ -25,24 +25,20 @@ const Mission = () => {
 
   return (
     <div>
-      {/* Mission Section */}
-      <motion.div
-        className="flex flex-items-center"
+
+<motion.div
+        className="flex flex-items-center  text-center "
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.3 }}  // `once: false` allows it to animate every time it's in view
         variants={slideIn}
       >
-        <Image
-          className="mt-1 ml-10 mb-10 max-w-xl rounded-lg w-full shadow-xl dark:shadow-gray-800"
-          src={mission}
-          alt="mission image"
-        />
-        <div id="missiontext" className="mt-30 text-left mt-20 ml-40">
-          <p className="font-sans font-bold text-xxl">Our Mission</p>
-          <br />
-          <p className="text-lg">
-            H. W. GICHOHI & COMPANY CPA (K) is a leading{' '}
+        
+        <div id="missiontext" className=" text-center  mb-40   ">
+        
+          <p className="text-2xl mt-20 font-medium">
+           <span className="font-bold"> H. W. GICHOHI & COMPANY CPA (K) </span>
+           is a leading{' '}
             <span className="text-[#C00000] font-bold">advisory, accountancy, audit</span>{' '}
             &{' '}
             <span className="text-[#C00000] font-bold">consulting firm</span>{' '}
@@ -52,6 +48,37 @@ const Mission = () => {
             Personnel Services, Management Consultancy Services, Corporate Re-Construction &
             Insolvency Services, Financial Advisory Services, Company Secretarial Services, and
             Dispute Mediation Services.
+          </p>
+
+     
+        </div>
+      </motion.div>
+      <br/>
+      <br/>
+      
+      
+
+      <hr />
+
+      {/* Mission Section */}
+      <motion.div
+        className="flex flex-items-center mt-20"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.3 }}  // `once: false` allows it to animate every time it's in view
+        variants={slideIn}
+      >
+        
+        <div id="missiontext" className="text-left mt-2 ml-20 text-balance">
+          <p className="font-sans font-bold text-6xl">Our Mission</p>
+          <br />
+          <p className="text-lg text-balance">
+            Our mission is to provide professional services to our clients to enable them to excel 
+            in their business. We offer professional services in assurance testing, Tax Planning and 
+            Tax Management, Forensic Investigation, Financial consulting, dispute resolution Consultancy services
+            etc in Kenya, East Africa and beyond in an economical and value added manner. We do this with integrity 
+            to impact positively to the economy and world at large.
+            
           </p>
         </div>
       </motion.div>
@@ -64,32 +91,19 @@ const Mission = () => {
         viewport={{ once: false, amount: 0.3 }}  // Re-triggers animation on every scroll into view
         variants={slideIn}
       >
-        <div className="text-left mt-5">
-          <p className="font-sans font-bold text-xxl">Our Vision</p>
-          <br />
-          <p className="text-[#C00000] font-bold font-sans">Why Choose Us:</p>
-          <br />
-          <ul className="list-disc ml-8">
-            <li>
-              <p className="text-lg">
-                Holistic solutions that address the unique requirements of individuals, businesses,
-                and organizations.
-              </p>
-            </li>
-            <li>
-              <p className="text-lg">
-                A one-stop solution for comprehensive support across various disciplines.
-              </p>
-            </li>
-            <li>
-              <p className="text-lg">
-                Dedication to delivering value-added services that drive success and help navigate
-                today's complex business environment
-              </p>
-            </li>
-          </ul>
+        
+        <div className="text-left mt-5 text-balance ml-20">
+          <p className="font-sans font-bold text-6xl">Our Vision</p>
+          <br/>
+          <p className="text-lg text-balance">
+            Our Vision is to become the most respected practising firm for its honesty,
+            integrity and high quality professional service in East and Central Africa, a reference point for 
+            Consultancy, Assurance Testing Services and Tax Consultancy.
+          </p>
+         
+          
         </div>
-        <Image className="rounded-lg mb-10 max-w-xl ms-auto w-full" src={vision} alt="vision image" />
+        
       </motion.div>
 
       {/* Final Image Section */}
@@ -100,13 +114,19 @@ const Mission = () => {
   className="flex justify-center items-end  mt-0"
 >
   <button
-    className="text-white bg-[#C00000] border border-2 border-red-700 rounded-2xl uppercase text-2l py-4 px-8 font-extrabold mb-0"
+    className="text-white bg-[#C00000] border border-2 border-red-700 rounded-2xl uppercase text-2l py-4 px-8 font-extrabold mb-0 mt-20 mb-20"
     onClick={() => router.push('/about')}
   >
     Learn More
   </button>
 </motion.div>
 
+
+
+
+      
+
+<hr/>
     </div>
   );
 };

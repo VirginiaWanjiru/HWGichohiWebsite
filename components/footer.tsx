@@ -1,30 +1,58 @@
+import React from 'react';
 import LogoLarge from "@/components/icons/LogoLarge";
+import Link from 'next/link';
 
-export default function Footer() {
+interface ExternalLink {
+  name: string;
+  url: string;
+}
+
+const externalLinks: ExternalLink[] = [
+  { name: 'Standard 1', url: 'https://www.linkedin.com' },
+  { name: 'Standard 2', url: 'https://www.twitter.com' },
+  { name: 'Standard 3', url: 'https://www.facebook.com' },
+];
+
+const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#292524] text-[#FAFAFA] pl-3 pt-8 pb-16 text-xs">
-      <div className="grid grid-cols-1 md:grid-cols-3">
-        <div>
-          <LogoLarge/>
-
-          <div className="mt-3 ">
-            <p>Excellence, Integrity, Growth: Partnering for Success</p>
-          </div>
+    <footer className="bg-[#292524] text-[#FAFAFA] px-4 py-8 text-xs">
+      <div className="container mx-auto flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-gray-600">
+        {/* Section 1 */}
+        <div className="flex-1 flex flex-col space-y-4 pb-4 md:pb-0 md:pr-4">
+          <LogoLarge />
+          <p className="text-xs">Excellence,Integrity, Growth: Partnering for Success</p>
         </div>
-        <div> </div>
-        <div className="md:mr-2  mt-4 text-xs font-sans">
-          <p>
+        
+        {/* Section 2 */}
+        <div className="flex-1 flex flex-col space-y-2 py-4 md:py-0 md:px-4">
+          <h3 className="font-semibold mb-2">Links to our accounting standards</h3>
+          {externalLinks.map((link) => (
+            <Link key={link.name} href={link.url} target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">
+              {link.name}
+            </Link>
+          ))}
+        </div>
+        
+        {/* Section 3 */}
+        <div className="flex-1 flex flex-col space-y-2 py-4 md:py-0 md:px-4 ">
+          <h3 className="font-semibold mb-2">Contact Us</h3>
+          <p className="text-xs">Email: hwgichohiandcompany@gmail.com</p>
+          <p className="text-xs">Phone: +1 234 567 8900</p>
+          <p className="text-xs">Address: 123 Business St, City, Country</p>
+        </div>
+        
+        {/* Section 4 */}
+        <div className="flex-1 flex flex-col space-y-4 pt-4 md:pt-0 md:pl-4 ">
+          <p className="text-xs">
             ©H.W Gichohi and Co. All rights reserved. H.W Gichohi and Co refers
             to the H.W Gichohi and Co network and/or one or more of its member
             firms, each of which is a separate legal entity.
-
-            
           </p>
-          
-          <br></br>
-          <p> | hwgichohiandcompany@gmail.com | </p>
+          <p className="text-xs">Privacy Policy | Terms of Service</p>
         </div>
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;
