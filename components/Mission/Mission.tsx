@@ -69,7 +69,7 @@ const Mission = () => {
 
       {/* Mission Section */}
       <motion.div
-        className="flex flex-items-center mt-20"
+        className="flex flex-items-center mt-10"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.3 }}  // `once: false` allows it to animate every time it's in view
@@ -77,7 +77,7 @@ const Mission = () => {
       >
         
         <div id="missiontext" className="text-center mt-2 ">
-          <p className="font-sans font-bold text-6xl">Our Mission</p>
+          <p className="font-serif font-bold text-6xl">Our Mission</p>
           <br />
           <p className="text-lg text-balance text-center">
             Our mission is to provide professional services to our clients to enable them to excel 
@@ -100,7 +100,7 @@ const Mission = () => {
       >
         
         <div className="text-center mt-5 text-balance ">
-          <p className="font-sans font-bold text-6xl">Our Vision</p>
+          <p className="font-serif font-bold text-6xl">Our Vision</p>
           <br/>
           <p className="text-lg text-center">
             Our Vision is to become the most respected practising firm for its honesty,
@@ -121,7 +121,7 @@ const Mission = () => {
   className="flex justify-center items-end  mt-0"
 >
   <button
-    className="text-white bg-[#C00000] border border-2 border-red-700 rounded-2xl uppercase text-2l py-4 px-8 font-extrabold mb-0 mt-20 mb-20"
+    className="text-white bg-[#C00000] border border-2 border-red-700 rounded-2xl uppercase text-2l py-4 px-8 font-extrabold mb-0 mt-10 mb-20"
     onClick={() => router.push('/about')}
   >
     Learn More

@@ -14,6 +14,15 @@ import { motion } from "framer-motion";
 import ProgressBar from "@/components/ProgressBar/ProgressBar";
 import Mission from "@/components/Mission/Mission";
 import Banner from "@/components/BannerSlider/banner";
+import secretary from "@/public/images/desk.png";
+
+import assurance from "@/public/images/assurance.png";
+import consulting from "@/public/images/consultant.png";
+import accounting from "@/public/images/accounting.png";
+import tax from "@/public/images/tax.png";
+import forensics from"@/public/images/forensic.png";
+
+
 
 export default function Home() {
   const router = useRouter();
@@ -30,8 +39,8 @@ export default function Home() {
             className="m-9 flex flex-col gap-14 "
             id="about-us"
           >
-            <h2 className="text-center font-sans">Who we are </h2>
-            <div className="flex justify-between gap-8 ">
+            <p className="text-center font-serif font-bold text-6xl ">Who We Are </p>
+            <div className="flex justify-between gap-8  ">
               <div>
                 <Mission />
               </div>
@@ -39,13 +48,19 @@ export default function Home() {
           </motion.div>
 
           <div className="m-0 mt-0  flex flex-col gap-14" id="our-services">
-            <h2 className="text-center font-sans">What we do</h2>
+            <p className="text-center font-serif font-bold text-6xl">What We Do</p>
+         
 
             <div className="flex flex-col md:flex-row justify-between mx-11">
               <div className="flex flex-col flex-1 items-center gap-14">
-                <AssuranceIcon />
-
+              <Image src={assurance} alt="assurance"/> 
+              
                 <Menu as="div" className="relative inline-block text-left">
+                  <p className="text-sm text-red-900 ">
+                    Our firm’s Audit and assurance services comply with the
+                    Companies Act, International ...
+                  </p>{" "}
+                  <br></br>
                   <div>
                     <MenuButton className="inline-flex w-56 justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-lg text-black font-semibold text-white-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-400">
                       Audit & Assurance services
@@ -55,7 +70,6 @@ export default function Home() {
                       />
                     </MenuButton>
                   </div>
-
                   <MenuItems
                     transition
                     className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
@@ -117,9 +131,14 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col flex-1 items-center gap-14">
-                <AssuranceIcon />
+              <Image src={forensics} alt="forensic"/> 
 
                 <Menu as="div" className="relative inline-block text-left">
+                  <p className="text-sm text-red-900 ">
+                    Our firm’s expertise in fraud and forensic investigation is
+                    extensive, backed by a team of ...
+                  </p>{" "}
+                  <br></br>
                   <div>
                     <MenuButton className="inline-flex w-56 justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-lg text-black font-semibold text-white-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-400">
                       Fraud and Forensic Investi... services
@@ -129,7 +148,6 @@ export default function Home() {
                       />
                     </MenuButton>
                   </div>
-
                   <MenuItems
                     transition
                     className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
@@ -191,9 +209,14 @@ export default function Home() {
               </div>
 
               <div className="flex flex-1 flex-col items-center gap-14">
-                <TaxIcon />
+              <Image src={tax} alt="tax"/> 
 
                 <Menu as="div" className="relative inline-block text-left">
+                  <p className="text-sm text-red-900 ">
+                    Our firm’s attentive and expert tax services cover all
+                    aspects of corporate and personal taxation ...
+                  </p>{" "}
+                  <br></br>
                   <div>
                     <MenuButton className="inline-flex w-56 justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-lg text-black font-semibold text-white-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-400">
                       Tax services {"  "}
@@ -203,7 +226,6 @@ export default function Home() {
                       />
                     </MenuButton>
                   </div>
-
                   <MenuItems
                     transition
                     className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
@@ -260,9 +282,14 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col flex-1 items-center gap-14">
-                <AccountingIcon />
+              <Image src={accounting} alt="accounting"/> 
 
                 <Menu as="div" className="relative inline-block text-left">
+                  <p className="text-sm text-red-900 ">
+                    Our firm offers expert handling of financial data and a wide
+                    range of accounting services ...
+                  </p>{" "}
+                  <br></br>
                   <div>
                     <MenuButton className="inline-flex w-56 justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-lg text-black font-semibold text-white-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-400">
                       Accounting services
@@ -272,7 +299,6 @@ export default function Home() {
                       />
                     </MenuButton>
                   </div>
-
                   <MenuItems
                     transition
                     className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
@@ -326,21 +352,24 @@ export default function Home() {
                 </Menu>
               </div>
 
-              <div className="flex flex-col flex-1 items-center gap-14">
-                <ConsultingIcon />
+              <div className="flex flex-col flex-1 items-center gap-14  ">
+              <Image src={consulting} alt="consulting"/> 
 
                 <Menu as="div" className="relative inline-block text-left">
+                  <p className="text-sm text-red-900 ">
+                    Our firm offers comprehensive consultancy, legal and
+                    business advisory services for management ...
+                  </p>{" "}
+                  <br></br>
                   <div>
                     <MenuButton className="inline-flex w-64 text-clip overflow-hidden justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-lg text-black font-semibold text-white-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-400">
-                    Consultancy &amp; Business Advisory services
-                      
+                      Consultancy &amp; Business Advisory services
                       <ChevronDownIcon
                         aria-hidden="true"
                         className="-mr-1 h-7 w-7 text-gray-400 "
                       />
                     </MenuButton>
                   </div>
-
                   <MenuItems
                     transition
                     className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
@@ -451,10 +480,15 @@ export default function Home() {
                 </Menu>
               </div>
 
-              <div className="flex flex-col flex-1 items-center gap-14">
-                <ConsultingIcon />
+              <div className="flex flex-col flex-1 items-center gap-14 ml-5">
+            <Image src={secretary} alt="secretary"/> 
 
                 <Menu as="div" className="relative inline-block text-left">
+                  <p className="text-sm text-red-900 ">
+                    Our clients benefit from our firm’s comprehensive range of
+                    secretarial services ...
+                  </p>{" "}
+                  <br></br>
                   <div>
                     <MenuButton className="inline-flex w-56 justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-lg text-black font-semibold text-white-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-400">
                       Secretarial services
@@ -464,7 +498,6 @@ export default function Home() {
                       />
                     </MenuButton>
                   </div>
-
                   <MenuItems
                     transition
                     className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
