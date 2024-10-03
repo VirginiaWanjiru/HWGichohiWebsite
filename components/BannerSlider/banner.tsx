@@ -18,7 +18,7 @@ const Banner: React.FC = () => {
   const slides: Slide[] = [
     {
       image: "/images/image1.jpg",
-      text: "Delivering Results in Assurance, Advisory and Compliance",
+      text: "Delivering Results in Assurance",
       name:"H.W GICHOHI AND CO CPA (K)",
       buttonText: "Contact Us",
       buttonLink: "/#contact-us",
