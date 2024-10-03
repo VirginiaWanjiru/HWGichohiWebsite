@@ -58,7 +58,7 @@ const Mission = () => {
 
         <br/>
         <br/>
-        <Image src={mission} alt="image" className="align-right w-1/2 h-96"></Image>
+        <Image src={mission} alt="image" className="align-right w-1/2 h-96 hidden md:block"></Image>
       </motion.div>
       <br/>
       <br/>
