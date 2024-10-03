@@ -87,7 +87,7 @@ const Banner: React.FC = () => {
               >
                 
                 <div className="flex flex-col w-full h-full px-8 md:px-8 gap-8 md:max-w-4xl md:gap-8 text-[#FFFFFF] mt-60">
-                  <h1 className="md:text-start mt-24 md:text-6xl font-serif">
+                  <h1 className="md:text-start mt-24 md:text-5xl font-serif">
                     {slide.text}
                     
                   </h1>
