@@ -70,10 +70,13 @@ const Banner: React.FC = () => {
     <>
       <div className={styles.landing}>
       <ProgressBar />
-        <div
-          className={styles.carousel}
-          style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-        >
+      <div
+  className={styles.carousel}
+  style={{
+    transform: `translateX(-${currentSlide * 100}%)`,
+    willChange: 'transform', // Hint to the browser for smoother animation
+  }}
+>
           {slides.map((slide, index) => (
             <div className={styles.slide} key={index}>
               <div
@@ -81,7 +84,7 @@ const Banner: React.FC = () => {
                 style={{
                   backgroundImage: `url(${slide.image})`,
                   backgroundSize: 'cover',
-                  boxShadow: 'inset 0 0 0 1000px rgba(0, 0, 0, 0.7)',
+                  boxShadow: 'inset 0 0 0 1000px rgba(0, 0, 0, 0.2)',
                 
                 }}
               >
@@ -112,7 +115,7 @@ const Banner: React.FC = () => {
           &#10095; {/* Right arrow symbol */}
         </button>
       </div>
-      <hr />
+   
     </>
   );
 };

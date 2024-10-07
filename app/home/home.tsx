@@ -20,9 +20,9 @@ import assurance from "@/public/images/assurance.png";
 import consulting from "@/public/images/consultant.png";
 import accounting from "@/public/images/accounting.png";
 import tax from "@/public/images/tax.png";
-import forensics from"@/public/images/forensic.png";
-
-
+import forensics from "@/public/images/forensic.png";
+import banner from "@/public/images/banner2.jpg";
+import Team from "@/components/About/about";
 
 export default function Home() {
   const router = useRouter();
@@ -36,10 +36,12 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            className="m-9 flex flex-col gap-14 "
+            className="m-9 flex flex-col gap-14  "
             id="about-us"
           >
-            <p className="text-center font-serif font-bold text-6xl ">Who We Are </p>
+            <p className="text-center font-serif font-bold text-6xl ">
+              Who We Are{" "}
+            </p>
             <div className="flex justify-between gap-8  ">
               <div>
                 <Mission />
@@ -47,14 +49,67 @@ export default function Home() {
             </div>
           </motion.div>
 
-          <div className="m-0 mt-0  flex flex-col gap-14" id="our-services">
-            <p className="text-center font-serif font-bold text-6xl">What We Do</p>
-         
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            className="relative flex flex-col gap-14 bg-cover bg-center w-full min-h-[60vh] py-24"
+            id="about-us"
+            style={{
+              backgroundImage: "url('/images/london.png')", // Replace with the path to your image
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            {/* Background Blur Overlay */}
+            <div className="absolute inset-0  bg-opacity-25 backdrop-blur-sm"></div>
+
+            {/* Text Content */}
+            <div className="relative z-30">
+              <p className="underline font-bold text-2xl text-black text-center">
+                Who We Are
+              </p>
+              <br/><br/>
+
+              <p className="text-lg ml-10 font-large leading-relaxed text-black font-bold text-center">
+                <span className="font-bold">
+                  H. W. GICHOHI & COMPANY CPA (K)
+                </span>{" "}
+                is a leading{" "}
+                <span className="text-[#C00000] font-bold">
+                  advisory, accountancy, audit
+                </span>{" "}
+                &{" "}
+                <span className="text-[#C00000] font-bold">
+                  consulting firm
+                </span>{" "}
+                registered in Kenya for the last{" "}
+                <span className="text-[#C00000] font-bold">43+</span> years with
+                expertise in Accounting, Tax Matters, Audit & Business Advisory
+                Services, Forensic Services, Human Resources & Personnel
+                Services, Management Consultancy Services, Corporate
+                Re-Construction & Insolvency Services, Financial Advisory
+                Services, Company Secretarial Services, and Dispute Mediation
+                Services.
+              </p>
+            </div>
+
+            <div className="flex justify-between gap-8">
+              <div></div>
+            </div>
+          </motion.div>
+
+          <Team/>
+
+          <div className="m-0 mt-10  flex flex-col gap-14" id="our-services">
+            <p className="text-center font-serif font-bold text-6xl">
+              Services
+            </p>
 
             <div className="flex flex-col md:flex-row justify-between mx-11">
               <div className="flex flex-col flex-1 items-center gap-14">
-              <Image src={assurance} alt="assurance"/> 
-              
+                <Image src={assurance} alt="assurance" />
+
                 <Menu as="div" className="relative inline-block text-left">
                   <p className="text-sm text-red-900 ">
                     Our firm’s Audit and assurance services comply with the
@@ -131,7 +186,7 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col flex-1 items-center gap-14">
-              <Image src={forensics} alt="forensic"/> 
+                <Image src={forensics} alt="forensic" />
 
                 <Menu as="div" className="relative inline-block text-left">
                   <p className="text-sm text-red-900 ">
@@ -209,7 +264,7 @@ export default function Home() {
               </div>
 
               <div className="flex flex-1 flex-col items-center gap-14">
-              <Image src={tax} alt="tax"/> 
+                <Image src={tax} alt="tax" />
 
                 <Menu as="div" className="relative inline-block text-left">
                   <p className="text-sm text-red-900 ">
@@ -282,7 +337,7 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col flex-1 items-center gap-14">
-              <Image src={accounting} alt="accounting"/> 
+                <Image src={accounting} alt="accounting" />
 
                 <Menu as="div" className="relative inline-block text-left">
                   <p className="text-sm text-red-900 ">
@@ -353,7 +408,7 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col flex-1 items-center gap-14  ">
-              <Image src={consulting} alt="consulting"/> 
+                <Image src={consulting} alt="consulting" />
 
                 <Menu as="div" className="relative inline-block text-left">
                   <p className="text-sm text-red-900 ">
@@ -481,7 +536,7 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col flex-1 items-center gap-14 ml-5">
-            <Image src={secretary} alt="secretary"/> 
+                <Image src={secretary} alt="secretary" />
 
                 <Menu as="div" className="relative inline-block text-left">
                   <p className="text-sm text-red-900 ">

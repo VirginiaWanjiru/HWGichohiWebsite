@@ -1,13 +1,11 @@
-"use client";
+"use client"
 
 import { useState } from "react";
 import Banner from "@/public/images/landing.png";
 import Image from "next/image";
-import ProgressBar from "@/components/ProgressBar/ProgressBar";
-import Aboutus from "@/public/images/tax.jpg";
+
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-
 import Amos from "@/public/images/nairobi1.jpg";
 import Karanja from "@/public/images/nairobi.jpg";
 import Gichohi from "@/public/images/nairobi3.jpg";
@@ -87,31 +85,6 @@ const TeamMember = ({ member }: any) => {
 export default function Team() {
   return (
     <>
-      <ProgressBar />
-
-      <div className="relative h-[56vh]">
-        <Image src={Banner} alt="Teamwork" layout="fill" objectFit="cover" />
-
-        <div
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            height: "100%",
-            width: "100%",
-            backgroundColor: "rgba(128, 128, 128, 0.7)", // Adjust the color and opacity as needed
-          }}
-        >
-          <p className="text-center text-6xl font-serif font-bold flex flex-col mt-52 text-red-950">
-            About Us
-          </p>
-          <br />
-          <p className=" text-center text-xl font-sans font-bold flex flex-col ">
-            H W. GICHOHI CPA (K)
-          </p>
-        </div>
-      </div>
-
       <div className="gap-10 p-4 md:ml-20 md:mr-20">
         <div>
           <motion.div
@@ -121,8 +94,8 @@ export default function Team() {
             viewport={{ once: false, amount: 0.3 }}
             variants={slideIn}
           >
-            <div id="missiontext" className="mt-10 mb-10">
-              <p className="text-center text-lg  md:text-md leading-relaxed ml-10 ">
+            <div id="missiontext" className="mt-20 ">
+              <p className="text-left text-lg  md:text-md leading-relaxed ml-10 ">
                 Our competencies are anchored on the combination of our{" "}
                 <span className="text-red-700 font-bold">
                   EXPERTISE, TECHNICAL KNOW-HOW,
@@ -137,11 +110,10 @@ export default function Team() {
                 services.
               </p>
             </div>
-            
           </motion.div>
         </div>
-<hr/>
-       
+        
+
         <div className="flex flex-col gap-10 p-4 md:ml-5 md:mr-20">
           <motion.div
             initial="hidden"
@@ -169,7 +141,7 @@ export default function Team() {
         </div>
       </div>
 
-      <hr />
+   
 
       <div className="m-4 md:m-10 flex flex-col gap-10" id="about-us">
         <p className="text-2xl md:text-3xl ml-4 md:ml-10 font-bold">

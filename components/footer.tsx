@@ -23,15 +23,7 @@ const Footer: React.FC = () => {
           <p className="text-xs">Excellence,Integrity, Growth: Partnering for Success</p>
         </div>
         
-        {/* Section 2 */}
-        <div className="flex-1 flex flex-col space-y-2 py-4 md:py-0 md:px-4">
-          <h3 className="font-semibold mb-2">Links to our accounting standards</h3>
-          {externalLinks.map((link) => (
-            <Link key={link.name} href={link.url} target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">
-              {link.name}
-            </Link>
-          ))}
-        </div>
+       
         
         {/* Section 3 */}
         <div className="flex-1 flex flex-col space-y-2 py-4 md:py-0 md:px-4 ">
