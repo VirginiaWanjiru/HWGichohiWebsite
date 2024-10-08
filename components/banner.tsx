@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ProgressBar from '../ProgressBar/ProgressBar';
+import ProgressBar from './ProgressBar/ProgressBar';
 import styles from '@/app/home/home.module.css';
 import { useRouter } from 'next/navigation';
 
@@ -18,29 +18,29 @@ const Banner: React.FC = () => {
   const slides: Slide[] = [
     {
       image: "/images/image1.jpg",
-      text: "Delivering Results in Assurance",
-      name:"H.W GICHOHI AND CO CPA (K)",
+      text: "Delivering Results in Advisory and Assurance ",
+      name:"H.W. Gichohi & Co CPA(K)",
       buttonText: "Contact Us",
       buttonLink: "/#contact-us",
     },
     {
       image: "/images/nairobi5.jpg",
       text: "Tailored Financial Solutions for Your Business",
-      name:"H.W GICHOHI AND CO CPA (K)",
+      name:"H.W. Gichohi & Co CPA(K)",
       buttonText: "Learn More",
       buttonLink: "/#learn-more",
     },
     {
       image: "/images/nairobi3.jpg",
       text: "Partnering with You for Sustainable Growth",
-      name:"H.W GICHOHI AND CO CPA (K)",
+      name:"H.W. Gichohi & Co CPA(K)",
       buttonText: "Our Services",
       buttonLink: "/#services",
     },
     {
       image: "/images/nairobi.jpg",
       text: "Trusted Advisors, Committed to Your Success",
-      name:"H.W GICHOHI AND CO CPA (K)",
+      name:"H.W. Gichohi & Co CPA(K)",
       buttonText: "Get Started",
       buttonLink: "/#get-started",
     },
@@ -89,15 +89,15 @@ const Banner: React.FC = () => {
                 }}
               >
                 
-                <div className="flex flex-col w-full h-full px-8 md:px-8 gap-8 md:max-w-4xl md:gap-8 text-[#FFFFFF] mt-60">
-                  <h1 className="md:text-start mt-24 md:text-5xl font-serif">
+                <div className="flex flex-col w-full h-full px-8 md:px-8 gap-8 md:max-w-4xl md:gap-8 text-[#FFFFFF] mt-60 ml-10">
+                  <h1 className="md:text-start mt-24 md:text-6xl ">
                     {slide.text}
                     
                   </h1>
                   <p>{slide.name}</p>
                   <button
                     onClick={() => router.push(slide.buttonLink)}
-                    className="bg-[#C00000] py-4 font-extrabold uppercase md:w-1/3 max-w-[20rem] rounded-2xl md:text-2l hover:bg-sky-700 mt-8"
+                    className="bg-transparent border-2  border-red-950 py-4 font-extrabold uppercase md:w-1/4 max-w-[20rem] rounded md:text-2l hover:bg-red-700 mt-8"
                   >
                     {slide.buttonText}
                   </button>
@@ -107,13 +107,15 @@ const Banner: React.FC = () => {
           ))}
         </div>
 
-        {/* Arrow Buttons */}
+        
+        {/*
         <button className={styles.prevButton} onClick={handlePrev}>
-          &#10094; {/* Left arrow symbol */}
+          &#10094; {/* Left arrow symbol
         </button>
         <button className={styles.nextButton} onClick={handleNext}>
-          &#10095; {/* Right arrow symbol */}
-        </button>
+          &#10095; {/* Right arrow symbol 
+        </button> */}
+
       </div>
    
     </>

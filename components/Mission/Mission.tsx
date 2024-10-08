@@ -32,20 +32,20 @@ const Mission = () => {
         viewport={{ once: false, amount: 0.3 }} // `once: false` allows it to animate every time it's in view
         variants={slideIn}
       >
-        <div
-          id="missiontext"
-          className=" container text-left  text-balance   "
-        >
+        <div id="missiontext" className=" container text-left  text-balance   ">
           <p className="text-lg text-balance justify-center items-center mt-20">
-            We are a trusted firm offering <span className="font-bold">audit</span>, <span className="font-bold">tax </span> and <span className="font-bold">consultancy </span> services
-            to businesses in Kenya, East Africa and beyond. Our commitment to
-            excellence, integrity and added value drives our operations.
-            Through a purpose-driven culture, we build lasting relationships
-            based on transparency, reliability and growth. Our diverse team
-            provides tailored solutions, empowering clients to thrive in today's
-            complex business environment. With expertise across industries, we
-            deliver innovative, client-focused solutions. Our people are key to
-            our success, united by shared values and a passion for high-quality
+            We are a trusted firm offering{" "}
+            <span className="font-bold">audit</span>,{" "}
+            <span className="font-bold">tax </span> and{" "}
+            <span className="font-bold">consultancy </span> services to
+            businesses in Kenya, East Africa and beyond. Our commitment to
+            excellence, integrity and added value drives our operations. Through
+            a purpose-driven culture, we build lasting relationships based on
+            transparency, reliability and growth. Our diverse team provides
+            tailored solutions, empowering clients to thrive in today's complex
+            business environment. With expertise across industries, we deliver
+            innovative, client-focused solutions. Our people are key to our
+            success, united by shared values and a passion for high-quality
             service. We aim to positively impact businesses and local economies.
           </p>
         </div>
@@ -70,7 +70,7 @@ const Mission = () => {
         variants={slideIn}
       >
         <div id="missiontext" className="text-center  ">
-          <p className="font-serif font-bold text-6xl">Our Mission</p>
+          <p className=" font-bold text-6xl">Our Mission</p>
           <br />
           <p className="text-lg text-balance text-center">
             Our mission is to provide professional services to our clients to
@@ -93,7 +93,7 @@ const Mission = () => {
         variants={slideIn}
       >
         <div className="text-center mt-5 text-balance ">
-          <p className="font-serif font-bold text-6xl">Our Vision</p>
+          <p className="font-bold text-6xl">Our Vision</p>
           <br />
           <p className="text-lg text-center">
             Our Vision is to become the most respected practising firm for its

@@ -13,7 +13,7 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { motion } from "framer-motion";
 import ProgressBar from "@/components/ProgressBar/ProgressBar";
 import Mission from "@/components/Mission/Mission";
-import Banner from "@/components/BannerSlider/banner";
+import Banner from "@/components/banner";
 import secretary from "@/public/images/desk.png";
 
 import assurance from "@/public/images/assurance.png";
@@ -22,7 +22,7 @@ import accounting from "@/public/images/accounting.png";
 import tax from "@/public/images/tax.png";
 import forensics from "@/public/images/forensic.png";
 import banner from "@/public/images/banner2.jpg";
-import Team from "@/components/About/about";
+import Team from "@/components/about";
 
 export default function Home() {
   const router = useRouter();
@@ -39,8 +39,8 @@ export default function Home() {
             className="m-9 flex flex-col gap-14  "
             id="about-us"
           >
-            <p className="text-center font-serif font-bold text-6xl ">
-              Who We Are{" "}
+            <p className="text-center text-pretty font-bold text-6xl ">
+              Who we are{" "}
             </p>
             <div className="flex justify-between gap-8  ">
               <div>
@@ -73,7 +73,7 @@ export default function Home() {
 
               <p className="text-lg ml-10 font-large leading-relaxed text-black font-bold text-center">
                 <span className="font-bold">
-                  H. W. GICHOHI & COMPANY CPA (K)
+                  H.W. Gichohi & Co CPA (K)
                 </span>{" "}
                 is a leading{" "}
                 <span className="text-[#C00000] font-bold">

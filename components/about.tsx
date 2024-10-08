@@ -42,7 +42,7 @@ const teamMembers = [
   },
   {
     id: 4,
-    name: "MR H W GICHOHI – CONSULTING PARTNER",
+    name: "MR H.W. GICHOHI – CONSULTING PARTNER",
     position: "Dedicated to providing expert consulting services",
     image: Karanja,
     description:

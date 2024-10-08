@@ -29,7 +29,7 @@ export default function Navbar() {
         </Link>
 
         {/*Desktop navigation*/}
-        <ul className="pt-2 list-none hidden md:flex gap-20 text-sm font-semibold">
+        <ul className="pt-2 list-none hidden md:flex gap-20 text-sm font-semibold ml-20">
           {navItems.map((item) => (
             <li key={item.name}>
               <Link

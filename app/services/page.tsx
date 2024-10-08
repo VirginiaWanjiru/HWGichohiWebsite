@@ -84,12 +84,13 @@ export default function Services() {
           left: 0,
           height: '100%',
           width: '100%',
-          backgroundColor: 'rgba(128, 128, 128, 0.7)' // Adjust the color and opacity as needed
+          backgroundColor: 'rgba(128, 128, 128, 0.7)',
+          objectFit:"cover" // Adjust the color and opacity as needed
         }}>
       
           <p className="text-center text-6xl font-serif font-bold flex flex-col mt-52 text-red-950">Services</p> 
           <br />
-          <p className=" text-center text-xl font-sans font-bold flex flex-col ">H W. GICHOHI CPA (K)</p> 
+          <p className=" text-center text-xl font-sans font-bold flex flex-col ">H.W. Gichohi & Co</p> 
         </div>
       </div>
       
