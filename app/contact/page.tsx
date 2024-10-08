@@ -23,9 +23,9 @@ const contactus = () => {
           backgroundColor: 'rgba(128, 128, 128, 0.7)' // Adjust the color and opacity as needed
         }}>
       
-          <p className="text-center text-6xl font-serif font-bold flex flex-col mt-52 text-red-950">Contact Us</p> 
+          <p className="text-center text-6xl  font-bold flex flex-col mt-52 text-red-950">Contact Us</p> 
           <br />
-          <p className=" text-center text-xl font-sans font-bold flex flex-col ">H.W. Gichohi & Co. CPA(K)</p> 
+          <p className=" text-center text-xl font-bold flex flex-col ">H.W. Gichohi & Co. CPA(K)</p> 
         </div>
       </div>
 
