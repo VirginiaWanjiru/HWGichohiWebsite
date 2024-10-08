@@ -86,21 +86,9 @@ const TeamMember = ({ member }: any) => {
 export default function Team() {
   return (
     <>
-      <div className="gap-10 p-4 md:ml-20 md:mr-20">
-        <div>
-          <motion.div
-            className="text-center"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: false, amount: 0.3 }}
-            variants={slideIn}
-          >
-            <div id="missiontext" className="mt-20"></div>
-          </motion.div>
-        </div>
-      </div>
+      
 
-      <div className="m-4 md:m-10 flex flex-col gap-10 mt-0" id="about-us">
+      <div className="mt-40 md:m-10 flex flex-col gap-10" id="about-us">
         <p className="text-2xl md:text-3xl ml-4 md:ml-10 font-bold">
           Our Partners
         </p>

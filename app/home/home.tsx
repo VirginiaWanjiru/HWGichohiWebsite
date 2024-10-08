@@ -52,9 +52,7 @@ export default function Home() {
             className="m-9 flex flex-col gap-14  "
             id="about-us"
           >
-            <p className="text-center text-pretty font-bold text-6xl ">
-              Who we are{" "}
-            </p>
+            <p className="text-center  font-bold text-6xl ">WHO WE ARE </p>
             <div className="flex justify-between gap-8  ">
               <div>
                 <Mission />
@@ -65,7 +63,7 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            className="relative flex flex-col gap-14 bg-cover bg-center w-full min-h-[85vh] py-24"
+            className="relative flex flex-col gap-2 bg-cover bg-center w-full min-h-[85vh] py-24"
             id="about-us"
             style={{
               backgroundImage: "url('/images/bg2.jpeg')", // Replace with the path to your image
@@ -78,7 +76,7 @@ export default function Home() {
             <div className="absolute inset-0  bg-opacity-25 backdrop-blur-lg z-0 "></div>
 
             {/* Text Content */}
-            <div ref={ref} className="relative z-10">
+            <div ref={ref} className="relative z-5">
               <p className="font-bold text-6xl text-white text-center mt-40 ">
                 With over{" "}
                 <span className="font-bold text-6xl text-red-700 ">
