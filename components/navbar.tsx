@@ -43,7 +43,7 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-0 z-10 w-full flex justify-between items-center px-12 py-3 transition-all duration-300 text-lg ${
+        className={`fixed top-0 z-10 w-full flex justify-between items-center px-12 py-7 transition-all duration-300 text-lg ${
           isScrolled ? "bg-white text-black" : "bg-transparent text-white"
         }`}
       >
@@ -52,7 +52,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop navigation - Aligning links to the right */}
-        <ul className="pt-2 list-none hidden md:flex gap-10 text-lg font-bold ml-auto">
+        <ul className="pt-6 list-none hidden md:flex gap-10 text-lg font-bold ml-auto">
           {navItems.map((item, index) => (
             <li
               key={item.name}

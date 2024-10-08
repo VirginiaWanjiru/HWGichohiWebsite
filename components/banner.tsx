@@ -71,7 +71,7 @@ const Banner: React.FC = () => {
   return (
     <>
       <div className={styles.landing}>
-        <ProgressBar />
+       
         <div
           className={styles.carousel}
           style={{
