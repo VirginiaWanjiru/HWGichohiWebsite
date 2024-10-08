@@ -27,7 +27,7 @@ const industry = () => {
           </p>
           <br />
           <p className=" text-center text-xl font-sans font-bold flex flex-col ">
-            H.W. Gichohi & Co CPA (K)
+            H.W. Gichohi & Co. CPA (K)
           </p>
         </div>
       </div>

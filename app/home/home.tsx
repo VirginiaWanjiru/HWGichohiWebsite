@@ -73,7 +73,7 @@ export default function Home() {
 
               <p className="text-lg ml-10 font-large leading-relaxed text-black font-bold text-center">
                 <span className="font-bold">
-                  H.W. Gichohi & Co CPA (K)
+                  H.W. Gichohi & Co. CPA (K)
                 </span>{" "}
                 is a leading{" "}
                 <span className="text-[#C00000] font-bold">

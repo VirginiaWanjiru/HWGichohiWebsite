@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
         {/* Section 1 */}
         <div className="flex-1 flex flex-col space-y-4 pb-4 md:pb-0 md:pr-4">
           <LogoLarge />
-          <p className="text-xs">Excellence,Integrity, Growth: Partnering for Success</p>
+          
         </div>
         
        
