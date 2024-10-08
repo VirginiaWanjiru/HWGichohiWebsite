@@ -57,9 +57,16 @@ const Mission = () => {
           alt="image"
           className="align-right w-1/2 h-96 hidden md:block"
         ></Image>
+      
       </motion.div>
+
+ 
       <br />
       <br />
+      <hr/>
+      <br />
+      <br />
+    
 
       {/* Mission Section */}
       <motion.div
@@ -112,7 +119,7 @@ const Mission = () => {
         className="flex justify-center items-end  mt-0"
       >
         <button
-          className="text-white bg-[#C00000] border border-2 border-red-700 rounded-2xl uppercase text-2l py-4 px-8 font-extrabold mt-10"
+          className="text-white bg-[#C00000] border border-2 border-red-700 rounded uppercase text-2l py-4 px-8 font-extrabold mt-10"
           onClick={() => router.push("/about")}
         >
           Learn More

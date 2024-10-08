@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 import Banner from "@/public/images/landing.png";
@@ -112,36 +112,7 @@ export default function Team() {
             </div>
           </motion.div>
         </div>
-        
-
-        <div className="flex flex-col gap-10 p-4 md:ml-5 md:mr-20">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: false, amount: 0.6 }}
-            variants={slideIn}
-            className="ml-4 md:ml-10 my-10"
-          >
-            <p className="text-[#C00000] font-bold font-serif text-lg md:text-md">
-              OUR SERVICES
-            </p>
-            <ul className="list-disc ml-6 md:ml-10 text-sm md:text-lg">
-              <li>Audit & Business Advisory Services</li>
-              <li>Accountancy</li>
-              <li>Tax Services</li>
-              <li>Secretarial Services</li>
-              <li>Legal & Mediation Support</li>
-              <li>Forensic Investigation</li>
-              <li>Management Consultancy Services</li>
-              <li>Human Resource & Personnel Services</li>
-              <li>Dispute Mediation Consultancy Services</li>
-              <li>Corporate Re-Construction & Insolvency Advisory Services</li>
-            </ul>
-          </motion.div>
-        </div>
       </div>
-
-   
 
       <div className="m-4 md:m-10 flex flex-col gap-10" id="about-us">
         <p className="text-2xl md:text-3xl ml-4 md:ml-10 font-bold">

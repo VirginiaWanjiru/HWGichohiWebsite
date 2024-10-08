@@ -47,7 +47,7 @@ const Contact = () => {
 
         className="flex flex-col w-full h-full justify-center gap-12">
 
-          <h2 className=" text-[#C00000] text-xl font-serif">Send us a message </h2>
+          <p className=" text-[#C00000] text-xl ">Send us a message </p>
             <input
                 type="text"
                 placeholder="Name"

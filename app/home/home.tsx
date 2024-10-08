@@ -624,7 +624,7 @@ export default function Home() {
               </div>
             </div>
             <button
-              className="text-[#FFFFFF] bg-[#C00000] rounded-2xl uppercase text-2l py-4 px-8 font-extrabold  self-center mb-10"
+              className="text-[#FFFFFF] bg-[#C00000] rounded uppercase text-2l py-4 px-8 font-extrabold  self-center mb-10"
               onClick={() => router.push("/services")}
             >
               Learn More
