@@ -24,6 +24,7 @@ import forensics from "@/public/images/forensic.png";
 import Team from "@/components/about";
 import { useInView } from "react-intersection-observer";
 import { useState } from "react";
+import Service from "@/components/service";
 
 export default function Home() {
   const router = useRouter();
@@ -95,6 +96,7 @@ export default function Home() {
           </motion.div>
 
           <Team />
+          <Service/>
         </div>
       </div>
     </>
