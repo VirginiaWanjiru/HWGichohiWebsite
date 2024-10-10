@@ -1,26 +1,11 @@
 "use client";
 
 import styles from "@/app/home/home.module.css";
-
-import AccountingIcon from "@/components/icons/AccountingIcon";
-import ConsultingIcon from "@/components/icons/ConsultingIcon";
-import AssuranceIcon from "@/components/icons/AssuranceIcon";
-import TaxIcon from "@/components/icons/TaxIcon";
 import { useRouter } from "next/navigation";
-import Image from "next/image";
-import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { motion } from "framer-motion";
-import ProgressBar from "@/components/ProgressBar/ProgressBar";
 import Mission from "@/components/Mission/Mission";
 import Banner from "@/components/banner";
-import secretary from "@/public/images/desk.png";
 import CountUp from "react-countup";
-import assurance from "@/public/images/assurance.png";
-import consulting from "@/public/images/consultant.png";
-import accounting from "@/public/images/accounting.png";
-import tax from "@/public/images/tax.png";
-import forensics from "@/public/images/forensic.png";
 import Team from "@/components/about";
 import { useInView } from "react-intersection-observer";
 import { useState } from "react";
@@ -96,7 +81,7 @@ export default function Home() {
           </motion.div>
 
           <Team />
-          <Service/>
+          <Service />
         </div>
       </div>
     </>

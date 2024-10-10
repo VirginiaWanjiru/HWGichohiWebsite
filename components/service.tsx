@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
-import Service1 from "@/public/images/nairobi.jpg"; // Example image
+import Service1 from "@/public/images/bg2.jpeg";
+import bg2 from "@/public/images/bg2.jpeg";
+import bg3 from "@/public/images/bg2.jpeg";
+import bg4 from "@/public/images/bg2.jpeg";
+import bg5 from "@/public/images/bg2.jpeg";
+import bg6 from "@/public/images/bg2.jpeg";
 // Import slick-carousel's styles
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const services = [
   {
@@ -12,104 +17,85 @@ const services = [
     title: "Tax",
     image: Service1,
     list: [
-      "Tax Consultation",
-      "Corporate Tax Services",
-      "Tax Planning",
-      "VAT Services",
+      "Preparation & submission of annual income tax returns ",
+      "Tax Planning to minimize our clients tax expenses ",
+      "Value Added Tax consultancy services",
+      "Tax Tribunal representation",
       "International Tax Advisory",
       "Tax Compliance",
-      "Tax Dispute Resolution",
     ],
   },
   {
     id: 2,
-    title: "Forensics, Risk and Compliance",
-    image: Service1,
+    title: "Fraud and Forensic Investigation",
+    image: bg2,
     list: [
-      "Fraud Investigations",
-      "Risk Management",
-      "Compliance Audits",
-      "Forensic Analysis",
-      "Corporate Governance",
-      "Data Protection",
-      "Regulatory Compliance",
+      "Forensic Investigations",
+      "Forensic Audit",
+      "Fraud Training",
+      "Fraud Risk Assessment",
+      "Litigation support",
+      "Business disengagement consultancy",
     ],
   },
   {
     id: 3,
-    title: "Real Estate & Construction",
-    image: Service1,
+    title: "Audit and Assurance services",
+    image: bg3,
     list: [
-      "Property Development",
-      "Construction Project Management",
-      "Real Estate Investments",
-      "Commercial Leasing",
-      "Land Acquisition",
-      "Urban Planning",
-      "Real Estate Law",
+      "Statutory audits ",
+      "Forensic audits",
+      "Project audits",
+      "Special audit and investigations",
+      "Environmental impact audits",
+      "Acquisition review and corporate advice",
     ],
   },
   {
     id: 4,
-    title: "Projects & Infrastructure",
-    image: Service1,
+    title: "Accounting ",
+    image: bg4,
     list: [
-      "Infrastructure Development",
-      "Project Feasibility Studies",
-      "Public-Private Partnerships",
-      "Infrastructure Financing",
-      "Construction Contracts",
-      "Sustainability Projects",
-      "Infrastructure Policy Planning",
+      "Keeping and maintaining accounting books ",
+      "Payroll administration",
+      "Accounting Training packages for non-accountants",
+      "Management controls for non-profits",
+      "Expert guidance on analysis of financial statements",
     ],
   },
   {
     id: 5,
-    title: "Private Clients",
-    image: Service1,
+    title: "Consultancy, corporate restructuring &amp; Business Advisory services",
+    image: bg5,
     list: [
-      "Estate Planning",
-      "Wealth Management",
-      "Tax Planning",
-      "Investment Advisory",
-      "Private Wealth Services",
-      "Philanthropy",
-      "Family Business Advisory",
+      "Company restructuring ",
+      "Specialty in company recievership and liquidation",
+      "Litigation Support ",
+      "Mediation, arbitration and business disengagement support services",
+      "Systems design and review ",
+      "Project Management",
+      "Strategic Management",
     ],
   },
   {
     id: 6,
-    title: "International Trade Law",
-    image: Service1,
+    title: "Secretarial services",
+    image: bg6,
     list: [
-      "Trade Policy Advisory",
-      "Customs Regulations",
-      "International Dispute Resolution",
-      "Free Trade Agreements",
-      "Export/Import Compliance",
-      "Tariff and Non-Tariff Barriers",
-      "Trade Finance",
+      "Filing annual returns.",
+      "Company / business registration.",
+      "Organizing business meetings",
+      "Maintaining company member’s registers.",
+      "Processing members dividends.",
+      "Issue company shares/ share certificate.",
+      "Governance audit",
     ],
   },
-  {
-    id: 7,
-    title: "Intellectual Property",
-    image: Service1,
-    list: [
-      "Patents and Trademarks",
-      "Copyright Protection",
-      "IP Licensing",
-      "Patent Litigation",
-      "Intellectual Property Strategy",
-      "Trade Secret Protection",
-      "IP Audits",
-    ],
-  },
+  
 ];
 
 const Service = () => {
-    const [hovered, setHovered] = useState<number | null>(null); // Set the type to accept number or null
-
+  const [hovered, setHovered] = useState<number | null>(null); // Set the type to accept number or null
 
   const settings = {
     dots: true,
@@ -137,7 +123,9 @@ const Service = () => {
 
   return (
     <div className="mt-40 md:m-10">
-      <h2 className="text-2xl md:text-3xl ml-4 md:ml-10 font-bold">Services</h2>
+      <h2 className="text-2xl md:text-3xl ml-4 md:ml-10 font-bold mb-10 ">
+        Services
+      </h2>
       <Slider {...settings}>
         {services.map((service) => (
           <div
