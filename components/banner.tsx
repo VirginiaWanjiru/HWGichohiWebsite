@@ -2,9 +2,12 @@ import React, { useState, useEffect } from "react";
 import ProgressBar from "./ProgressBar/ProgressBar";
 import styles from "@/app/home/home.module.css";
 import { useRouter } from "next/navigation";
+import One from "@/public/images/image1.jpg";
+
+
 
 interface Slide {
-  image: string;
+  image: any;
   text: string;
   name: string;
   buttonText: string;
@@ -17,11 +20,11 @@ const Banner: React.FC = () => {
   // Carousel data with images, text, and button labels
   const slides: Slide[] = [
     {
-      image: "/images/image1.jpg",
+      image: One,
       text: "Delivering Results in Advisory and Assurance ",
       name: "H.W. Gichohi & Co. CPA(K)",
       buttonText: "Contact Us",
-      buttonLink: "/#contact-us",
+      buttonLink: "/#contact-us", 
     },
     {
       image: "/images/nairobi5.jpg",
