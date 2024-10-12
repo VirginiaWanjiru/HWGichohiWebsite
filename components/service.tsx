@@ -7,6 +7,7 @@ import bg3 from "@/public/images/bg2.jpeg";
 import bg4 from "@/public/images/bg2.jpeg";
 import bg5 from "@/public/images/bg2.jpeg";
 import bg6 from "@/public/images/bg2.jpeg";
+
 // Import slick-carousel's styles
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -17,8 +18,8 @@ const services = [
     title: "Tax",
     image: Service1,
     list: [
-      "Preparation & submission of annual income tax returns ",
-      "Tax Planning to minimize our clients tax expenses ",
+      "Preparation & submission of annual income tax returns",
+      "Tax Planning to minimize our clients tax expenses",
       "Value Added Tax consultancy services",
       "Tax Tribunal representation",
       "International Tax Advisory",
@@ -43,8 +44,7 @@ const services = [
     title: "Audit and Assurance services",
     image: bg3,
     list: [
-      "Statutory audits ",
-      "Forensic audits",
+      "Statutory audits",
       "Project audits",
       "Special audit and investigations",
       "Environmental impact audits",
@@ -53,10 +53,10 @@ const services = [
   },
   {
     id: 4,
-    title: "Accounting ",
+    title: "Accounting",
     image: bg4,
     list: [
-      "Keeping and maintaining accounting books ",
+      "Keeping and maintaining accounting books",
       "Payroll administration",
       "Accounting Training packages for non-accountants",
       "Management controls for non-profits",
@@ -65,14 +65,14 @@ const services = [
   },
   {
     id: 5,
-    title: "Consultancy, corporate restructuring &amp; Business Advisory services",
+    title: "Consultancy,corporate restructuring & Business Advisory services",
     image: bg5,
     list: [
-      "Company restructuring ",
-      "Specialty in company recievership and liquidation",
-      "Litigation Support ",
+      "Company restructuring",
+      "Specialty in company receivership and liquidation",
+      "Litigation Support",
       "Mediation, arbitration and business disengagement support services",
-      "Systems design and review ",
+      "Systems design and review",
       "Project Management",
       "Strategic Management",
     ],
@@ -91,7 +91,6 @@ const services = [
       "Governance audit",
     ],
   },
-  
 ];
 
 const Service = () => {
@@ -103,6 +102,8 @@ const Service = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true, // Enable autoplay
+    autoplaySpeed: 2000, // Set autoplay speed in milliseconds
     responsive: [
       {
         breakpoint: 768,
@@ -123,7 +124,7 @@ const Service = () => {
 
   return (
     <div className="mt-40 md:m-10">
-      <h2 className="text-2xl md:text-3xl ml-4 md:ml-10 font-bold mb-10 ">
+      <h2 className="text-2xl md:text-3xl ml-4 md:ml-10 font-bold mb-10">
         Services
       </h2>
       <Slider {...settings}>

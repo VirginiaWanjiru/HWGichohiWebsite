@@ -15,7 +15,7 @@ const externalLinks: ExternalLink[] = [
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#292524] text-[#FAFAFA] px-4 py-8 text-xs">
+    <footer className="bg-[#292524] text-[#FAFAFA] px-4 py-32 text-xs">
       <div className="container mx-auto flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-gray-600">
         {/* Section 1 */}
         <div className="flex-1 flex flex-col space-y-4 pb-4 md:pb-0 md:pr-4">

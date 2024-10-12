@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ProgressBar from "./ProgressBar/ProgressBar";
 import styles from "@/app/home/home.module.css";
 import { useRouter } from "next/navigation";
-import One from "@/public/images/image1.jpg";
+
 
 
 
@@ -20,7 +20,7 @@ const Banner: React.FC = () => {
   // Carousel data with images, text, and button labels
   const slides: Slide[] = [
     {
-      image: One,
+      image: "/images/nairobi3.jpg",
       text: "Delivering Results in Advisory and Assurance ",
       name: "H.W. Gichohi & Co. CPA(K)",
       buttonText: "Contact Us",
@@ -101,7 +101,7 @@ const Banner: React.FC = () => {
                   <p>{slide.name}</p>
                   <button
                     onClick={() => router.push(slide.buttonLink)}
-                    className="py-4 font-extrabold uppercase md:w-1/4 max-w-[20rem] rounded md:text-2l bg-red-600 hover:bg-red-900 mt-8 transition-colors duration-300 ease-in-out"
+                    className="py-4 font-extrabold uppercase md:w-1/4 md:mt-30 max-w-[20rem] rounded md:text-2l bg-red-600 hover:bg-red-900 mt-8 transition-colors duration-300 ease-in-out"
                   >
                     {slide.buttonText}
                   </button>

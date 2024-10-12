@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { motion } from "framer-motion"; // Import framer-motion
-import ExecutiveImage from "@/public/images/bg3.jpg"; // Replace with actual image path
+import ExecutiveImage from "@/public/images/bg3.jpg"; // Ensure this path is correct
 import { FaDownload } from "react-icons/fa";
 
 export default function ExecutiveProfile() {
@@ -19,13 +19,15 @@ export default function ExecutiveProfile() {
         animate={{ x: 0 }}
         transition={{ duration: 1, ease: "easeInOut" }}
       >
-        <Image
-          src={ExecutiveImage}
-          alt="Executive Image"
-          layout="fill"
-          objectFit="cover"
-          className="h-full w-full object-cover"
-        />
+        <div className="relative w-full h-full">
+          <Image
+            src={ExecutiveImage}
+            alt="Executive Image"
+            fill // Use "fill" instead of "layout"
+            style={{ objectFit: "cover" }} // Correct way to set object fit
+            className="h-1/2 w-1/2 z-2"
+          />
+        </div>
       </motion.div>
 
       {/* Right Side: Executive Details */}
