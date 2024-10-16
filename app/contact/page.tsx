@@ -12,20 +12,28 @@ const contactus = () => {
     <>
       <ProgressBar />
 
-      <div style={{ height: "56vh", position: "relative" }}>
+      <div style={{ height: "64vh", position: "relative" }}>
         <Image src={Banner} alt="Teamwork" layout="fill" objectFit="cover" />
-        <div style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          height: '100%',
-          width: '100%',
-          backgroundColor: 'rgba(128, 128, 128, 0.7)' // Adjust the color and opacity as needed
-        }}>
-      
-          <p className="text-center text-6xl  font-bold flex flex-col mt-52 text-red-950">Contact Us</p> 
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            height: "100%",
+            width: "100%",
+            backgroundColor: "rgba(0, 0, 0, 0.3)",
+            objectFit: "cover", // Adjust the color and opacity as needed
+          }}
+        >
+          <p className="text-left text-7xl font-bold flex flex-col mt-48 text-white ml-20">
+            <span className=" inline-block px-2 mr-auto  pb-2 pt-2">Contact Us</span>
+          </p>
           <br />
-          <p className=" text-center text-xl font-bold flex flex-col ">H.W. Gichohi & Co. CPA(K)</p> 
+          <p className="text-left text-xl font-sans font-bold flex flex-col text-white ml-20">
+            <span className="inline px-2 mr-auto pb-2 pt-2">
+              H.W. Gichohi & Co. CPA(K)
+            </span>
+          </p>
         </div>
       </div>
 

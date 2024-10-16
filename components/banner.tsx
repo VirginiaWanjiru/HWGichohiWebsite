@@ -3,9 +3,6 @@ import ProgressBar from "./ProgressBar/ProgressBar";
 import styles from "@/app/home/home.module.css";
 import { useRouter } from "next/navigation";
 
-
-
-
 interface Slide {
   image: any;
   text: string;
@@ -24,7 +21,7 @@ const Banner: React.FC = () => {
       text: "Delivering Results in Advisory and Assurance ",
       name: "H.W. Gichohi & Co. CPA(K)",
       buttonText: "Contact Us",
-      buttonLink: "/#contact-us", 
+      buttonLink: "/#contact-us",
     },
     {
       image: "/images/nairobi5.jpg",
@@ -51,7 +48,7 @@ const Banner: React.FC = () => {
 
   const [currentSlide, setCurrentSlide] = useState<number>(0);
 
-  // Automatically switch slides every 5 seconds
+  // Automatically switch slides every 7 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
@@ -59,67 +56,43 @@ const Banner: React.FC = () => {
     return () => clearInterval(interval);
   }, [slides.length]);
 
-  // Handler to go to the next slide
-  const handleNext = () => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-  };
-
-  // Handler to go to the previous slide
-  const handlePrev = () => {
-    setCurrentSlide(
-      (prevSlide) => (prevSlide + 1 - slides.length) % slides.length
-    );
-  };
-
   return (
-    <>
-      <div className={styles.landing}>
-       
-        <div
-          className={styles.carousel}
-          style={{
-            transform: `translateX(-${currentSlide * 100}%)`,
-            willChange: "transform", // Hint to the browser for smoother animation
-          }}
-        >
-          {slides.map((slide, index) => (
-            <div className={styles.slide} key={index}>
-              <div
-                className="flex items-center h-full w-full md:min-h-[85vh] lg:min-h-[99vh]"
-                style={{
-                  backgroundImage: `url(${slide.image})`,
-                  backgroundSize: "cover",
-                  boxShadow: "inset 0 0 0 1000px rgba(0, 0, 0, 0.2)",
-                  height:"99vh",
-
-                }}
-              >
-                <div className="flex flex-col w-full h-full px-8 md:px-8 gap-8 md:max-w-4xl md:gap-8 text-[#FFFFFF] mt-60 ml-10">
-                  <h1 className="md:text-start mt-24 md:text-6xl ">
-                    {slide.text}
-                  </h1>
-                  <p>{slide.name}</p>
-                  <button
-                    onClick={() => router.push(slide.buttonLink)}
-                    className="py-4 font-extrabold uppercase md:w-1/4 md:mt-30 max-w-[20rem] rounded md:text-2l bg-red-600 hover:bg-red-900 mt-8 transition-colors duration-300 ease-in-out"
-                  >
-                    {slide.buttonText}
-                  </button>
-                </div>
+    <div className={styles.landing}>
+      <div
+        className={styles.carousel}
+        style={{
+          transform: `translateX(-${currentSlide * 100}%)`,
+          willChange: "transform",
+        }}
+      >
+        {slides.map((slide, index) => (
+          <div className={styles.slide} key={index}>
+            <div
+              className="flex items-center justify-start w-full h-screen md:min-h-[85vh] lg:min-h-[99vh]"
+              style={{
+                backgroundImage: `url(${slide.image})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                boxShadow: "inset 0 0 0 1000px rgba(0, 0, 0, 0.2)",
+              }}
+            >
+              <div className="flex flex-col w-full px-4 md:px-8 gap-6 md:gap-8 text-white max-w-4xl ml-8 md:ml-16">
+                <p className="text-left text-6xl md:text-6xl lg:text-6xl font-bold mt-24">
+                  {slide.text}
+                </p>
+                <p className="text-left text-xl md:text-2xl">{slide.name}</p>
+                <button
+                  onClick={() => router.push(slide.buttonLink)}
+                  className="self-start py-4 px-8 font-extrabold uppercase max-w-xs rounded-lg text-lg md:text-xl bg-red-600 hover:bg-red-900 transition-colors duration-300 ease-in-out"
+                >
+                  {slide.buttonText}
+                </button>
               </div>
             </div>
-          ))}
-        </div>
-
-        {/*
-        <button className={styles.prevButton} onClick={handlePrev}>
-          &#10094; {/* Left arrow symbol
-        </button>
-        <button className={styles.nextButton} onClick={handleNext}>
-          &#10095; {/* Right arrow symbol 
-        </button> */}
+          </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 

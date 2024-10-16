@@ -59,12 +59,12 @@ const TeamMember = ({ member }: any) => {
             <p className="text-sm mb-2">{member.position}</p>
             <p className="text-xs text-center mb-4">{member.description}</p>
             {/* Button to see profile */}
-            <Link href={member.profileLink}>
+            <a href={member.profileLink}>
 
               <button className="bg-red-900 mt-10 text-white rounded font-bold py-2 px-4  transition-transform hover:scale-110 hover:bg-white hover:text-red-900 ">
                 See Profile
               </button>
-            </Link>
+            </a>
           </div>
         )}
       </div>
@@ -76,7 +76,7 @@ const TeamMember = ({ member }: any) => {
 export default function Team() {
   return (
     <div className="mt-40 md:m-10 flex flex-col gap-10" id="about-us">
-      <p className="text-2xl md:text-3xl ml-4 md:ml-10 font-bold">Our Partners</p>
+      <p className="text-2xl md:text-3xl ml-4 md:ml-10 font-bold">OUR PARTNERS</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-0 mt-10">
         {teamMembers.map((member) => (
           <TeamMember key={member.id} member={member} />
