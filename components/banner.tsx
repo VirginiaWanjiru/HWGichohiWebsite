@@ -17,28 +17,28 @@ const Banner: React.FC = () => {
   // Carousel data with images, text, and button labels
   const slides: Slide[] = [
     {
-      image: "/images/nairobi3.jpg",
+      image: "/images/nairobi3.webp",
       text: "Delivering Results in Advisory and Assurance ",
       name: "H.W. Gichohi & Co. CPA(K)",
       buttonText: "Contact Us",
       buttonLink: "/#contact-us",
     },
     {
-      image: "/images/nairobi5.jpg",
+      image: "/images/nairobi5.webp",
       text: "Tailored Financial Solutions for Your Business",
       name: "H.W. Gichohi & Co. CPA(K)",
       buttonText: "Learn More",
       buttonLink: "/#learn-more",
     },
     {
-      image: "/images/nairobi3.jpg",
+      image: "/images/nairobi3.webp",
       text: "Partnering with You for Sustainable Growth",
       name: "H.W. Gichohi & Co. CPA(K)",
       buttonText: "Our Services",
       buttonLink: "/#services",
     },
     {
-      image: "/images/nairobi.jpg",
+      image: "/images/nairobi.webp",
       text: "Trusted Advisors, Committed to Your Success",
       name: "H.W. Gichohi & Co. CPA(K)",
       buttonText: "Get Started",
