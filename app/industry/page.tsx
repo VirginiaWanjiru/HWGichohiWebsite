@@ -24,7 +24,9 @@ const industry = () => {
           }}
         >
           <p className="text-left text-7xl font-bold flex flex-col mt-48 text-white ml-20">
-            <span className=" inline-block px-2 mr-auto  pb-2 pt-2">Industries</span>
+            <span className=" inline-block px-2 mr-auto  pb-2 pt-2">
+              Industries
+            </span>
           </p>
           <br />
           <p className="text-left text-xl font-sans font-bold flex flex-col text-white ml-20">
@@ -35,7 +37,30 @@ const industry = () => {
         </div>
       </div>
 
-      <div className="mt-20 mb-10 flex flex-col gap-0  h-360" id="industry">
+      <div>
+        <p className=" mt-10 ml-40 text-red-900 font-bold text-5xl">
+          Overview
+        </p>
+        <p className="mt-10 ml-40 text-lg text-balance ">
+          {" "}
+          The accounting and audit industry plays a crucial role in the
+          financial ecosystem, providing transparency, accuracy, and
+          accountability that underpin trust in financial reporting and business
+          operations. As companies navigate an increasingly complex regulatory
+          landscape, the need for expert guidance in financial management,
+          compliance, and risk assessment has never been greater. Accounting and
+          audit firms empower businesses by delivering insights that enhance
+          decision-making and ensure compliance with standards. From financial
+          audits to advisory services, these firms help organizations achieve
+          sustainable growth, optimize operational efficiencies, and maintain
+          investor confidence through meticulous analysis and objective
+          reporting.
+        </p>
+
+        <p className="mt-10 ml-40 text-lg ">They include :</p>
+      </div>
+
+      <div className="mt-10 mb-10 flex flex-col gap-0  h-360" id="industry">
         <IndustryCarousel />
       </div>
     </>

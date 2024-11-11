@@ -77,7 +77,7 @@ const Mission = () => {
         variants={slideIn}
       >
         <div id="missiontext" className="text-center  ">
-          <p className=" font-bold text-6xl">Our Mission</p>
+          <p className=" font-bold text-6xl mt-10">Our Mission</p>
           <br />
           <p className="text-lg text-balance text-center">
             Our mission is to provide professional services to our clients to
@@ -99,7 +99,7 @@ const Mission = () => {
         viewport={{ once: false, amount: 0.3 }} // Re-triggers animation on every scroll into view
         variants={slideIn}
       >
-        <div className="text-center mt-5 text-balance ">
+        <div className="text-center mt-5 text-balance  mb-20">
           <p className="font-bold text-6xl">Our Vision</p>
           <br />
           <p className="text-lg text-center">
@@ -118,13 +118,11 @@ const Mission = () => {
         whileInView={{ opacity: 1 }}
         className="flex justify-center items-end  mt-0"
       >
-        <button
-          className="text-white bg-[#C00000] border border-2 border-red-700 rounded uppercase text-2l py-4 px-8 font-extrabold mt-10"
-          onClick={() => router.push("/about")}
-        >
-          Learn More
-        </button>
+        
       </motion.div>
+
+      
+      <br></br>
     </div>
   );
 };
