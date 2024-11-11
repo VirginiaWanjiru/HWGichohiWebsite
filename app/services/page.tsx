@@ -1,36 +1,28 @@
 "use client";
-
-import Banner from "@/public/images/nairobi5.jpg";
-import Consulting from "@/public/images/image2.png";
-import Accounting from "@/public/images/image 3.png";
-import Assurance from "@/public/images/image 4.png";
-import Tax from "@/public/images/image 5.png";
-import Image from "next/image";
+import Image from 'next/image'
+import Banner from '@/public/images/nairobi.jpg'
 
 import { useState } from "react";
-import ProgressBar from "@/components/ProgressBar/ProgressBar";
-
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const services = [
   {
     id: 1,
-    name: "Audit and Business Advisory Services ",
-    image: Tax,
+    name: "Audit & Assurance services ",
     options: [
-      "Project Audits ",
-      "Special audit and investigations ",
+      "Project Audits",
+      "Special audit and investigations",
       "Acquisition review and corporate financial advice",
       "Forensic Audits",
       "Environmental impact audits",
     ],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec justo et nunc volutpat eleifend ut a leo. Donec at lectus ut erat convallis dignissim. Nulla facilisi.",
   },
   {
     id: 2,
-    name: "Management consultancy services division",
-    image: Assurance,
+    name: "Fraud, and Forensic Investigation Division",
     options: [
-      "Finance and consultancy services ",
+      "Finance and consultancy services",
       "Information Technology",
       "Systems design and their regular review",
       "Business performance review",
@@ -39,57 +31,89 @@ const services = [
       "Structure designs for efficiency",
       "Company re-structuring and re-engineering",
     ],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
   },
+
   {
     id: 3,
-    name: "Human Resources and Personnel Division",
-    image: Accounting,
+    name: "Tax Services",
     options: [
-      "Personnel Recruitment",
-      "Personnel training ",
-      "Management development and training ",
-      "Job Pricing exercise",
-      "Salary and renumaration research",
-      "Maintenance of a wide range of personnel databank",
+      "Finance and consultancy services",
+      "Information Technology",
+      "Systems design and their regular review",
+      "Business performance review",
+      "Economic studies",
+      "Feasibility studies and market research",
+      "Structure designs for efficiency",
+      "Company re-structuring and re-engineering",
     ],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
   },
+
   {
     id: 4,
-    name: "Corporate Re-construction and insolvency devision",
-    image: Consulting,
-    options: ["Audit Consulting", "Risk Management", "Financial Strategy"],
+    name: "Accounting",
+    options: [
+      "Finance and consultancy services",
+      "Information Technology",
+      "Systems design and their regular review",
+      "Business performance review",
+      "Economic studies",
+      "Feasibility studies and market research",
+      "Structure designs for efficiency",
+      "Company re-structuring and re-engineering",
+    ],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
   },
   {
     id: 5,
-    name: "Accounting ",
-    image: Consulting,
-    options: ["Audit Consulting", "Risk Management", "Financial Strategy"],
+    name: "Consultancy, corporate restructuring & Business Advisory services",
+    options: [
+      "Finance and consultancy services",
+      "Information Technology",
+      "Systems design and their regular review",
+      "Business performance review",
+      "Economic studies",
+      "Feasibility studies and market research",
+      "Structure designs for efficiency",
+      "Company re-structuring and re-engineering",
+    ],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
   },
+
   {
     id: 6,
-    name: "Secretarial",
-    image: Consulting,
-    options: ["Audit Consulting", "Risk Management", "Financial Strategy"],
-  },
-  {
-    id: 7,
-    name: "Legal and Mediation ",
-    image: Consulting,
-    options: ["Audit Consulting", "Risk Management", "Financial Strategy"],
-  },
-  {
-    id: 8,
-    name: "Forensics",
-    image: Consulting,
-    options: ["Audit Consulting", "Risk Management", "Financial Strategy"],
+    name: "Secretarial Services ",
+    options: [
+      "Finance and consultancy services",
+      "Information Technology",
+      "Systems design and their regular review",
+      "Business performance review",
+      "Economic studies",
+      "Feasibility studies and market research",
+      "Structure designs for efficiency",
+      "Company re-structuring and re-engineering",
+    ],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
   },
 ];
 
 export default function Services() {
+  // Managing each section's state independently
+  const [expandedServices, setExpandedServices] = useState<number | null>(null);
+
+  const toggleExpand = (id: number) => {
+    // If the same section is clicked, collapse it. Otherwise, expand the new section.
+    setExpandedServices(prevState => (prevState === id ? null : id));
+  };
+
   return (
     <>
-      <ProgressBar />
-
       <div style={{ height: "64vh", position: "relative" }}>
         <Image src={Banner} alt="Teamwork" layout="fill" objectFit="cover" />
         <div
@@ -115,51 +139,51 @@ export default function Services() {
         </div>
       </div>
 
-      <br />
+         
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 p-6 mt-10">
-        {services.map((service) => (
-          <Card
-            key={service.id}
-            className="w-full p-4 bg-white rounded-lg shadow-lg"
-          >
-            <div className="flex items-center">
-              {/* Left Side: Image */}
-              <div className="w-1/3 flex justify-center">
-                <Image
-                  src={service.image}
-                  alt={service.name}
-                  width={150}
-                  height={150}
-                  className="rounded-md transition-transform ease-in-out duration-300 hover:scale-95"
-                />
+        <div className="mt-10">
+          {services.map((service) => (
+            <div
+              key={service.id}
+              onClick={() => toggleExpand(service.id)}
+              className="mb-6 p-6 bg-white rounded-lg shadow-lg"
+            >
+              <div className="flex justify-between items-center">
+                
+                {/* Section Title */}
+                <h2 className="text-lg font-bold">{service.name}</h2>
+
+                {/* Expand Icon */}
+                <button
+                  onClick={() => toggleExpand(service.id)}
+                  className="text-xl text-gray-500 hover:text-gray-700"
+                >
+                  {expandedServices === service.id ? "-" : "+"}
+                </button>
               </div>
 
-              {/* Right Side: Text Content */}
-              <div className="w-2/3 pl-4">
-                <CardHeader className="flex flex-col items-start">
-                  <CardTitle className="text-lg font-bold ">
-                    {service.name}
-                  </CardTitle>
-                </CardHeader>
-
-                <CardContent className="text-justify mt-1 mb-1">
-                  <div className="mt-2 rounded-md p-3">
-                    <p className="text-sm font-semibold mb-2">
-                      Available Options:
-                    </p>
+              {/* Service Description and Options */}
+              <div
+                className={`transition-all duration-500 ease-in-out overflow-hidden ${
+                  expandedServices === service.id ? "max-h-[500px]" : "max-h-0"
+                }`}
+              >
+                {expandedServices === service.id && (
+                  <div className="mt-4">
+                    <p className="text-sm font-semibold mb-2">Available Options:</p>
                     <ul className="list-disc ml-4 text-sm">
                       {service.options.map((option, index) => (
                         <li key={index}>{option}</li>
                       ))}
                     </ul>
+                    <p className="mt-4 text-sm text-gray-700">{service.description}</p>
                   </div>
-                </CardContent>
+                )}
               </div>
             </div>
-          </Card>
-        ))}
-      </div>
+          ))}
+        </div>
+    
     </>
   );
 }

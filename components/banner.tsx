@@ -77,7 +77,11 @@ const Banner: React.FC = () => {
               }}
             >
               <div className="flex flex-col w-full px-4 md:px-8 gap-6 md:gap-8 text-white max-w-4xl ml-8 md:ml-16">
-                <p className="text-left text-6xl md:text-6xl lg:text-6xl font-bold mt-24">
+                <p
+                  className={`text-left text-6xl md:text-6xl lg:text-6xl font-bold mt-24 ${styles.slideText} ${
+                    currentSlide === index ? styles.slideTextVisible : ""
+                  }`}
+                >
                   {slide.text}
                 </p>
                 <p className="text-left text-xl md:text-2xl">{slide.name}</p>

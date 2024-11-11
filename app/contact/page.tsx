@@ -3,7 +3,7 @@ import ContactForm from "@/components/ui/contact-form";
 import ContactMap from "@/components/ui/contact-map";
 import { motion } from "framer-motion";
 import ProgressBar from "@/components/ProgressBar/ProgressBar";
-import Banner from "@/public/images/landing.png";
+import Banner from "@/public/images/nairobi5.webp";
 import Image from "next/image";
 
 

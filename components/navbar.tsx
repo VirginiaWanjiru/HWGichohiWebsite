@@ -37,7 +37,7 @@ export default function Navbar() {
     { name: "Services", path: "/services" },
     { name: "Industry", path: "/industry" },
     { name: "Contact Us", path: "/contact" },
-    { name: "Careers", path: "/contact" },
+    
   ];
 
   return (
@@ -52,7 +52,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop navigation - Aligning links to the right */}
-        <ul className="pt-6 list-none hidden md:flex gap-10 text-lg font-bold ml-auto">
+        <ul className="pt-6 list-none hidden md:flex gap-10 text-lg font-bold ml-auto mr-10">
           {navItems.map((item, index) => (
             <li
               key={item.name}
