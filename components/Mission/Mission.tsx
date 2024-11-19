@@ -64,65 +64,6 @@ const Mission = () => {
       <hr />
       <br />
       <br />
-      {/* Values Section */}
-      <motion.div
-        className=" flex-items-center "
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.2 }} // `once: false` allows it to animate every time it's in view
-        variants={slideIn}
-      >
-        
-          <div id="missiontext" className="text-center">
-            <p className=" font-bold text-6xl mt-10">Our Values</p>
-            <br />
-            <p className="text-4xl  text-blue-900  font-bold">
-              INTEGRITY
-            </p>
-            <p className="text-lg  ">
-              {" "}
-              Upholding honesty & ethics, building trust in every engagement.
-            </p>
-
-            <br></br>
-
-            <p className="text-4xl  text-blue-900  font-bold">
-              EXCELLENCE
-            </p>
-            <p className="text-lg  ">
-              Delivering high-quality,practical solutions with precision and
-              continuous improvement.
-            </p>
-
-            <br></br>
-            <p className="text-4xl  text-blue-900  font-bold">
-              CLIENT FOCUS
-            </p>
-            <p className="text-lg  ">
-              Providing personalized, proactive financial guidance tailored to
-              client needs .
-            </p>
-            <br></br>
-            <p className="text-4xl  text-blue-900  font-bold">
-              INNOVATION AND SUSTAINABILITY{" "}
-            </p>
-
-            <p className="text-lg  ">
-              Adopting advanced methods to offer forward-looking sustainable
-              solutions.
-            </p>
-            <br></br>
-            <p className="text-4xl  text-blue-900  font-bold">
-              ACCOUNTABILITY
-            </p>
-            <p className="text-lg  ">
-              {" "}
-              Ensuring transparency and responsibility in all reporting and
-              advisory services.
-            </p>
-          
-        </div>
-      </motion.div>
 
       {/* Mission Section */}
       <motion.div
@@ -163,6 +104,60 @@ const Mission = () => {
             honesty, integrity and high quality professional service in East and
             Central Africa, a reference point for Consultancy, Assurance Testing
             Services and Tax Consultancy.
+          </p>
+        </div>
+      </motion.div>
+
+      <hr />
+
+      {/* Values Section */}
+      <motion.div
+        className=" flex-items-center "
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.2 }} // `once: false` allows it to animate every time it's in view
+        variants={slideIn}
+      >
+        <div id="missiontext" className="text-center">
+          <p className=" font-bold text-6xl mt-10">Our Values</p>
+          <br />
+          <br />
+          
+          <p className="text-4xl  text-blue-900  font-bold ">INTEGRITY</p>
+          <p className="text-lg  ">
+            {" "}
+            Upholding honesty & ethics, building trust in every engagement.
+          </p>
+
+          <br></br>
+
+          <p className="text-4xl  text-blue-900  font-bold">EXCELLENCE</p>
+          <p className="text-lg  ">
+            Delivering high-quality,practical solutions with precision and
+            continuous improvement.
+          </p>
+
+          <br></br>
+          <p className="text-4xl  text-blue-900  font-bold">CLIENT FOCUS</p>
+          <p className="text-lg  ">
+            Providing personalized, proactive financial guidance tailored to
+            client needs .
+          </p>
+          <br></br>
+          <p className="text-4xl  text-blue-900  font-bold">
+            INNOVATION AND SUSTAINABILITY{" "}
+          </p>
+
+          <p className="text-lg  ">
+            Adopting advanced methods to offer forward-looking sustainable
+            solutions.
+          </p>
+          <br></br>
+          <p className="text-4xl  text-blue-900  font-bold">ACCOUNTABILITY</p>
+          <p className="text-lg  ">
+            {" "}
+            Ensuring transparency and responsibility in all reporting and
+            advisory services.
           </p>
         </div>
       </motion.div>

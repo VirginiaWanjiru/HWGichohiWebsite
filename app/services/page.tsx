@@ -137,10 +137,10 @@ export default function Services() {
         </div>
 
         <div>
-          <p className="font-sans mt-10 ml-20 text-red-800 font-bold text-5xl">
+          <p className="font-sans mt-10 ml-40 text-red-800 font-bold text-5xl">
             Overview
           </p>
-          <p className="mt-10   ml-20 text-base ">
+          <p className="mt-10   ml-40 text-base ">
             {" "}
             H. W. Gichohi and Company offers all the services that a Certified
             Public Accountant firm provides.Our competencies are anchored on the
@@ -152,7 +152,7 @@ export default function Services() {
             services.
           </p>
 
-          <p className="mt-10   ml-20 text-lg ">
+          <p className="mt-10   ml-40 text-lg ">
             They include but not limited to:
           </p>
         </div>
