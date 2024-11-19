@@ -34,7 +34,7 @@ export default function Kiragu() {
           </p>
         </a>
         <span className="text-gray-400 mx-4">|</span>
-        <a href="/profile/Karanja">
+        <a href="/profile/Kariuki">
           <p className="text-white text-lg px-4 hover:underline">
             MR J. N. KARIUKI
           </p>
@@ -81,7 +81,7 @@ export default function Kiragu() {
             with a commitment to excellence.
           </p>
 
-          {/* Download CV Button */}
+          {/* Download CV Button 
           <motion.div
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -100,6 +100,8 @@ export default function Kiragu() {
               </button>
             </a>
           </motion.div>
+
+          */}
         </motion.div>
       </div>
     </div>

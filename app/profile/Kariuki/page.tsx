@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { FaDownload, FaArrowLeft } from "react-icons/fa"; // Import the back icon
 import ExecutiveImage from "@/public/images/bg3.jpg";
 
-export default function Karanja() {
+export default function Kariuki() {
   const [hovered, setHovered] = useState(false);
 
   return (
@@ -30,7 +30,7 @@ export default function Karanja() {
           <p className="text-white text-lg px-4 hover:underline">MR ISAAC M. KIRAGU</p>
         </a>
         <span className="text-gray-400 mx-4">|</span>
-        <a href="/profile/Karanja">
+        <a href="/profile/Kariuki">
           <p className="text-white text-lg px-4 hover:underline">MR J. N. KARIUKI</p>
         </a>
       </nav>
@@ -75,7 +75,7 @@ export default function Karanja() {
             Management Consultancy.
           </p>
 
-          {/* Download CV Button */}
+          {/* Download CV Button 
           <motion.div
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -94,6 +94,8 @@ export default function Karanja() {
               </button>
             </a>
           </motion.div>
+
+          */}
         </motion.div>
       </div>
     </div>

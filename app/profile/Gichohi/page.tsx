@@ -81,7 +81,7 @@ export default function Gichohi() {
             with a commitment to excellence.
           </p>
 
-          {/* Download CV Button */}
+          {/* Download CV Button 
           <motion.div
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -100,8 +100,11 @@ export default function Gichohi() {
               </button>
             </a>
           </motion.div>
-        </motion.div>
+          */}
+        </motion.div> 
+       
       </div>
     </div>
   );
 }
+

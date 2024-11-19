@@ -2,7 +2,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Amos from "@/public/images/nairobi1.jpg";
-import Karanja from "@/public/images/nairobi.jpg";
+import Kariuki from "@/public/images/nairobi.jpg";
 import Gichohi from "@/public/images/nairobi3.jpg";
 
 // Data for the partners
@@ -21,13 +21,13 @@ const teamMembers = [
     position: "'The best way to predict a future is to create it'",
     image: Amos,
     description: "Visionary associate partner focused on shaping the future of our industry.",
-    profileLink: "/profile/Karanja",
+    profileLink: "/profile/Kariuki",
   },
   {
     id: 3,
     name: "MR H.W. GICHOHI – CONSULTING PARTNER",
     position: "Dedicated to providing expert consulting services",
-    image: Karanja,
+    image: Kariuki,
     description: "Skilled consulting partner with a wealth of industry knowledge.",
     profileLink: "/profile/Gichohi",
   },

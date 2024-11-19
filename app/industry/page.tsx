@@ -38,26 +38,22 @@ const industry = () => {
       </div>
 
       <div>
-        <p className=" mt-10 ml-40 text-red-900 font-bold text-5xl">
-          Overview
-        </p>
-        <p className="mt-10 ml-40 text-lg text-balance ">
+        <p className=" mt-10 ml-40 text-red-900 font-bold text-5xl">Overview</p>
+        <p className="mt-10 ml-40 text-lg text-balance text-left ">
           {" "}
-          The accounting and audit industry plays a crucial role in the
-          financial ecosystem, providing transparency, accuracy, and
-          accountability that underpin trust in financial reporting and business
-          operations. As companies navigate an increasingly complex regulatory
-          landscape, the need for expert guidance in financial management,
-          compliance, and risk assessment has never been greater. Accounting and
-          audit firms empower businesses by delivering insights that enhance
-          decision-making and ensure compliance with standards. From financial
-          audits to advisory services, these firms help organizations achieve
-          sustainable growth, optimize operational efficiencies, and maintain
-          investor confidence through meticulous analysis and objective
-          reporting.
+          The accounting and audit services sector is vital to the financial
+          ecosystem, providing transparency and accountability essential for
+          trust in financial reporting. As businesses navigate complex
+          regulations, the expertise in financial management, compliance, and
+          risk assessment offered by firms like <span className="font-bold"> H.W. Gichohi & Co. CPA (K) </span> is
+          invaluable. Through our financial audits and advisory services, we
+          empower organizations to make informed decisions, achieve sustainable
+          growth, protect value, and optimize efficiencies—reinforcing investor
+          confidence with meticulous analysis and objective reporting that drive
+          lasting business success.
         </p>
 
-        <p className="mt-10 ml-40 text-lg ">They include :</p>
+        <p className="mt-10 ml-40 text-lg ">We have worked with industries such as  :</p>
       </div>
 
       <div className="mt-10 mb-10 flex flex-col gap-0  h-360" id="industry">

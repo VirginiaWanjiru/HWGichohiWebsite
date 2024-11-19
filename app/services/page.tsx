@@ -16,10 +16,9 @@ const services = [
       "Acquisition review and corporate financial advice",
       "Forensic Audits",
       "Environmental impact audits",
-      
     ],
     description:
-      "Our firm’s Audit and assurance services comply with the Companies Act, InternationalAuditing Standards, International Financial Reporting Standards, and other relevantlaws. However, some audits are tailored to our client’s requirements in accordance withcontracts between us and the client.",
+      "Our firm’s Audit and assurance services comply with the Companies Act, InternationalAuditing Standards, International Financial Reporting Standards and other relevant laws. However, some audits are tailored to our client’s requirements in accordance with contracts between us and the client.",
   },
   {
     id: 2,
@@ -32,7 +31,7 @@ const services = [
       "Business disengagement consultancy",
     ],
     description:
-      "Our firm’s expertise in fraud and forensic investigation is extensive, backed by a team of certified fraud experts (CFE)s and skilled professionals. Our team is equipped to assess, detect and identify fraudulent activities while providing actionablerecommendations to prevent and uncover fraud within the organisation.",
+      "Our firm’s expertise in fraud and forensic investigation is extensive, backed by a team of certified fraud experts (CFE)s and skilled professionals. Our team is equipped to assess, detect and identify fraudulent activities while providing actionable recommendations to prevent and uncover fraud within the organization.",
   },
 
   {
@@ -44,7 +43,6 @@ const services = [
       "Value Added Tax Consultancy services",
       "Represent our clients in the Tax Tribunal and other forums as necessary",
       "We keep our clients abreast of tax changes through providing them with tax update reports which are produced annually after the budget",
-     
     ],
     description:
       "Our firm’s attentive and expert tax services cover all aspects of corporate and personal taxation. Thus, ensuring our clients are compliant with relevant statutory tax laws and have peace of mind while carrying out their business.",
@@ -77,8 +75,7 @@ const services = [
       "Job Pricing",
       "Salary research",
       "Management training for supervisors and middle management",
-      "Strategic management"
-
+      "Strategic management",
     ],
     description:
       "Our firm offers comprehensive consultancy, legal and business advisory services for management, dispute resolution support services as well as providing positive and feasible solutions to company’s problems.",
@@ -94,7 +91,6 @@ const services = [
       "Maintaining company member registers",
       "Processing members dividends ",
       "Issue company shares/ shares certificate",
-      
     ],
     description:
       "Our clients benefit from our firm’s comprehensive range of secretarial services designed to support corporate governance. We offer professional guidance to help our clients enhance their operations while ensuring compliance with relevant industry changes.",
@@ -194,15 +190,13 @@ export default function Services() {
                     </p>
 
                     <p className="text-lg font-semibold mb-2 mt-4">
-                    They include :
+                      They include :
                     </p>
                     <p className="list-disc ml-4 text-lg">
                       {service.options.map((option, index) => (
                         <li key={index}>{option}</li>
-                        
                       ))}
                     </p>
-                    
                   </div>
                 )}
               </div>
