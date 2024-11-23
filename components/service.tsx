@@ -15,6 +15,18 @@ import "slick-carousel/slick/slick-theme.css";
 const services = [
   {
     id: 1,
+    title: "Audit and Assurance services",
+    image: bg3,
+    list: [
+      "Statutory audits",
+      "Project audits",
+      "Special audit and investigations",
+      "Environmental impact audits",
+      "Acquisition review and corporate advice",
+    ],
+  },
+  {
+    id: 2,
     title: "Tax",
     image: Service1,
     list: [
@@ -27,7 +39,19 @@ const services = [
     ],
   },
   {
-    id: 2,
+    id: 3,
+    title: "Accounting",
+    image: bg4,
+    list: [
+      "Keeping and maintaining accounting books",
+      "Payroll administration",
+      "Accounting Training packages for non-accountants",
+      "Management controls for non-profits",
+      "Expert guidance on analysis of financial statements",
+    ],
+  },
+  {
+    id: 4,
     title: "Fraud and Forensic Investigation",
     image: bg2,
     list: [
@@ -39,30 +63,7 @@ const services = [
       "Business disengagement consultancy",
     ],
   },
-  {
-    id: 3,
-    title: "Audit and Assurance services",
-    image: bg3,
-    list: [
-      "Statutory audits",
-      "Project audits",
-      "Special audit and investigations",
-      "Environmental impact audits",
-      "Acquisition review and corporate advice",
-    ],
-  },
-  {
-    id: 4,
-    title: "Accounting",
-    image: bg4,
-    list: [
-      "Keeping and maintaining accounting books",
-      "Payroll administration",
-      "Accounting Training packages for non-accountants",
-      "Management controls for non-profits",
-      "Expert guidance on analysis of financial statements",
-    ],
-  },
+
   {
     id: 5,
     title: "Consultancy,corporate restructuring & Business Advisory services",
@@ -77,6 +78,7 @@ const services = [
       "Strategic Management",
     ],
   },
+
   {
     id: 6,
     title: "Secretarial services",
@@ -91,6 +93,11 @@ const services = [
       "Governance audit",
     ],
   },
+
+  
+  
+  
+  
 ];
 
 const Service = () => {
@@ -125,7 +132,7 @@ const Service = () => {
   return (
     <div className="mt-40 md:m-10">
       <h2 className="text-2xl md:text-3xl ml-4 md:ml-10 font-bold mb-10">
-        Services
+        Our Services
       </h2>
       <Slider {...settings}>
         {services.map((service) => (
@@ -135,26 +142,35 @@ const Service = () => {
             onMouseEnter={() => setHovered(service.id)}
             onMouseLeave={() => setHovered(null)}
           >
+            {/* Card Number */}
+            <div
+              className={`absolute top-8 left-8 text-white text-6xl font-bold z-10 transition-opacity duration-300 ${
+                hovered === service.id ? "opacity-0" : "opacity-80"
+              }`}
+            >
+              {service.id}
+            </div>
+
             {/* Image with blur effect on hover */}
             <Image
               src={service.image}
               alt={service.title}
-              width={300}
-              height={200}
+              width={400}
+              height={300}
               className={`w-full h-auto transition-all duration-500 ease-in-out ${
                 hovered === service.id ? "blur-md" : "" // Smooth blur effect on hover
               }`}
             />
 
             {/* Title */}
-            <div className="absolute bottom-0 left-0 text-white p-2">
+            <div className="absolute bottom-0 left-0 text-white p-4">
               <p className="text-xl ml-5">{service.title}</p>
             </div>
 
             {/* List to display on hover, specific to the service */}
             {hovered === service.id && (
               <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center transition-all duration-500 ease-in-out">
-                <ul className="text-white text-lg space-y-2">
+                <ul className="text-white text-xl space-y-4 p-8">
                   {service.list.map((item, index) => (
                     <li key={index}>{item}</li>
                   ))}
