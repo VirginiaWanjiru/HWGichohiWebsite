@@ -2,7 +2,9 @@ import React from "react";
 import mission from "@/public/images/fraud.jpg";
 import vision from "@/public/images/tax2.jpg";
 import Image from "next/image";
-
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import bg from "@/public/images/bg.jpg";
@@ -22,48 +24,92 @@ const slideIn = {
 
 const Mission = () => {
   const router = useRouter();
+  const [startCount, setStartCount] = useState(false);
+
+  // Use the useInView hook to track when the section is in view
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Animation triggers only once when the section comes into view
+    threshold: 0.5, // Trigger when 50% of the section is in view
+  });
+
+  // Start counting when the section is in view
+  if (inView && !startCount) {
+    setStartCount(true);
+  }
 
   return (
     <div>
       <motion.div
-        className="flex flex-items-center  text-center "
+        className="flex flex-items-center text-balance text-center mb-40 mt-10 "
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.3 }} // `once: false` allows it to animate every time it's in view
         variants={slideIn}
       >
-        <div id="missiontext" className=" container text-left  text-balance   ">
-          <p className="text-lg text-balance justify-center items-center mt-20">
+        <div id="missiontext" className=" container text-center     ">
+          <p className="text-xl justify-center items-center ">
             We are a trusted firm offering{" "}
-            <span className="font-bold">audit</span>,{" "}
-            <span className="font-bold">tax </span> and{" "}
-            <span className="font-bold">consultancy </span> services to
-            businesses in Kenya, East Africa and beyond. Our commitment to
-            excellence, integrity and added value drives our operations. Through
-            a purpose-driven culture, we build lasting relationships based on
-            transparency, reliability and growth. Our diverse team provides
-            tailored solutions, empowering clients to thrive in today's complex
-            business environment. With expertise across industries, we deliver
-            innovative, client-focused solutions. Our people are key to our
-            success, united by shared values and a passion for high-quality
-            service. We aim to positively impact businesses and local economies.
+            <span className="font-bold text-red-900 ">audit</span>,{" "}
+            <span className="font-bold text-red-900  ">tax </span> and{" "}
+            <span className="font-bold text-red-900  ">consultancy </span>{" "}
+            services to businesses in Kenya, East Africa and beyond. Our
+            commitment to excellence, integrity and added value drives our
+            operations. Through a purpose-driven culture, we build lasting
+            relationships based on transparency, reliability and growth. Our
+            diverse team provides tailored solutions, empowering clients to
+            thrive in today's complex business environment. With expertise
+            across industries, we deliver innovative, client-focused solutions.
+            Our people are key to our success, united by shared values and a
+            passion for high-quality service. We aim to positively impact
+            businesses and local economies.
           </p>
         </div>
 
         <br />
-        <br />
-        <Image
-          src={mission}
-          alt="image"
-          className="align-right w-1/2 h-96 hidden md:block"
-        ></Image>
       </motion.div>
 
-      <br />
-      <br />
-      <hr />
-      <br />
-      <br />
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        className="relative flex flex-col gap-2 bg-cover bg-center w-full min-h-[60vh] py-10"
+        id="about-us"
+        style={{
+          backgroundImage: "url('/images/bg2.jpeg')", // Replace with the path to your image
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        {/* Background Blur Overlay */}
+        <div className="absolute inset-0  bg-opacity-25 backdrop-blur-lg z-0 "></div>
+
+        {/* Text Content */}
+        <div ref={ref} className="relative z-5">
+          <p className="font-bold text-6xl text-white text-center mt-20 ">
+            Over{" "}
+            <span className="font-bold text-6xl text-red-700 ">
+              {startCount && <CountUp start={0} end={45} duration={5.0} />}+{" "}
+              {/* The plus sign after the count */}
+            </span>{" "}
+            years of experience
+          </p>
+          <p className="mt-10 text-white text-lg text-balance text-center">
+            Since the 1970s, we have built a legacy of trust and a wealth of
+            expertise, delivering professional services to thousands of small,
+            medium, and large institutions across diverse industries, including
+            finance, manufacturing, education, healthcare, technology, retail,
+            non-profit, real estate, construction, insurance, public sector,
+            agriculture & agribusiness, mining, transportation & logistics,
+            legal, hospitality, and energy.
+          </p>
+          <br />
+          <br />
+        </div>
+
+        <div className="flex justify-between gap-8">
+          <div></div>
+        </div>
+      </motion.div>
 
       {/* Mission Section */}
       <motion.div
@@ -108,56 +154,60 @@ const Mission = () => {
         </div>
       </motion.div>
 
-      <hr />
-
       {/* Values Section */}
       <motion.div
-        className=" flex-items-center "
+        className=" flex-items-center mb-20"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.2 }} // `once: false` allows it to animate every time it's in view
         variants={slideIn}
       >
         <div id="missiontext" className="text-center">
-          <p className=" font-bold text-6xl mt-10">Our Values</p>
+          <p className=" font-bold text-6xl ">Our Values</p>
           <br />
           <br />
-          
-          <p className="text-4xl  text-blue-900  font-bold ">INTEGRITY</p>
+
+          <p className="text-4xl  text-red-900  font-bold ">Integrity</p>
           <p className="text-lg  ">
             {" "}
-            Upholding honesty & ethics, building trust in every engagement.
+            We uphold the highest standards of honesty and ethics, fostering
+            long-lasting trust in every engagement and building relationships
+            based on transparency and respect.
           </p>
 
           <br></br>
 
-          <p className="text-4xl  text-blue-900  font-bold">EXCELLENCE</p>
+          <p className="text-4xl  text-red-900  font-bold">Excellence</p>
           <p className="text-lg  ">
-            Delivering high-quality,practical solutions with precision and
-            continuous improvement.
+            We are committed to delivering high-quality, practical solutions
+            with precision, driving results through continuous improvement and a
+            relentless pursuit of excellence.
           </p>
 
           <br></br>
-          <p className="text-4xl  text-blue-900  font-bold">CLIENT FOCUS</p>
+          <p className="text-4xl  text-red-900  font-bold">Client</p>
           <p className="text-lg  ">
-            Providing personalized, proactive financial guidance tailored to
-            client needs .
+            We take a personalized, proactive approach to understanding and
+            addressing each client’s unique needs, delivering tailored financial
+            guidance that empowers their success.
           </p>
           <br></br>
-          <p className="text-4xl  text-blue-900  font-bold">
-            INNOVATION AND SUSTAINABILITY{" "}
+          <p className="text-4xl  text-red-900  font-bold">
+            Innovation & Sustainability{" "}
           </p>
 
           <p className="text-lg  ">
-            Adopting advanced methods to offer forward-looking sustainable
-            solutions.
+            We leverage cutting-edge methods and forward-thinking solutions to
+            drive innovation, ensuring sustainability and long-term success for
+            both our clients and the communities we serve.
           </p>
           <br></br>
-          <p className="text-4xl  text-blue-900  font-bold">ACCOUNTABILITY</p>
+          <p className="text-4xl  text-red-900  font-bold">Accountability</p>
           <p className="text-lg  ">
             {" "}
-            Ensuring transparency and responsibility in all reporting and
-            advisory services.
+            We are dedicated to providing complete transparency, ensuring
+            accountability in all aspects of our reporting and advisory
+            services, and instilling confidence in our clients' decision-making.
           </p>
         </div>
       </motion.div>
@@ -167,8 +217,43 @@ const Mission = () => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        className="flex justify-center items-end  mt-0"
-      ></motion.div>
+        className="relative flex flex-col gap-2 bg-cover bg-center w-full min-h-[60vh] py-5"
+        id="about-us"
+        style={{
+          backgroundImage: "url('/images/bg.jpg')", // Replace with the path to your image
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        {/* Background Blur Overlay */}
+        <div className="absolute inset-0  bg-opacity-25 backdrop-blur-lg z-0 "></div>
+
+        {/* Text Content */}
+        <div ref={ref} className="relative z-5">
+          <p className="font-bold text-6xl text-center mt-20 ">
+            Over{" "}
+            <span className="font-bold text-6xl text-red-700 ">
+              {startCount && <CountUp start={0} end={20} duration={5.0} />}+{" "}
+              {/* The plus sign after the count */}
+            </span>{" "}
+            talented professionals{" "}
+          </p>
+          <br />
+
+          <p className="mt-10 text-black text-lg text-balance text-center">
+          
+            Our diverse team of professionals brings expertise across a wide
+            range of services. Each team member is dedicated to offering
+            innovative, practical solutions to complex business challenges.”
+          </p>
+          <br />
+        </div>
+
+        <div className="flex justify-between gap-8">
+          <div></div>z
+        </div>
+      </motion.div>
 
       <br></br>
     </div>

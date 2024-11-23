@@ -18,31 +18,31 @@ const Banner: React.FC = () => {
   const slides: Slide[] = [
     {
       image: "/images/nairobi3.webp",
-      text: "Delivering Results in Advisory and Assurance ",
+      text: "Reliable and timely audit and assurance services",
       name: "H.W. Gichohi & Co. CPA(K)",
       buttonText: "Contact Us",
-      buttonLink: "/#contact-us",
+      buttonLink: "/contact",
     },
     {
       image: "/images/nairobi5.webp",
       text: "Tailored Financial Solutions for Your Business",
       name: "H.W. Gichohi & Co. CPA(K)",
-      buttonText: "Learn More",
-      buttonLink: "/#learn-more",
+      buttonText: "Contact Us",
+      buttonLink: "/contact",
     },
     {
       image: "/images/nairobi3.webp",
       text: "Partnering with You for Sustainable Growth",
       name: "H.W. Gichohi & Co. CPA(K)",
-      buttonText: "Our Services",
-      buttonLink: "/#services",
+      buttonText: "Contact Us ",
+      buttonLink: "/contact",
     },
     {
       image: "/images/nairobi.webp",
       text: "Trusted Advisors, Committed to Your Success",
       name: "H.W. Gichohi & Co. CPA(K)",
-      buttonText: "Get Started",
-      buttonLink: "/#get-started",
+      buttonText: "Contact Us",
+      buttonLink: "/contact",
     },
   ];
 
