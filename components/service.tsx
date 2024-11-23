@@ -17,87 +17,38 @@ const services = [
     id: 1,
     title: "Audit and Assurance services",
     image: bg3,
-    list: [
-      "Statutory audits",
-      "Project audits",
-      "Special audit and investigations",
-      "Environmental impact audits",
-      "Acquisition review and corporate advice",
-    ],
+    link: "/services#1",
   },
   {
     id: 2,
     title: "Tax",
     image: Service1,
-    list: [
-      "Preparation & submission of annual income tax returns",
-      "Tax Planning to minimize our clients tax expenses",
-      "Value Added Tax consultancy services",
-      "Tax Tribunal representation",
-      "International Tax Advisory",
-      "Tax Compliance",
-    ],
+    link: "/services#3",
   },
   {
     id: 3,
     title: "Accounting",
     image: bg4,
-    list: [
-      "Keeping and maintaining accounting books",
-      "Payroll administration",
-      "Accounting Training packages for non-accountants",
-      "Management controls for non-profits",
-      "Expert guidance on analysis of financial statements",
-    ],
+    link: "/services#4",
   },
   {
     id: 4,
     title: "Fraud and Forensic Investigation",
     image: bg2,
-    list: [
-      "Forensic Investigations",
-      "Forensic Audit",
-      "Fraud Training",
-      "Fraud Risk Assessment",
-      "Litigation support",
-      "Business disengagement consultancy",
-    ],
+    link: "/services#2",
   },
-
   {
     id: 5,
-    title: "Consultancy,corporate restructuring & Business Advisory services",
+    title: "Consultancy, corporate restructuring & Business Advisory services",
     image: bg5,
-    list: [
-      "Company restructuring",
-      "Specialty in company receivership and liquidation",
-      "Litigation Support",
-      "Mediation, arbitration and business disengagement support services",
-      "Systems design and review",
-      "Project Management",
-      "Strategic Management",
-    ],
+    link: "/services#5",
   },
-
   {
     id: 6,
     title: "Secretarial services",
     image: bg6,
-    list: [
-      "Filing annual returns.",
-      "Company / business registration.",
-      "Organizing business meetings",
-      "Maintaining company member’s registers.",
-      "Processing members dividends.",
-      "Issue company shares/ share certificate.",
-      "Governance audit",
-    ],
+    link: "/services#6",
   },
-
-  
-  
-  
-  
 ];
 
 const Service = () => {
@@ -166,15 +117,15 @@ const Service = () => {
             <div className="absolute bottom-0 left-0 text-white p-4">
               <p className="text-xl ml-5">{service.title}</p>
             </div>
-
-            {/* List to display on hover, specific to the service */}
+            {/* Button to display on hover */}
             {hovered === service.id && (
               <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center transition-all duration-500 ease-in-out">
-                <ul className="text-white text-xl space-y-4 p-8">
-                  {service.list.map((item, index) => (
-                    <li key={index}>{item}</li>
-                  ))}
-                </ul>
+                <a
+                  href={service.link}
+                  className="bg-maroon text-white px-6 py-3 rounded-lg font-bold hover:bg-red-700 transition-colors"
+                >
+                  Learn More
+                </a>
               </div>
             )}
           </div>

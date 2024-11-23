@@ -10,6 +10,7 @@ const services = [
     name: "Audit & Assurance services ",
     options: [
       "Financial Audits",
+      "Statutory Audits",
       "Project Audits",
       "Governance audit",
       "Special audit and investigations",
@@ -18,10 +19,39 @@ const services = [
       "Environmental impact audits",
     ],
     description:
-      "Our firm’s Audit and assurance services comply with the Companies Act, InternationalAuditing Standards, International Financial Reporting Standards and other relevant laws. However, some audits are tailored to our client’s requirements in accordance with contracts between us and the client.",
+      "Our firm’s Audit and assurance services comply with the Companies Act, International Auditing Standards (ISAs), International Financial Reporting Standards (IFRSs), and other relevant laws. However, some audits are tailored to our client’s requirements in accordance with contracts between us and the client.",
   },
+
   {
     id: 2,
+    name: "Tax Services",
+    options: [
+      "Outsourced Tax Compliance Services : This involves preparation & filing of returns and payment of tax payable on behalf of the client. Income Tax, VAT, PAYE, Monthly Rent Income Taxes, Capital Gains Tax, etc",
+      "This involves preparation & filing of returns and payment of tax payable on behalf of the client. Income Tax, VAT, PAYE, Monthly Rent Income Taxes, Capital Gains Tax, etc",
+      "Tax Accounting & Statutory Book Keeping",
+      "Tax Compliance Management Services",
+      "International Tax Consultancy (e.g. Expatriate taxation, Transfer pricing) ",
+      "Tax Assessment & Investigation Resolution Services.This includes, responding to KRA on behalf of our clients, negotiating audits and timelines; "
+    ],
+    description:
+      "Our firm’s attentive and expert tax services cover all aspects of corporate and personal taxation. Thus, ensuring our clients are compliant with relevant statutory tax laws and have peace of mind while carrying out their business.",
+  },
+
+  {
+    id: 3,
+    name: "Accounting",
+    options: [
+      "Keeping and maintaining accounting books",
+      "Payroll administration",
+      "Accounting Training packages for non-accountants",
+      "Management controls for non-profits",
+      "Expert guidance on analysis of financial statements",
+    ],
+    description:
+      "Our firm offers expert handling of financial data and a wide range of accounting services to our clients, which is aimed at ensuring that the client’s financial data is well captured and interpreted to enhance business processes and decision making.",
+  },
+  {
+    id: 4,
     name: "Fraud & Forensic Investigation Division",
     options: [
       "Forensic Investigations",
@@ -35,35 +65,8 @@ const services = [
   },
 
   {
-    id: 3,
-    name: "Tax Services",
-    options: [
-      "Preparation & Submission of annual income tax returns ",
-      "Tax Planning to minimize our clients tax expenses",
-      "Value Added Tax Consultancy services",
-      "Represent our clients in the Tax Tribunal and other forums as necessary",
-      "We keep our clients abreast of tax changes through providing them with tax update reports which are produced annually after the budget",
-    ],
-    description:
-      "Our firm’s attentive and expert tax services cover all aspects of corporate and personal taxation. Thus, ensuring our clients are compliant with relevant statutory tax laws and have peace of mind while carrying out their business.",
-  },
-
-  {
-    id: 4,
-    name: "Accounting",
-    options: [
-      "Keeping and maintaining accounting books",
-      "Payroll administration",
-      "Accounting Training packages for non-accountants",
-      "Management controls for non-profits",
-      "Expert guidance on analysis of financial statements",
-    ],
-    description:
-      "Our firm offers expert handling of financial data and a wide range of accounting services to our clients, which is aimed at ensuring that the client’s financial data is well captured and interpreted to enhance business processes and decision making.",
-  },
-  {
     id: 5,
-    name: "Consultancy, corporate restructuring & Business Advisory services",
+    name: "Business Advisory & Consultancy",
     options: [
       "Company restructuring ",
       "Specialty in company receivership and liquidation",
@@ -76,6 +79,8 @@ const services = [
       "Salary research",
       "Management training for supervisors and middle management",
       "Strategic management",
+      "Conducting business feasibility studies",
+      "Business Registration & Set up services"
     ],
     description:
       "Our firm offers comprehensive consultancy, legal and business advisory services for management, dispute resolution support services as well as providing positive and feasible solutions to company’s problems.",
@@ -138,18 +143,15 @@ export default function Services() {
 
         <div>
           <p className="font-sans mt-10 ml-40 text-red-800 font-bold text-5xl">
-            Overview
+            Overview of Our Services
           </p>
           <p className="mt-10   ml-40 text-base ">
             {" "}
-            H. W. Gichohi and Company offers all the services that a Certified
-            Public Accountant firm provides.Our competencies are anchored on the
-            combination of our EXPERTISE, TECHNICAL KNOW-HOW, continual TRAINING
-            and PROFESSIONALISM in delivering all services expected of a
-            Certified Public Accounting firm and cater for the needs of clients;
-            including individuals, businesses and all types of organizations; by
-            providing integrated and holistic solutions through personalized
-            services.
+            We offer a full range of services provided by a Certified Public
+            Accountant firm. Our expertise, technical know-how, and
+            professionalism enable us to deliver integrated and holistic
+            solutions, tailored to meet the needs of individuals, businesses,
+            and organizations
           </p>
 
           <p className="mt-10   ml-40 text-lg ">
@@ -161,6 +163,7 @@ export default function Services() {
           {services.map((service) => (
             <div
               key={service.id}
+              id={service.name.toLowerCase().replace(/[^a-z]+/g, "-")} // Converts the name to a URL-friendly id
               onClick={() => toggleExpand(service.id)}
               className=" mb-6 p-6 bg-neutral-100 rounded-lg shadow-lg ml-20 mr-20 hover:bg-gradient-to-r from-gray-300 via red-200 to-red-800 "
             >
