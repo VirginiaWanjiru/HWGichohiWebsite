@@ -24,7 +24,7 @@ const slideIn = {
 
 const Mission = () => {
   const router = useRouter();
-  const [startCount, setStartCount] = useState(false);
+  const [startCount, setStartCount] = useState(true);
 
   // Use the useInView hook to track when the section is in view
   const { ref, inView } = useInView({
@@ -88,7 +88,7 @@ const Mission = () => {
           <p className="font-bold text-6xl text-white text-center mt-20 ">
             Over{" "}
             <span className="font-bold text-6xl text-red-700 ">
-              {startCount && <CountUp start={0} end={45} duration={5.0} />}+{" "}
+              {startCount && <CountUp start={0} end={45} duration={7.0} />}+{" "}
               {/* The plus sign after the count */}
             </span>{" "}
             years of experience

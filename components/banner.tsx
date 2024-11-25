@@ -18,7 +18,7 @@ const Banner: React.FC = () => {
   const slides: Slide[] = [
     {
       image: "/images/nairobi3.webp",
-      text: "Reliable and timely audit and assurance services",
+      text: "Reliable and Timely Audit and Assurance Services",
       name: "H.W. Gichohi & Co. CPA(K)",
       buttonText: "Contact Us",
       buttonLink: "/contact",

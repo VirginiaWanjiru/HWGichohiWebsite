@@ -31,7 +31,10 @@ const services = [
       "Tax Accounting & Statutory Book Keeping",
       "Tax Compliance Management Services",
       "International Tax Consultancy (e.g. Expatriate taxation, Transfer pricing) ",
-      "Tax Assessment & Investigation Resolution Services.This includes, responding to KRA on behalf of our clients, negotiating audits and timelines; "
+      "Tax Assessment & Investigation Resolution Services.This includes, responding to KRA on behalf of our clients, negotiating audits and timelines,negotations waiver of penalties and interests; representing our clients Tax Tribunals; ",
+      "Indirect Tax Services (e.g. matters dealing with VAT, Customs Duty Tax)",
+      "Tax Training Services",
+      "Tax Back-Stopping Services",
     ],
     description:
       "Our firm’s attentive and expert tax services cover all aspects of corporate and personal taxation. Thus, ensuring our clients are compliant with relevant statutory tax laws and have peace of mind while carrying out their business.",
