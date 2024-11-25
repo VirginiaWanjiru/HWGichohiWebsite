@@ -4,9 +4,9 @@ export default function ContactMap(){
             <div className="w-2/5 bg-[#b91c1c] flex flex-col text-[#FFFFFF] justify-evenly items-center">
                 <span className="text-center flex flex-col">
                     <p className="font-extrabold">Call Us</p>
-                    <span className="text-base font-normal">0713 324558</span>
-                    <span className="text-base font-normal">0733 324558</span>
-                    <span className="text-base font-normal">0724 256228</span>
+                    <span className="text-base font-normal">+254 (0)713 324558</span>
+                    <span className="text-base font-normal">+254 (0)733 324558</span>
+                    <span className="text-base font-normal">+254 (0)724 256228</span>
                 </span>
                 <span className="text-center">
                     <p className="font-extrabold">Location</p>
@@ -15,10 +15,10 @@ export default function ContactMap(){
                 <span className="text-center flex flex-col">
                     <p className="font-extrabold">Our Top Services</p><br></br>
 
-                    <span className="text-base font-normal">Accounting</span>
-                    <span className="text-base font-normal">Assurance</span>
-                    <span className="text-base font-normal">Tax Planning </span>
-                    <span className="text-base font-normal">Advisory</span>
+                    <span className="text-base font-normal">Audit & Assurance</span>
+                    <span className="text-base font-normal">Tax</span>
+                    <span className="text-base font-normal">Forensic</span>
+                    <span className="text-base font-normal">Business Advisory & Consultancy</span>
                 </span>
 
             </div>
