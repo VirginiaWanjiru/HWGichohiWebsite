@@ -146,9 +146,9 @@ export default function Services() {
 
         <div>
           <p className="font-sans mt-10 ml-40 text-red-800 font-bold text-5xl">
-            Overview of Our Services
+            Overview Of Our Services
           </p>
-          <p className="mt-10   ml-40 text-base ">
+          <p className="mt-10   ml-40 text-base text-lg text-balance ">
             {" "}
             We offer a full range of services provided by a Certified Public
             Accountant firm. Our expertise, technical know-how, and
@@ -162,7 +162,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="mt-10 ">
+        <div className="mt-10 ml-20 ">
           {services.map((service) => (
             <div
               key={service.id}

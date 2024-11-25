@@ -156,59 +156,63 @@ const Mission = () => {
 
       {/* Values Section */}
       <motion.div
-        className=" flex-items-center mb-20"
+        className="flex items-center mb-20"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.2 }} // `once: false` allows it to animate every time it's in view
         variants={slideIn}
       >
-        <div id="missiontext" className="text-center">
-          <p className=" font-bold text-6xl ">Our Values</p>
-          <br />
-          <br />
+        <div id="missiontext" className="text-center max-w-4xl mx-auto">
+          <p className="font-bold text-6xl mb-10">Our Values</p>
 
-          <p className="text-4xl  text-red-900  font-bold ">Integrity</p>
-          <p className="text-lg  ">
-            {" "}
-            We uphold the highest standards of honesty and ethics, fostering
-            long-lasting trust in every engagement and building relationships
-            based on transparency and respect.
-          </p>
+          {/* Integrity */}
+          <div className="mb-8">
+            <p className="text-4xl text-red-900 font-bold">Integrity</p>
+            <p className="text-lg text-balance mx-auto max-w-xl">
+              We uphold the highest standards of honesty and ethics, fostering
+              long-lasting trust in every engagement.
+            </p>
+          </div>
 
-          <br></br>
+          {/* Excellence */}
+          <div className="mb-8">
+            <p className="text-4xl text-red-900 font-bold">Excellence</p>
+            <p className="text-lg text-balance mx-auto max-w-xl">
+              We are committed to delivering high-quality, practical solutions
+              with precision, driving results through continuous improvement.
+            </p>
+          </div>
 
-          <p className="text-4xl  text-red-900  font-bold">Excellence</p>
-          <p className="text-lg  ">
-            We are committed to delivering high-quality, practical solutions
-            with precision, driving results through continuous improvement and a
-            relentless pursuit of excellence.
-          </p>
+          {/* Client */}
+          <div className="mb-8">
+            <p className="text-4xl text-red-900 font-bold">Client</p>
+            <p className="text-lg text-balance mx-auto max-w-xl">
+              We take a personalized, proactive approach to understanding and
+              addressing each client’s unique needs, delivering tailored
+              financial guidance.
+            </p>
+          </div>
 
-          <br></br>
-          <p className="text-4xl  text-red-900  font-bold">Client</p>
-          <p className="text-lg  ">
-            We take a personalized, proactive approach to understanding and
-            addressing each client’s unique needs, delivering tailored financial
-            guidance that empowers their success.
-          </p>
-          <br></br>
-          <p className="text-4xl  text-red-900  font-bold">
-            Innovation & Sustainability{" "}
-          </p>
+          {/* Innovation & Sustainability */}
+          <div className="mb-8">
+            <p className="text-4xl text-red-900 font-bold">
+              Innovation & Sustainability
+            </p>
+            <p className="text-lg text-balance mx-auto max-w-xl">
+              We leverage cutting-edge methods and forward-thinking solutions to
+              drive innovation, ensuring sustainability and long-term success.
+            </p>
+          </div>
 
-          <p className="text-lg  ">
-            We leverage cutting-edge methods and forward-thinking solutions to
-            drive innovation, ensuring sustainability and long-term success for
-            both our clients and the communities we serve.
-          </p>
-          <br></br>
-          <p className="text-4xl  text-red-900  font-bold">Accountability</p>
-          <p className="text-lg  ">
-            {" "}
-            We are dedicated to providing complete transparency, ensuring
-            accountability in all aspects of our reporting and advisory
-            services, and instilling confidence in our clients' decision-making.
-          </p>
+          {/* Accountability */}
+          <div className="mb-8">
+            <p className="text-4xl text-red-900 font-bold">Accountability</p>
+            <p className="text-lg text-balance mx-auto max-w-xl">
+              We are dedicated to providing complete transparency, ensuring
+              accountability in all aspects of our reporting and advisory
+              services.
+            </p>
+          </div>
         </div>
       </motion.div>
 
@@ -242,7 +246,6 @@ const Mission = () => {
           <br />
 
           <p className="mt-10 text-black text-lg text-balance text-center">
-          
             Our diverse team of professionals brings expertise across a wide
             range of services. Each team member is dedicated to offering
             innovative, practical solutions to complex business challenges.”

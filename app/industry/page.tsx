@@ -54,7 +54,7 @@ const Industry = () => {
       </div>
 
       <div>
-        <p className="mt-10 ml-40 text-red-900 font-bold text-5xl">Overview</p>
+        <p className="mt-10 ml-40 text-red-800 font-bold text-5xl">Overview</p>
         <p className="mt-10 ml-40 text-lg text-balance text-left ">
           The accounting and audit services sector is vital to the financial
           ecosystem, providing transparency and accountability essential for
