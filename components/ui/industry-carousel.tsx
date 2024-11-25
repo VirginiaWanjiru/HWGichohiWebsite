@@ -190,7 +190,7 @@ export default function IndustryCarousel() {
   useEffect(() => {
     const interval = setInterval(() => {
       handleRight();
-    }, 3000); // Move carousel every 3 seconds
+    }, 5000); // Move carousel every 3 seconds
 
     return () => clearInterval(interval); // Clean up on unmount
   }, [right]);
