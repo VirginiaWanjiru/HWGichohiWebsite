@@ -81,26 +81,7 @@ export default function Gichohi() {
             with a commitment to excellence.
           </p>
 
-          {/* Download CV Button 
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            className="self-start"
-          >
-            <a href="/cv/isaac-kiragu-cv.pdf">
-              <button
-                className="flex items-center bg-blue-500 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600 transition-all ease-in-out"
-                onMouseEnter={() => setHovered(true)}
-                onMouseLeave={() => setHovered(false)}
-              >
-                <FaDownload
-                  className={`mr-2 ${hovered ? "animate-bounce" : ""}`}
-                />
-                Download CV
-              </button>
-            </a>
-          </motion.div>
-          */}
+          
         </motion.div> 
        
       </div>
