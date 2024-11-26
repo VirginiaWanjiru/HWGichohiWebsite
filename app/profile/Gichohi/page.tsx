@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import Image from "next/image";
 import Link from "next/link";
@@ -72,20 +72,32 @@ export default function Gichohi() {
             MR H.W. GICHOHI - CONSULTING PARTNER
           </p>
           <p className="text-xl text-gray-200 mb-6">Nairobi, Kenya</p>
+        </motion.div>
+      </div>
 
-          {/* Background/Description */}
-          <p className="text-gray-300 text-base mb-8">
-            With over 43 years of extensive experience in various fields
-            including Accounting, Tax Practice, Auditing, Financial Consulting,
-            and Human Resources, Mr. H. W. Gichohi leads our consulting division
-            with a commitment to excellence.
-          </p>
-
-          
-        </motion.div> 
-       
+      {/* Dropdowns Section */}
+      <div className="w-full flex flex-col items-center mt-10 space-y-4">
+        <select className="w-3/4 md:w-1/2 p-3 text-lg rounded bg-gray-800 text-white border border-gray-600">
+          <option value="">Select Option 1</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+        </select>
+        <select className="w-3/4 md:w-1/2 p-3 text-lg rounded bg-gray-800 text-white border border-gray-600">
+          <option value="">Select Option 2</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+        </select>
+        <select className="w-3/4 md:w-1/2 p-3 text-lg rounded bg-gray-800 text-white border border-gray-600">
+          <option value="">Select Option 3</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+        </select>
+        <select className="w-3/4 md:w-1/2 p-3 text-lg rounded bg-gray-800 text-white border border-gray-600">
+          <option value="">Select Option 4</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+        </select>
       </div>
     </div>
   );
 }
-

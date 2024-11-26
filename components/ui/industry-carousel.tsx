@@ -5,7 +5,15 @@ import financialServices from "@/public/images/financial_services.jpg";
 import soleProprietorship from "@/public/images/sole.jpg";
 import manufacturingSector from "@/public/images/manufacturing_sector.jpg";
 import sme from "@/public/images/sme.jpg";
+import edu from "@/public/images/education.png";
+import construction from "@/public/images/construction.png";
 import agriculture from "@/public/images/agriculture.png";
+import fraud from "@/public/images/fraud.jpg";
+import tourism from "@/public/images/tourism.png";
+import energy from "@/public/images/energy.png";
+import trading from "@/public/images/trading.png";
+import other from "@/public/images/other.png";
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 import ArrowLeft from "@/components/icons/ArrowLeft";
@@ -19,39 +27,30 @@ const industryItems = [
     image: soleProprietorship,
     description:
       "Our clients in this category enjoy the advantage of tailor-made services designed to meet both their personal and business needs. We offer a comprehensive range of services that include audit and assurance, maintaining and managing business accounting records, and providing strategic tax planning and VAT consultancy.",
-    options: ["ABCDE", "EFGH"],
+    options: [],
   },
   {
     id: 2,
     title: "Financial Services Industry",
     image: financialServices,
 
-    options: [
-      "Banks",
-      "Insurance Companies",
-      "BOSA & FOSA Saccos",
-      "Pension Schemes",
-    ],
+    options: [],
     description:
-      "In the Financial Services sector, we offer audit and advisory service to Credit Unions commonly called SACCOs or cooperative financial institution offering financial services to its members.",
+      "In the Financial Services sector, we offer audit and advisory services to a range of institutions, including Credit Unions (SACCOs), cooperative financial organizations providing financial services to their members, as well as banks, insurance companies, BOSA and FOSA SACCOs, and pension schemes.",
   },
   {
     id: 3,
     title: "Manufacturing Sector",
     image: manufacturingSector,
-    options: [
-      "Metal & Steel Manufacturing Companies ",
-      "Consumer Goods Manufacturing Companies",
-      "Construction Materials Manufacturing",
-    ],
+    options: [],
     description:
-      "In the Manufacturing sector, we offer audit, strategy transformation and advisory services to client typically a companies engaged in the establishment or production of goods through various manufacturing processes.",
+      "In the Manufacturing sector, we provide audit, strategy transformation, and advisory services to companies involved in the establishment or production of goods through various manufacturing processes, including metal and steel manufacturing companies, consumer goods manufacturing companies, and construction materials manufacturing.",
   },
   {
     id: 4,
     title: "Small and Medium-sized Enterprises",
     image: sme,
-    options: ["ABCDE", "EFGH"],
+    options: [],
     description:
       "For SMEs (Small and Medium-sized Enterprises), our clients are typically a small or medium-sized businesses operating in various industries, including retail, services, or manufacturing.",
   },
@@ -59,7 +58,7 @@ const industryItems = [
     id: 5,
     title: "Agriculture & Agribusiness Industry",
     image: agriculture,
-    options: ["ABCDE", "EFGH"],
+    options: [],
     description:
       "In Agriculture sector, our audit client are often a farm or agricultural enterprise involved in the cultivation, production, value additions or distribution of crops, livestock, or related products.",
   },
@@ -67,102 +66,68 @@ const industryItems = [
     id: 6,
     title: "Not for Profit Organizations",
     image: humanitarianAid,
-    options: [
-      "Not for Profit Companies",
-      "Non-Governmental Organizations",
-      "Humanitarian Organizations",
-    ],
+    options: [],
     description:
-      "Our The audit client in the International Development and Humanitarian Aid sector are  typically a non-profit organizations and  governmental agency involved in providing aid and development assistance in the East Africa  region.",
+      "In the International Development and Humanitarian Aid sector, our audit clients are typically non-profit organizations and government agencies involved in providing aid and development assistance in the East Africa region, including not-for-profit companies, non-governmental organizations, and humanitarian organizations.",
   },
 
   {
     id: 7,
     title: "Construction & Real Estate",
-    image: humanitarianAid,
-    options: [
-      "Construction companies",
-      "Real Estate Development Companies",
-      "Real Estate Investment & Management Companies",
-    ],
+    image: construction,
+    options: [],
     description:
-      "Our The audit client in the International Development and Humanitarian Aid sector are  typically a non-profit organizations and  governmental agency involved in providing aid and development assistance in the East Africa  region.",
+      "In the Real Estate and Construction sector, we offer audit and advisory services to construction companies, real estate development companies, and real estate investment and management companies.",
   },
   {
     id: 8,
     title: "Education Sector",
-    image: humanitarianAid,
-    options: [
-      "Primary Schools",
-      "Secondary/High Schools",
-      "Tertiary Institutions: Colleges & Universities",
-    ],
+    image: edu,
+    options: [],
     description:
-      "Our The audit client in the International Development and Humanitarian Aid sector are  typically a non-profit organizations and  governmental agency involved in providing aid and development assistance in the East Africa  region.",
+      "We provide audit and advisory services to educational institutions, including primary schools, secondary/high schools, and tertiary institutions such as colleges and universities.",
   },
   {
     id: 9,
     title: "Government and Public Sector ",
-    image: humanitarianAid,
-    options: ["Global Donors ", "Parastatals","Grants & Project Donors"],
+    image: fraud,
+    options: [],
     description:
-      "Our The audit client in the International Development and Humanitarian Aid sector are  typically a non-profit organizations and  governmental agency involved in providing aid and development assistance in the East Africa  region.",
+      "We offer audit and advisory services to global donors, parastatals, and grants and project donors, supporting their initiatives and ensuring transparency in their operations.",
   },
   {
     id: 10,
     title: "Natural Resources and Energy",
-    image: humanitarianAid,
-    options: [
-      "Mining Companies ",
-      "Oil and Gas Companies",
-      "Renewable Energy Companies",
-    ],
+    image: energy,
+    options: [],
     description:
-      "Our The audit client in the International Development and Humanitarian Aid sector are  typically a non-profit organizations and  governmental agency involved in providing aid and development assistance in the East Africa  region.",
+      "We provide audit and advisory services to companies in the energy and resources sector, including mining companies, oil and gas companies, and renewable energy companies.",
   },
   {
     id: 11,
     title: "Tourism & Hospitality Center",
-    image: humanitarianAid,
-    options: [
-      "Tourism Agencies ",
-      "Hotels, Resorts & Restaurants",
-      "Events & Entertainment Companies",
-    ],
+    image: tourism,
+    options: [,],
     description:
-      "Our The audit client in the International Development and Humanitarian Aid sector are  typically a non-profit organizations and  governmental agency involved in providing aid and development assistance in the East Africa  region.",
+      "We offer audit and advisory services to businesses in the tourism and hospitality sector, including tourism agencies, hotels, resorts, and restaurants, as well as events and entertainment companies.",
   },
-  
+
   {
     id: 12,
     title: "Trading Industry",
-    image: humanitarianAid,
-    options: [
-      "Fast Moving Consumer Goods Companies ",
-      "Wholesalers",
-      "Retailers",
-    ],
+    image: trading,
+    options: [,],
     description:
-      "Our The audit client in the International Development and Humanitarian Aid sector are  typically a non-profit organizations and  governmental agency involved in providing aid and development assistance in the East Africa  region.",
+      "We provide audit and advisory services to companies in the consumer goods sector, including fast-moving consumer goods (FMCG) companies, wholesalers, and retailers.",
   },
 
   {
     id: 13,
     title: "Other sectors",
-    image: humanitarianAid,
-    options: [
-    "Humanitarian Institutions" ,
-      "Media & Entertainment",
-      "Mining & Natural Resources",
-      "Proprietorships & Partnerships",
-      "Services Sector",
-      "Telecommunications",
-      "Transport & Logistics",
-      "Health Sector: Pharmaceutical Companies & Healthcare Providers",
-      "Waste Management & Environmental Services",
-    ],
+    image: other,
+    options: [,],
     description:
-      "Our The audit client in the International Development and Humanitarian Aid sector are  typically a non-profit organizations and  governmental agency involved in providing aid and development assistance in the East Africa  region.",
+      "We offer audit and advisory services across a diverse range of sectors, including humanitarian institutions, media and entertainment, mining and natural resources, proprietorships and partnerships, the services sector, telecommunications, transport and logistics, the health sector (pharmaceutical companies and healthcare providers), as well as waste management and environmental services. ",
   },
 ];
 
