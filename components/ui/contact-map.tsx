@@ -17,7 +17,7 @@ export default function ContactMap(){
 
                     <span className="text-base font-normal">Audit & Assurance</span>
                     <span className="text-base font-normal">Tax</span>
-                    <span className="text-base font-normal">Forensic</span>
+                    <span className="text-base font-normal">Forensics</span>
                     <span className="text-base font-normal">Business Advisory & Consultancy</span>
                 </span>
 

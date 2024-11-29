@@ -7,7 +7,7 @@ import emailjs from '@emailjs/browser';
 
 function SubmitButton(){
     return (
-        <button type="submit" className="text-[#FFFFFF] bg-[#C00000] uppercase py-4 px-1 rounded-2xl">
+        <button type="submit" className="text-[#FFFFFF] bg-[#C00000] uppercase py-4 px1 rounded w-1/2 ml-40 ">
             Submit
         </button>
     )
@@ -23,8 +23,8 @@ const Contact = () => {
         e.preventDefault();
     
         emailjs
-          .sendForm('service_5wni69g', 'template_3x83o0c', form.current, {
-            publicKey: 'ej7XtOMqIQhyLxg5q',
+          .sendForm('service_xs3hh98', 'template_47dejgo', form.current, {
+            publicKey: 'HgfOIWKXOEpTF2ab3',
           })
           .then(
             () => {
@@ -47,11 +47,11 @@ const Contact = () => {
 
         className="flex flex-col w-full h-full justify-center gap-12">
 
-          <p className=" text-[#C00000] text-xl ">Send us a message </p>
+          <p className=" text-[#C00000] text-4xl font-bold "> Send us a message </p>
             <input
                 type="text"
                 placeholder="Name"
-                className="text-[#C00000] text-2l py-4 px-1"
+                className="text-[#C00000] text-2l py-4 px-1 border"
                 name='user_name'
               
                 required
@@ -60,7 +60,7 @@ const Contact = () => {
            <input
                 type="email"
                 placeholder="Email"
-                className="text-[#C00000] text-2l py-4 px-1"
+                className="text-[#C00000] text-2l py-4 px-1 border"
                 name='email'
                 required
                 
@@ -68,7 +68,7 @@ const Contact = () => {
             <textarea
                
                 placeholder="Message"
-                className="text-[#C00000] text-2l py-4 px-1"
+                className="text-[#C00000] text-2l py-4 px-2 border"
                 name='message'
                 required
                 
