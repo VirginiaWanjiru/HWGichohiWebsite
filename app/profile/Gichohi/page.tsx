@@ -81,18 +81,22 @@ export default function Gichohi() {
           <br></br>
 
           <p className="text-gray-900 font-bold text-xl ">Postal Address</p>
-          <p  className="text-base text-gray-700">P.O. Box 34694, 00100 G.P.O. Nairobi</p>
+          <p className="text-base text-gray-700">
+            P.O. Box 34694, 00100 G.P.O. Nairobi
+          </p>
 
           <br></br>
 
           <p className="text-gray-900 font-bold text-xl">Telephone </p>
 
-          <p className="text-base text-gray-700" >Tel: (+254) 720 3981 02</p>
+          <p className="text-base text-gray-700">Tel: (+254) 720 3981 02</p>
         </motion.div>
       </div>
 
       <div className=" p-20 ">
-        <h1 className="text-4xl text-red-900 mb-10 ">Background & Expertise </h1>
+        <h1 className="text-4xl text-red-900 mb-10 ">
+          Background & Expertise{" "}
+        </h1>
         <p className="text-xl text-black text-balance">
           Hezekiah Wang’ombe Gichohi is currently the Consulting Partner at H.W.
           Gichohi & Company CPA(K). With over 58 years of cumulative experience
@@ -116,14 +120,18 @@ export default function Gichohi() {
           centers in his community.
         </p>
 
-        <h1 className="text-4xl text-red-900 mb-10 mt-10 ">Educational & Professional Qualifications </h1>
+        <h1 className="text-4xl text-red-900 mb-10 mt-10 ">
+          Educational & Professional Qualifications{" "}
+        </h1>
         <p className="text-xl text-black text-base">
           <ul>
             <li>1968 - 1972: Kenya Polytechnic – ACCA </li>
           </ul>
         </p>
 
-        <h1 className="text-4xl text-red-900 mb-10 mt-10 ">Professional Membership</h1>
+        <h1 className="text-4xl text-red-900 mb-10 mt-10 ">
+          Professional Membership
+        </h1>
         <p className="text-xl text-black text-base">
           <ul>
             <li>

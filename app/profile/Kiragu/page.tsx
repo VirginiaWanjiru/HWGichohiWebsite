@@ -105,7 +105,7 @@ export default function Kiragu() {
         <h1 className="text-4xl text-red-900 mb-10 ">
           Background & Expertise{" "}
         </h1>
-        <p className="text-xl text-black text-balance">
+        <p className="text-lg text-black text-balance">
           CPA Isaac Mwangi Kiragu is the current Managing Partner at H.W.
           Gichohi & Company, Certified Public Accountants, in Kenya. With over
           33 years of professional experience in auditing, taxation, and
@@ -133,7 +133,7 @@ export default function Kiragu() {
         <h1 className="text-4xl text-red-900 mb-10 mt-10 ">
           Educational & Professional Qualifications{" "}
         </h1>
-        <p className="text-xl text-black text-base">
+        <p className="text-lg text-gray-900 text-base">
           <ul>
             <li>Masters of Business Administration - University of Nairobi</li>
             <li>Bachelor of Commerce - University of Nairobi</li>
@@ -147,7 +147,7 @@ export default function Kiragu() {
         <h1 className="text-4xl text-red-900 mb-10 mt-10 ">
           Professional Membership
         </h1>
-        <p className="text-xl text-black">
+        <p className="text-lg text-gray-900">
           <ul>
             <li>Institute of Certified Public Accountants of Kenya (ICPAK) </li>
             <li>The Kenya Institute of Management </li>
@@ -158,7 +158,7 @@ export default function Kiragu() {
 
         <h1 className="text-4xl text-red-900 mb-10 mt-10">Career Summary</h1>
 
-        <p className="text-xl text-black">
+        <p className="text-lg text-black">
           <ul>
             <li>2011 to date: Managing Partner, H.W. Gichohi & Co. CPA(K)</li>
             <li>1999 – 2010: Resident Partner, H.W. Gichohi & Co. CPA(K)</li>

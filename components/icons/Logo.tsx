@@ -1,9 +1,9 @@
 export default function Logo() {
     return (
-        <svg width="60" height="55" viewBox="0 0 60 55" xmlns="http://www.w3.org/2000/svg">
+        <svg width="80" height="60" viewBox="0 0 60 55" >
             <defs>
                 <pattern id="logo-pattern" patternUnits="userSpaceOnUse" width="120" height="110">
-                    <image href="/images/logo.png"  width="60" height="55"  />
+                    <image href="/images/logo.png"  width="80" height="78"  />
                 </pattern>
             </defs>
             <rect width="60" height="55" fill="url(#logo-pattern)" />
