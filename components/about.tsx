@@ -27,7 +27,7 @@ const teamMembers = [
   },
   {
     id: 3,
-    name: "FCPA Hezekiah W. GICHOHI ",
+    name: "FCPA HEZEKIAH W. GICHOHI ",
     position: "CONSULTING PARTNER",
     image: Kariuki,
     description:

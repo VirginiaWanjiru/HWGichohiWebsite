@@ -116,8 +116,8 @@ const Industry = () => {
 
             {/* Button */}
             <a href="/contact">
-            <button className="px-6 py-2 bg-red-900 text-white font-bold rounded-lg hover:bg-red-700">
-              Contact Us
+            <button className="px-6 py-2 bg-red-700 text-white font-bold rounded hover:bg-red-900">
+           CONTACT US
             </button>
             </a>
           </div>

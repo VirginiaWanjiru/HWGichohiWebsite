@@ -13,20 +13,21 @@ const profile = [
     name: "Background and Experience ",
 
     description:
-      "CPA Isaac Mwangi Kiragu is the current Managing Partner at H.W. Gichohi & Company, Certified Public Accountants, in Kenya. With over 33 years of professional experience in auditing, taxation, and management consultancy, Isaac has cultivated deep expertise in corporate governance, forensic investigations, and organizational restructuring. Isaac has held several notable leadership roles, including serving as a Former Board Member of the Association of Certified Fraud Examiners (Kenya Chapter), the National Vice Chairman of Mhasibu Sacco Ltd, and the Chairman of the Mhasibu Housing Company Ltd. His career highlights include managing high-profile receiverships, and successfully restoring renowned enterprises. He has also consulted on strategic planning, fraud investigations, and restructuring businesses for sustainability and growth.As former Lecturer at the University of Nairobi, Isaac has contributed to academia by developing curricula, supervising research projects, and serving on faculty examination and disciplinary boards. His commitment to capacity building and leadership extends to delivering training programs in fraud management, operational risk, and financial management.Mr. Isaac is an award-winning professional, recognized for academic excellence and outstanding contributions in accounting, and remains dedicated to fostering innovation and excellence in financial management and corporate governance.",
- 
- options:[]
-    },
+      "CPA Isaac Mwangi Kiragu is the current Managing Partner at H.W. Gichohi & Company, Certified Public Accountants, in Kenya.\n With over 33 years of professional experience in auditing, taxation, and management consultancy, Isaac has cultivated deep expertise in corporate governance, forensic investigations, and organizational restructuring. Isaac has held several notable leadership roles, including serving as a Former Board Member of the Association of Certified Fraud Examiners (Kenya Chapter), the National Vice Chairman of Mhasibu Sacco Ltd, and the Chairman of the Mhasibu Housing Company Ltd. His career highlights include managing high-profile receiverships, and successfully restoring renowned enterprises.\n He has also consulted on strategic planning, fraud investigations, and restructuring businesses for sustainability and growth.As former Lecturer at the University of Nairobi, Isaac has contributed to academia by developing curricula, supervising research projects, and serving on faculty examination and disciplinary boards. His commitment to capacity building and leadership extends to delivering training programs in fraud management, operational risk, and financial management.Mr. Isaac is an award-winning professional, recognized for academic excellence and outstanding contributions in accounting, and remains dedicated to fostering innovation and excellence in financial management and corporate governance.",
+
+    options: [],
+  },
 
   {
     id: 2,
     name: "Educational & Professional Qualifications",
-    options: ["Masters of Business Administration – University of Nairobi",
+    options: [
+      "Masters of Business Administration – University of Nairobi",
       "Bachelor of Commerce – University of Nairobi",
       "Diploma in Forensic Accounting",
       "Certified Public Accountant (CPA-K)",
       "Certified Fraud Examiner (CFE)",
-      "Environmental Impact Assessment – Lead Expert"
+      "Environmental Impact Assessment – Lead Expert",
     ],
   },
 
@@ -38,9 +39,7 @@ const profile = [
       "The Kenya Institute of Management",
       "Association of Certified Fraud Examiners (ACFE)",
       "Professional Trainers Association",
-      
     ],
-    
   },
   {
     id: 4,
@@ -52,12 +51,10 @@ const profile = [
       "1995 – 1997: Lecturer – Accounting & Finance Department, University of Nairobi ",
       "1994: Audit Senior, Peat Marwick Certified Public Accountants",
       "1991 – 1993: Audit & Tax Senior Accountant, H.W. Gichohi & Co. CPA(K)",
-      "1989 – 1990: Stock Control Accountant, Delmonte Kenya Limited"
-      
+      "1989 – 1990: Stock Control Accountant, Delmonte Kenya Limited",
     ],
   },
 ];
-
 
 export default function Kiragu() {
   const [hovered, setHovered] = useState(false);
@@ -189,7 +186,16 @@ export default function Kiragu() {
               {expandedGichohi === profiles.id && (
                 <div className="mt-4">
                   <p className="mt-4 text-lg text-gray-700">
-                    {profiles.description}
+                    {profiles.description &&
+                      profiles.description
+                        .split("\n")
+                        .map((paragraph, index) => (
+                          <p key={index} className="mb-6 text-lg text-gray-700">
+                            {" "}
+                            {/* Adjust `mb-6` for more space */}
+                            {paragraph}
+                          </p>
+                        ))}
                   </p>
 
                   <p className="list-disc ml-4 text-lg">
