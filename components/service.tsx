@@ -89,6 +89,7 @@ const Service = () => {
         {services.map((service) => (
           <div
             key={service.id}
+            id={`${service.id}`}
             className="relative px-2 group"
             onMouseEnter={() => setHovered(service.id)}
             onMouseLeave={() => setHovered(null)}

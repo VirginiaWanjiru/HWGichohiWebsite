@@ -155,7 +155,7 @@ export default function Kariuki() {
             key={profiles.id}
             id={profiles.name.toLowerCase().replace(/[^a-z]+/g, "-")} // Converts the name to a URL-friendly id
             onClick={() => toggleExpand(profiles.id)}
-            className=" mb-6 p-6 bg-neutral-100 rounded-lg shadow-lg ml-20 mr-20 hover:bg-gradient-to-r from-gray-300 via red-200 to-red-800 "
+            className=" mb-6 p-6 bg-transparent  shadow-lg ml-20 mr-20 hover:bg-gradient-to-r from-gray-300 via red-200 to-red-800 "
           >
             <div className="flex justify-between items-center">
               {/* Section Title */}
