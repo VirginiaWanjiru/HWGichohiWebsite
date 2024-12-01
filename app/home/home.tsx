@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Mission from "@/components/Mission/Mission";
 import Banner from "@/components/banner";
 import Image from "next/image";
-import Nairobi from "@/public/images/nairobi.jpg";
+import Nairobi from "@/public/images/nairobi5.webp";
 
 import Team from "@/components/about";
 
@@ -56,7 +56,7 @@ export default function Home() {
                 
 
                 {/* Additional Text */}
-                <span className="font-bold text-xl">
+                <span className="font-bold text-xl text-white">
                   Contact us today to schedule a personalized one-on-one
                   consultation.
                 </span>
@@ -67,8 +67,8 @@ export default function Home() {
 
                 {/* Button */}
                 <a href="/contact">
-                  <button className="px-20 py-4 bg-red-900 text-white font-bold  hover:bg-red-700 text-xl rounded ">
-                    Contact Us
+                  <button className="px-20 py-4 bg-red-700 text-white font-bold  hover:bg-red-900 text-xl rounded ">
+                  CONTACT US
                   </button>
                 </a>
               </div>
