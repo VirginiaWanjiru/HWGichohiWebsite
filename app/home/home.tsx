@@ -39,7 +39,7 @@ export default function Home() {
           <Service />
 
           {/* Full-width Image with Text and Button */}
-          <div className="relative  mt-20">
+          <div className="relative  mt-20 mb-20">
             <div className="relative w-full h-[70vh]">
               <Image
                 src={Nairobi}
@@ -50,7 +50,7 @@ export default function Home() {
               />
             </div>
             {/* Background Blur Overlay */}
-            <div className="absolute inset-0  bg-opacity-5 backdrop-blur-lg z-0 "></div>
+            <div className="absolute inset-0  bg-opacity-2 backdrop-blur-lg z-0 "></div>
             <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
               <div className="text-center text-white max-w-3xl px-6 py-4">
                 
