@@ -14,9 +14,9 @@ const profile = [
 
     description:
       "Hezekiah Wang’ombe Gichohi is currently the Consulting Partner at H.W.Gichohi & Company CPA(K). With over 58 years of cumulative experience in auditing, taxation, and management consultancy, Hezekiah has built a remarkable career specializing in organizational development, strategic financial management, and the restructuring of businesses. Mr. Hezekiah has extensive expertise in auditing for diverse sectors, including insurance, banking, NGOs, manufacturing, and quasi-government institutions. He has played a pivotal role in turning around financially distressed organizations, including managing over 15 companies under receivership and successfully restoring them to profitability. Mr. Hezekiah has contributed significantly to the accounting profession. He initiated the acquisition of ICPAK's CPA Centre. He also initiated the establishment of the Mhasibu Sacco Society in 1986, which has grown to over 23,000 members globally. Beyond his professional achievements, Hezekiah has a passion for community service. He founded a water company that serves over 200 families, providing annual dividends of up to 30% for shareholders. As a mentor and leader, he has trained and guided countless professionals in their careers while serving as a patron for schools and health centers in his community.",
- 
- options:[]
-    },
+
+    options: [],
+  },
 
   {
     id: 2,
@@ -33,18 +33,17 @@ const profile = [
       "Fellow of the Kenya Institute of Management",
       "Professional Trainers Association",
     ],
-    
   },
   {
     id: 4,
     name: "Career Summary",
     options: [
-      "1966 – 1974: Audit Assistant, Delloite & Touche, Certified Public Accountants",
-      "1974 – 1976: Senior Accountant, Delloite & Touche, Certified Public Accountants",
-      " 1976 – 1979: Audit Senior, Delloite & Touche, Certified Public  Accountants",
-      "1979 – 1985: Managing Partner, Wanyeki Gichohi & Company, Certified Public Accountants",
-      "1986 – 2011: Managing Partner, H.W. Gichohi & Co. CPA(K)",
       "2011 - Present : Consulting Partner, H.W. Gichohi & Co. CPA(K)",
+      "1986 – 2011: Managing Partner, H.W. Gichohi & Co. CPA(K)",
+      "1979 – 1985: Managing Partner, Wanyeki Gichohi & Company, Certified Public Accountants",
+      "1976 – 1979: Audit Senior, Delloite & Touche, Certified Public  Accountants",
+      "1974 – 1976: Senior Accountant, Delloite & Touche, Certified Public Accountants",
+      "1966 – 1974: Audit Assistant, Delloite & Touche, Certified Public Accountants",
     ],
   },
 ];
@@ -142,13 +141,13 @@ export default function Gichohi() {
         </motion.div>
       </div>
 
-      <div className="mt-10 ml-20 ">
+      <div className="mt-10 ml-20 w-3/4  ">
         {profile.map((profiles) => (
           <div
             key={profiles.id}
             id={profiles.name.toLowerCase().replace(/[^a-z]+/g, "-")} // Converts the name to a URL-friendly id
             onClick={() => toggleExpand(profiles.id)}
-            className=" mb-6 p-6 bg-neutral-100 rounded-lg shadow-lg ml-20 mr-20 hover:bg-gradient-to-r from-gray-300 via red-200 to-red-800 "
+            className=" mb-6 p-6 bg-transparent  shadow-lg ml-20 mr-20 hover:bg-gradient-to-r from-gray-300 via red-200 to-red-800  "
           >
             <div className="flex justify-between items-center">
               {/* Section Title */}
@@ -166,7 +165,7 @@ export default function Gichohi() {
             {/* Service Description and Options */}
             <div
               className={`transition-all duration-500 ease-in-out overflow-hidden ${
-                expandedGichohi === profiles.id ? "max-h-[500px]" : "max-h-0"
+                expandedGichohi === profiles.id ? "max-h-[600px]" : "max-h-0"
               }`}
             >
               {expandedGichohi === profiles.id && (

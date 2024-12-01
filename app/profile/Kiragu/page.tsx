@@ -7,8 +7,67 @@ import { motion } from "framer-motion";
 import { FaDownload, FaArrowLeft } from "react-icons/fa"; // Import the back icon
 import ExecutiveImage from "@/public/images/bg3.jpg";
 
+const profile = [
+  {
+    id: 1,
+    name: "Background and Experience ",
+
+    description:
+      "CPA Isaac Mwangi Kiragu is the current Managing Partner at H.W. Gichohi & Company, Certified Public Accountants, in Kenya. With over 33 years of professional experience in auditing, taxation, and management consultancy, Isaac has cultivated deep expertise in corporate governance, forensic investigations, and organizational restructuring. Isaac has held several notable leadership roles, including serving as a Former Board Member of the Association of Certified Fraud Examiners (Kenya Chapter), the National Vice Chairman of Mhasibu Sacco Ltd, and the Chairman of the Mhasibu Housing Company Ltd. His career highlights include managing high-profile receiverships, and successfully restoring renowned enterprises. He has also consulted on strategic planning, fraud investigations, and restructuring businesses for sustainability and growth.As former Lecturer at the University of Nairobi, Isaac has contributed to academia by developing curricula, supervising research projects, and serving on faculty examination and disciplinary boards. His commitment to capacity building and leadership extends to delivering training programs in fraud management, operational risk, and financial management.Mr. Isaac is an award-winning professional, recognized for academic excellence and outstanding contributions in accounting, and remains dedicated to fostering innovation and excellence in financial management and corporate governance.",
+ 
+ options:[]
+    },
+
+  {
+    id: 2,
+    name: "Educational & Professional Qualifications",
+    options: ["Masters of Business Administration – University of Nairobi",
+      "Bachelor of Commerce – University of Nairobi",
+      "Diploma in Forensic Accounting",
+      "Certified Public Accountant (CPA-K)",
+      "Certified Fraud Examiner (CFE)",
+      "Environmental Impact Assessment – Lead Expert"
+    ],
+  },
+
+  {
+    id: 3,
+    name: " Professional Membership",
+    options: [
+      "Institute of Certified Public Accountants of Kenya (ICPAK)",
+      "The Kenya Institute of Management",
+      "Association of Certified Fraud Examiners (ACFE)",
+      "Professional Trainers Association",
+      
+    ],
+    
+  },
+  {
+    id: 4,
+    name: "Career Summary",
+    options: [
+      "2011 - Present: Managing Partner, H.W. Gichohi & Co. CPA(K)",
+      "1999 – 2010: Resident Partner, H.W. Gichohi & Co. CPA(K)",
+      "1998 – 1999: Senior Manager, H.W. Gichohi & Co. CPA(K)",
+      "1995 – 1997: Lecturer – Accounting & Finance Department, University of Nairobi ",
+      "1994: Audit Senior, Peat Marwick Certified Public Accountants",
+      "1991 – 1993: Audit & Tax Senior Accountant, H.W. Gichohi & Co. CPA(K)",
+      "1989 – 1990: Stock Control Accountant, Delmonte Kenya Limited"
+      
+    ],
+  },
+];
+
+
 export default function Kiragu() {
   const [hovered, setHovered] = useState(false);
+
+  const [expandedGichohi, setExpandedGichohi] = useState<number | null>(null);
+
+  const toggleExpand = (id: number) => {
+    // If the same section is clicked, collapse it. Otherwise, expand the new section.
+    setExpandedGichohi((prevState) => (prevState === id ? null : id));
+  };
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-white">
@@ -89,96 +148,60 @@ export default function Kiragu() {
           <br></br>
 
           <p className="text-gray-900 font-bold text-xl ">Postal Address</p>
-          <p  className="text-base text-gray-700">P.O. Box 34694, 00100 G.P.O. Nairobi</p>
+          <p className="text-base text-gray-700">
+            P.O. Box 34694, 00100 G.P.O. Nairobi
+          </p>
 
           <br></br>
 
           <p className="text-gray-900 font-bold text-xl">Telephone </p>
 
-          <p className="text-base text-gray-700" >Tel: (+254) 720 3981 02</p>
-
-          
+          <p className="text-base text-gray-700">Tel: (+254) 720 3981 02</p>
         </motion.div>
       </div>
+      <div className="mt-10 ml-20 w-3/4">
+        {profile.map((profiles) => (
+          <div
+            key={profiles.id}
+            id={profiles.name.toLowerCase().replace(/[^a-z]+/g, "-")} // Converts the name to a URL-friendly id
+            onClick={() => toggleExpand(profiles.id)}
+            className=" mb-6 p-6 bg-neutral-100 rounded-lg shadow-lg ml-20 mr-20 hover:bg-gradient-to-r from-gray-300 via red-200 to-red-800 "
+          >
+            <div className="flex justify-between items-center">
+              {/* Section Title */}
+              <h2 className="text-lg font-bold">{profiles.name}</h2>
 
-      <div className=" p-20 ">
-        <h1 className="text-4xl text-red-900 mb-10 ">
-          Background & Expertise{" "}
-        </h1>
-        <p className="text-lg text-black text-balance">
-          CPA Isaac Mwangi Kiragu is the current Managing Partner at H.W.
-          Gichohi & Company, Certified Public Accountants, in Kenya. With over
-          33 years of professional experience in auditing, taxation, and
-          management consultancy, Isaac has cultivated deep expertise in
-          corporate governance, forensic investigations, and organizational
-          restructuring. Isaac has held several notable leadership roles,
-          including serving as a Former Board Member of the Association of
-          Certified Fraud Examiners (Kenya Chapter), the National Vice Chairman
-          of Mhasibu Sacco Ltd, and the Chairman of the Mhasibu Housing Company
-          Ltd. His career highlights include managing high-profile
-          receiverships, and successfully restoring renowned enterprises. He has
-          also consulted on strategic planning, fraud investigations, and
-          restructuring businesses for sustainability and growth. As former
-          Lecturer at the University of Nairobi, Isaac has contributed to
-          academia by developing curricula, supervising research projects, and
-          serving on faculty examination and disciplinary boards. His commitment
-          to capacity building and leadership extends to delivering training
-          programs in fraud management, operational risk, and financial
-          management. Mr. Isaac is an award-winning professional, recognized for
-          academic excellence and outstanding contributions in accounting, and
-          remains dedicated to fostering innovation and excellence in financial
-          management and corporate governance.
-        </p>
+              {/* Expand Icon */}
+              <button
+                onClick={() => toggleExpand(profiles.id)}
+                className="text-xl text-gray-500 hover:text-gray-700"
+              >
+                {expandedGichohi === profiles.id ? "-" : "+"}
+              </button>
+            </div>
 
-        <h1 className="text-4xl text-red-900 mb-10 mt-10 ">
-          Educational & Professional Qualifications{" "}
-        </h1>
-        <p className="text-lg text-gray-900 text-base">
-          <ul>
-            <li>Masters of Business Administration - University of Nairobi</li>
-            <li>Bachelor of Commerce - University of Nairobi</li>
-            <li>Diploma in Forensic Accounting </li>
-            <li>Certified Public Accountant(CPA-K)</li>
-            <li>Certified Fraud Examiner (CFE)</li>
-            <li>Environmental Impact Assessment- Lead Expert </li>
-          </ul>
-        </p>
+            {/* Service Description and Options */}
+            <div
+              className={`transition-all duration-500 ease-in-out overflow-hidden ${
+                expandedGichohi === profiles.id ? "max-h-[500px]" : "max-h-0"
+              }`}
+            >
+              {expandedGichohi === profiles.id && (
+                <div className="mt-4">
+                  <p className="mt-4 text-lg text-gray-700">
+                    {profiles.description}
+                  </p>
 
-        <h1 className="text-4xl text-red-900 mb-10 mt-10 ">
-          Professional Membership
-        </h1>
-        <p className="text-lg text-gray-900">
-          <ul>
-            <li>Institute of Certified Public Accountants of Kenya (ICPAK) </li>
-            <li>The Kenya Institute of Management </li>
-            <li>Associate of Certified Fraud Examiners (ACFE)</li>
-            <li>Professional Trainers Association</li>
-          </ul>
-        </p>
-
-        <h1 className="text-4xl text-red-900 mb-10 mt-10">Career Summary</h1>
-
-        <p className="text-lg text-black">
-          <ul>
-            <li>2011 to date: Managing Partner, H.W. Gichohi & Co. CPA(K)</li>
-            <li>1999 – 2010: Resident Partner, H.W. Gichohi & Co. CPA(K)</li>
-            <li>1998 – 1999: Senior Manager, H.W. Gichohi & Co. CPA(K)</li>
-            <li>
-              1995 – 1997: Lecturer – Accounting & Finance Department,
-              University of Nairobi
-            </li>
-            <li>
-              1994: Audit Senior, Peat Marwick Certified Public Accountants
-            </li>
-            <li>
-              1991 – 1993: Audit & Tax Senior Accountant, H.W. Gichohi & Co.
-              CPA(K)
-            </li>
-            <li>
-              1989 – 1990: Stock Control Accountant, Delmonte Kenya Limited
-            </li>
-          </ul>
-        </p>
+                  <p className="list-disc ml-4 text-lg">
+                    {profiles.options.map((option, index) => (
+                      <li key={index}>{option}</li>
+                    ))}
+                  </p>
+                </div>
+              )}
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

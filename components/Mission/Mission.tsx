@@ -248,7 +248,7 @@ const Mission = () => {
           <p className="mt-10 text-black text-lg text-balance text-center">
             Our diverse team of professionals brings expertise across a wide
             range of services. Each team member is dedicated to offering
-            innovative, practical solutions to complex business challenges.”
+            innovative, practical solutions to complex business challenges.
           </p>
           <br />
         </div>

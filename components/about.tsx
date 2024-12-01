@@ -9,8 +9,8 @@ import Gichohi from "@/public/images/nairobi3.jpg";
 const teamMembers = [
   {
     id: 1,
-    name: "CPA ISAAC M. KIRAGU - MANAGING PARTNER",
-    position: "'You must be the change you want to see'",
+    name: "CPA ISAAC M. KIRAGU",
+    position: "MANAGING PARTNER",
     image: Gichohi,
     description:
       "Experienced managing partner with a passion for positive change.",
@@ -18,8 +18,8 @@ const teamMembers = [
   },
   {
     id: 2,
-    name: "CPA JONAH N. KARIUKI – ASSOCIATE PARTNER",
-    position: "'The best way to predict a future is to create it'",
+    name: "CPA JONAH N. KARIUKI",
+    position: "ASSOCIATE PARTNER",
     image: Amos,
     description:
       "Visionary associate partner focused on shaping the future of our industry.",
@@ -27,8 +27,8 @@ const teamMembers = [
   },
   {
     id: 3,
-    name: "FCPA Hezekiah W. GICHOHI – CONSULTING PARTNER",
-    position: "Dedicated to providing expert consulting services",
+    name: "FCPA Hezekiah W. GICHOHI ",
+    position: "CONSULTING PARTNER",
     image: Kariuki,
     description:
       "Skilled consulting partner with a wealth of industry knowledge.",
@@ -70,7 +70,8 @@ const TeamMember = ({ member }: any) => {
       {/* Name and Position Below the Image */}
       <div className="mt-4 text-center">
         <p className="font-bold text-sm">{member.name}</p>
-        <p className="text-xs text-gray-600">{member.position}</p>
+        <p className="text-xs text-red-900 font-bold">{member.position}</p>
+        <p className="text-xs text-gray-600">{member.description}</p>
       </div>
     </div>
   );
