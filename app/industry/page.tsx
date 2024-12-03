@@ -79,7 +79,7 @@ const Industry = () => {
       </div>
 
       {/* Full-width Image with Text and Button */}
-      <div className="relative mb-20">
+      <div className="relative">
         <div className="relative w-full h-[70vh]">
           <Image
             src={Contact}

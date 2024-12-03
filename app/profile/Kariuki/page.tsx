@@ -13,7 +13,7 @@ const profile = [
     name: "Background and Experience ",
 
     description:
-      "Jonah Njuguna Kariuki is the Associate Partner at H.W. Gichohi & Company, Certified Public Accountants, in Kenya. With over 30 years of professional experience, Jonah is a seasoned expert in financial and assurance audits, governance and compliance audits, and forensic investigations.\n He has a strong command handling of secretarial, taxation and litigation matters, along with vast experience in institutional management.Jonah has continuously enhanced his expertise through regular participation in professional development courses on topics such as audit quality, tax compliance, and leadership. \n In his role, Jonah oversees large portfolios of financial assurance and project audits, represents clients in tax appeals and alternative dispute resolution, and contributes to fraud investigations and litigation support. He is deeply involved in capacity building, mentoring junior professionals, and ensuring the firm adheres to quality standards. Jonah has served in leadership roles, including as the Former Chairman of the Credit Committee at Mhasibu Sacco Society and former Board Member of Gatanga Girls High School. His dedication to professional and corporate governance, combined with his expertise in mediation and strategic planning, makes him a key asset to our firm and the accounting profession.",
+      "CPA Jonah Njuguna Kariuki is the Associate Partner at H.W. Gichohi & Company, Certified Public Accountants, in Kenya. With over 30 years of professional experience, Jonah is a seasoned expert in financial and assurance audits, governance and compliance audits, and forensic investigations.\n He has a strong command handling of secretarial, taxation and litigation matters, along with vast experience in institutional management.Jonah has continuously enhanced his expertise through regular participation in professional development courses on topics such as audit quality, tax compliance, and leadership. \n In his role, Jonah oversees large portfolios of financial assurance and project audits, represents clients in tax appeals and alternative dispute resolution, and contributes to fraud investigations and litigation support. He is deeply involved in capacity building, mentoring junior professionals, and ensuring the firm adheres to quality standards. Jonah has served in leadership roles, including as the Former Chairman of the Credit Committee at Mhasibu Sacco Society and former Board Member of Gatanga Girls High School. His dedication to professional and corporate governance, combined with his expertise in mediation and strategic planning, makes him a key asset to our firm and the accounting profession.",
     options: [],
   },
 
@@ -70,21 +70,21 @@ export default function Kariuki() {
         </a>
 
         {/* Navbar Links */}
-        <a href="/profile/Gichohi">
-          <p className="text-black text-lg px-4 hover:underline">
-            MR H. W. GICHOHI
-          </p>
-        </a>
-        <span className="text-gray-400 mx-4">|</span>
         <a href="/profile/Kiragu">
           <p className="text-black text-lg px-4 hover:underline">
-            MR ISAAC M. KIRAGU
+            MR. ISAAC M. KIRAGU
           </p>
         </a>
         <span className="text-gray-400 mx-4">|</span>
         <a href="/profile/Kariuki">
           <p className="text-black text-lg px-4 hover:underline">
-            MR J. N. KARIUKI
+            MR. JONAH N.KARIUKI
+          </p>
+        </a>
+        <span className="text-gray-400 mx-4">|</span>
+        <a href="/profile/Gichohi">
+          <p className="text-black text-lg px-4 hover:underline">
+            MR. HEZEKIAH W. GICHOHI
           </p>
         </a>
       </nav>

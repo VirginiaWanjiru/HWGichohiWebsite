@@ -46,7 +46,9 @@ const Mission = () => {
         viewport={{ once: false, amount: 0.3 }} // `once: false` allows it to animate every time it's in view
         variants={slideIn}
       >
-        <div id="missiontext" className=" container text-center     ">
+        
+        <div id="missiontext" className=" container text-center min-h-[40vh] mt-20 text-balance">
+        <p className="text-center  font-bold text-6xl mb-10">Who We Are </p>
           <p className="text-lg justify-center items-center ">
             We are a trusted firm offering{" "}
             <span className="font-bold text-red-900 ">audit</span>,{" "}
@@ -153,7 +155,7 @@ const Mission = () => {
           </p>
         </div>
       </motion.div>
-      <hr/>
+      <hr />
 
       {/* Values Section */}
       <motion.div

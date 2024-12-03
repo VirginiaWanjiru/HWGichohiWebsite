@@ -27,7 +27,7 @@ export default function Home() {
             className="m-9 flex flex-col gap-14  "
             id="about-us"
           >
-            <p className="text-center  font-bold text-6xl">Who We Are </p>
+            
             <div className="flex justify-between gap-8  ">
               <div>
                 <Mission />

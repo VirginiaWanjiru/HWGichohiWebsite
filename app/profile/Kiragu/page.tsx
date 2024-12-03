@@ -78,21 +78,21 @@ export default function Kiragu() {
         </a>
 
         {/* Navbar Links */}
-        <a href="/profile/Gichohi">
-          <p className="text-black text-lg px-4 hover:underline">
-            MR H. W. GICHOHI
-          </p>
-        </a>
-        <span className="text-gray-700 mx-4">|</span>
         <a href="/profile/Kiragu">
           <p className="text-black text-lg px-4 hover:underline">
-            MR ISAAC M. KIRAGU{" "}
+            MR. ISAAC M. KIRAGU
           </p>
         </a>
-        <span className="text-gray-700 mx-4">|</span>
+        <span className="text-gray-400 mx-4">|</span>
         <a href="/profile/Kariuki">
           <p className="text-black text-lg px-4 hover:underline">
-            MR J. N. KARIUKI
+            MR. JONAH N. KARIUKI
+          </p>
+        </a>
+        <span className="text-gray-400 mx-4">|</span>
+        <a href="/profile/Gichohi">
+          <p className="text-black text-lg px-4 hover:underline">
+            MR. HEZEKIAH W. GICHOHI
           </p>
         </a>
       </nav>

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import ProgressBar from "./ProgressBar/ProgressBar";
 import styles from "@/app/home/home.module.css";
 import { useRouter } from "next/navigation";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 interface Slide {
   image: any;
@@ -48,6 +50,14 @@ const Banner: React.FC = () => {
 
   const [currentSlide, setCurrentSlide] = useState<number>(0);
 
+  // Use the useInView hook to track when the section is in view
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Animation triggers only once when the section comes into view
+    threshold: 0.5, // Trigger when 50% of the section is in view
+  });
+
+  
+
   // Automatically switch slides every 7 seconds
   useEffect(() => {
     const interval = setInterval(() => {
@@ -78,9 +88,9 @@ const Banner: React.FC = () => {
             >
               <div className="flex flex-col w-full px-4 md:px-8 gap-6 md:gap-8 text-white max-w-4xl ml-8 md:ml-16">
                 <p
-                  className={`text-left text-6xl md:text-6xl lg:text-6xl font-bold mt-24 ${styles.slideText} ${
-                    currentSlide === index ? styles.slideTextVisible : ""
-                  }`}
+                  className={`text-left text-6xl md:text-6xl lg:text-6xl font-bold mt-24 ${
+                    styles.slideText
+                  } ${currentSlide === index ? styles.slideTextVisible : ""}`}
                 >
                   {slide.text}
                 </p>

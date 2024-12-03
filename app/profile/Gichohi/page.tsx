@@ -13,7 +13,7 @@ const profile = [
     name: "Background and Experience ",
 
     description:
-      "Hezekiah Wang’ombe Gichohi is currently the Consulting Partner at H.W.Gichohi & Company CPA(K). With over 58 years of cumulative experience in auditing, taxation, and management consultancy, Hezekiah has built a remarkable career specializing in organizational development, strategic financial management, and the restructuring of businesses.\n  Mr. Hezekiah has extensive expertise in auditing for diverse sectors, including insurance, banking, NGOs, manufacturing, and quasi-government institutions. He has played a pivotal role in turning around financially distressed organizations, including managing over 15 companies under receivership and successfully restoring them to profitability. Mr. Hezekiah has contributed significantly to the accounting profession. He initiated the acquisition of ICPAK's CPA Centre.\n\ He also initiated the establishment of the Mhasibu Sacco Society in 1986, which has grown to over 23,000 members globally. Beyond his professional achievements, Hezekiah has a passion for community service. He founded a water company that serves over 200 families, providing annual dividends of up to 30% for shareholders. As a mentor and leader, he has trained and guided countless professionals in their careers while serving as a patron for schools and health centers in his community.",
+      "FCPA Hezekiah Wang’ombe Gichohi is currently the Consulting Partner at H.W.Gichohi & Company CPA(K). With over 58 years of cumulative experience in auditing, taxation, and management consultancy, Hezekiah has built a remarkable career specializing in organizational development, strategic financial management, and the restructuring of businesses.\n  Mr. Hezekiah has extensive expertise in auditing for diverse sectors, including insurance, banking, NGOs, manufacturing, and quasi-government institutions. He has played a pivotal role in turning around financially distressed organizations, including managing over 15 companies under receivership and successfully restoring them to profitability. Mr. Hezekiah has contributed significantly to the accounting profession. He initiated the acquisition of ICPAK's CPA Centre.\n\ He also initiated the establishment of the Mhasibu Sacco Society in 1986, which has grown to over 23,000 members globally. Beyond his professional achievements, Hezekiah has a passion for community service. He founded a water company that serves over 200 families, providing annual dividends of up to 30% for shareholders. As a mentor and leader, he has trained and guided countless professionals in their careers while serving as a patron for schools and health centers in his community.",
 
     options: [],
   },
@@ -70,23 +70,26 @@ export default function Gichohi() {
         </a>
 
         {/* Navbar Links */}
-        <a href="/profile/Gichohi">
-          <p className="text-black text-lg px-4 hover:underline">
-            MR H.W. GICHOHI
-          </p>
-        </a>
-        <span className="text-gray-400 mx-4">|</span>
+        
+        
         <a href="/profile/Kiragu">
           <p className="text-black text-lg px-4 hover:underline">
-            MR ISAAC M. KIRAGU
+            MR. ISAAC M. KIRAGU
           </p>
         </a>
         <span className="text-gray-400 mx-4">|</span>
         <a href="/profile/Kariuki">
           <p className="text-black text-lg px-4 hover:underline">
-            MR J. N. KARIUKI
+            MR. JONAH N. KARIUKI
           </p>
         </a>
+        <span className="text-gray-400 mx-4">|</span>
+        <a href="/profile/Gichohi">
+          <p className="text-black text-lg px-4 hover:underline">
+            MR. HEZEKIAH W. GICHOHI
+          </p>
+        </a>
+        
       </nav>
 
       {/* Main Content */}
