@@ -47,7 +47,7 @@ const Mission = () => {
         variants={slideIn}
       >
         <div id="missiontext" className=" container text-center     ">
-          <p className="text-xl justify-center items-center ">
+          <p className="text-lg justify-center items-center ">
             We are a trusted firm offering{" "}
             <span className="font-bold text-red-900 ">audit</span>,{" "}
             <span className="font-bold text-red-900  ">tax </span> and{" "}
