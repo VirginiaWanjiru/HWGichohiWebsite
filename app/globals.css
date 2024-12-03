@@ -106,7 +106,7 @@ p {
   font-weight: 500;
 }
 
-@media (max-width: 1330px) {
+@media (max-width: 1500px) {
   html {font-size: 80%}
 }
 

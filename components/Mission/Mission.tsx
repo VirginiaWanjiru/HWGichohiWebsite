@@ -71,7 +71,7 @@ const Mission = () => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        className="relative flex flex-col gap-2 bg-cover bg-center w-full min-h-[60vh] py-10"
+        className="relative flex flex-col gap-2 bg-cover bg-center w-full min-h-[40vh] py-10"
         id="about-us"
         style={{
           backgroundImage: "url('/images/bg2.jpeg')", // Replace with the path to your image
@@ -85,7 +85,7 @@ const Mission = () => {
 
         {/* Text Content */}
         <div ref={ref} className="relative z-5">
-          <p className="font-bold text-6xl text-white text-center mt-20 ">
+          <p className="font-bold text-6xl text-white text-center mt-10 ">
             Over{" "}
             <span className="font-bold text-6xl text-red-700 ">
               {startCount && <CountUp start={0} end={45} duration={7.0} />}+{" "}
@@ -222,7 +222,7 @@ const Mission = () => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        className="relative flex flex-col gap-2 bg-cover bg-center w-full min-h-[60vh] py-5"
+        className="relative flex flex-col gap-2 bg-cover bg-center w-full min-h-[40vh] py-5"
         id="about-us"
         style={{
           backgroundImage: "url('/images/bg.jpg')", // Replace with the path to your image
@@ -246,7 +246,7 @@ const Mission = () => {
           </p>
           <br />
 
-          <p className="mt-10 text-black text-lg text-balance text-center">
+          <p className=" text-black text-lg text-balance text-center">
             Our diverse team of professionals brings expertise across a wide
             range of services. Each team member is dedicated to offering
             innovative, practical solutions to complex business challenges.

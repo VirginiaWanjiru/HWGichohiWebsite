@@ -39,8 +39,10 @@ export default function Home() {
           <Service />
 
           {/* Full-width Image with Text and Button */}
-          <div className="relative  mt-20 mb-20">
-            <div className="relative w-full h-[70vh]">
+          <div className="relative  mt-20 ">
+          
+          
+            <div className="relative w-full h-[40vh]">
               <Image
                 src={Nairobi}
                 alt="Full-width Banner"
@@ -67,7 +69,7 @@ export default function Home() {
 
                 {/* Button */}
                 <a href="/contact">
-                  <button className="px-20 py-4 bg-red-700 text-white font-bold  hover:bg-red-900 text-xl rounded ">
+                  <button className="px-10 py-4 bg-red-700 text-white font-bold  hover:bg-red-900 text-lg rounded ">
                   CONTACT US
                   </button>
                 </a>
