@@ -40,7 +40,7 @@ const Mission = () => {
   return (
     <div>
       <motion.div
-        className="flex flex-items-center text-balance text-center mb-40 mt-10 "
+        className="flex flex-items-center text-balance text-center mb-20  "
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.3 }} // `once: false` allows it to animate every time it's in view
@@ -153,17 +153,18 @@ const Mission = () => {
           </p>
         </div>
       </motion.div>
+      <hr/>
 
       {/* Values Section */}
       <motion.div
-        className="flex items-center mb-20"
+        className="flex items-center mb-20 mt-20"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.2 }} // `once: false` allows it to animate every time it's in view
         variants={slideIn}
       >
         <div id="missiontext" className="text-center max-w-4xl mx-auto">
-          <p className="font-bold text-6xl mb-10">Our Values</p>
+          <p className="font-bold text-6xl mb-5 ">Our Values</p>
 
           {/* Integrity */}
           <div className="mb-8">
