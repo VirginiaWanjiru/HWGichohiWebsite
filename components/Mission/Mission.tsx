@@ -2,12 +2,14 @@ import React from "react";
 import mission from "@/public/images/fraud.jpg";
 import vision from "@/public/images/tax2.jpg";
 import Image from "next/image";
+
+
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import bg from "@/public/images/bg.jpg";
+
 
 const slideIn = {
   hidden: { opacity: 0, x: -100 },
@@ -240,13 +242,8 @@ const Mission = () => {
 
         {/* Text Content */}
         <div ref={ref} className="relative z-5 container text-balance ">
-          <p className=" container text-balance   text-white font-bold text-6xl text-center mt-20 ">
-            In collaboration with{" "}
-            <span className="font-bold text-6xl text-red-700 ">
-              {startCount && <CountUp start={0} end={20} duration={5.0} />}+{" "}
-              {/* The plus sign after the count */}
-            </span>{" "}
-            talented professionals{" "}
+          <p className=" container text-balance   text-white font-bold text-5xl text-center mt-20  " style={{ lineHeight: "1.2" }}>
+           Pooling together many skilled, diverse & exceptional professionals
           </p>
           <br />
 
