@@ -46,9 +46,11 @@ const Mission = () => {
         viewport={{ once: false, amount: 0.3 }} // `once: false` allows it to animate every time it's in view
         variants={slideIn}
       >
-        
-        <div id="missiontext" className=" container text-center min-h-[40vh] mt-20 text-balance">
-        <p className="text-center  font-bold text-6xl mb-10">Who We Are </p>
+        <div
+          id="missiontext"
+          className=" container text-center min-h-[40vh] mt-20 text-balance"
+        >
+          <p className="text-center  font-bold text-6xl mb-10">Who We Are </p>
           <p className="text-lg justify-center items-center ">
             We are a trusted firm offering{" "}
             <span className="font-bold text-red-900 ">audit</span>,{" "}
@@ -87,7 +89,7 @@ const Mission = () => {
 
         {/* Text Content */}
         <div ref={ref} className="relative z-5">
-          <p className="font-bold text-6xl text-white text-center mt-10 ">
+          <p className=" container text-balance font-bold text-6xl text-white text-center mt-10 ">
             Over{" "}
             <span className="font-bold text-6xl text-red-700 ">
               {startCount && <CountUp start={0} end={45} duration={7.0} />}+{" "}
@@ -95,7 +97,7 @@ const Mission = () => {
             </span>{" "}
             years of experience
           </p>
-          <p className=" container mt-10 text-white text-lg text-balance text-center">
+          <p className="  mt-10 text-white text-lg text-balance text-center">
             Since the 1970s, we have built a legacy of trust and a wealth of
             expertise, delivering professional services to thousands of small,
             medium, and large institutions across diverse industries, including
@@ -238,7 +240,7 @@ const Mission = () => {
 
         {/* Text Content */}
         <div ref={ref} className="relative z-5">
-          <p className=" container font-bold text-6xl text-center mt-20 ">
+          <p className=" container text-balance  font-bold text-6xl text-center mt-20 ">
             Over{" "}
             <span className="font-bold text-6xl text-red-700 ">
               {startCount && <CountUp start={0} end={20} duration={5.0} />}+{" "}
