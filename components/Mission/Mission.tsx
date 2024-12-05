@@ -1,15 +1,10 @@
 import React from "react";
-import mission from "@/public/images/fraud.jpg";
-import vision from "@/public/images/tax2.jpg";
-import Image from "next/image";
-
 
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-
 
 const slideIn = {
   hidden: { opacity: 0, x: -100 },
@@ -92,8 +87,8 @@ const Mission = () => {
         {/* Text Content */}
         <div ref={ref} className=" container text-balance relative z-5">
           <p className="  font-bold text-6xl text-white text-center mt-10 ">
-            Over {" "}
-            <span className="font-bold text-6xl text-red-700 ">
+            Over{" "}
+            <span className="font-bold text-6xl text-red-600 ">
               {startCount && <CountUp start={0} end={45} duration={7.0} />}+{" "}
               {/* The plus sign after the count */}
             </span>{" "}
@@ -159,7 +154,43 @@ const Mission = () => {
           </p>
         </div>
       </motion.div>
-      <hr />
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        className="relative flex flex-col gap-2 bg-cover bg-center w-full min-h-[40vh] py-10"
+        id="about-us"
+        style={{
+          backgroundImage: "url('/images/bg2.jpeg')", // Replace with the path to your image
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        {/* Background Blur Overlay */}
+        <div className="absolute inset-0  bg-opacity-25 backdrop-blur-lg z-0 "></div>
+
+        {/* Text Content */}
+        <div ref={ref} className=" container text-balance relative z-5">
+          <p className="  font-bold text-6xl text-white text-center mt-10 ">
+            Our <span className="font-bold text-6xl text-red-600 "> Commitment </span> to You
+          </p>
+          <p className="  mt-10 text-white text-lg text-balance text-center">
+            Whether you're a startup, a legacy business, based in Kenya, or
+            operating internationally, we are committed to delivering tailored
+            services designed to meet your unique needs. Our growth and success
+            are rooted in consistently exceeding client expectations. We look
+            forward to building mutually rewarding and fulfilling partnerships
+            with each of our clients.
+          </p>
+          <br />
+          <br />
+        </div>
+
+        <div className="flex justify-between gap-8">
+          <div></div>
+        </div>
+      </motion.div>
 
       {/* Values Section */}
       <motion.div
@@ -242,8 +273,11 @@ const Mission = () => {
 
         {/* Text Content */}
         <div ref={ref} className="relative z-5 container text-balance ">
-          <p className=" container text-balance   text-white font-bold text-5xl text-center mt-20  " style={{ lineHeight: "1.2" }}>
-           Pooling together many skilled, diverse & exceptional professionals
+          <p
+            className=" container text-balance text-white font-bold text-5xl text-center mt-20  "
+            style={{ lineHeight: "1.2" }}
+          >
+            Pooling <span className="font-bold text-5xl text-red-600 ">  together</span> many exceptional, skilled & diverse  professionals
           </p>
           <br />
 
