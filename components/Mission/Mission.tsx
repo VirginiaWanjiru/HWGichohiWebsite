@@ -95,7 +95,7 @@ const Mission = () => {
             </span>{" "}
             years of experience
           </p>
-          <p className="mt-10 text-white text-lg text-balance text-center">
+          <p className=" container mt-10 text-white text-lg text-balance text-center">
             Since the 1970s, we have built a legacy of trust and a wealth of
             expertise, delivering professional services to thousands of small,
             medium, and large institutions across diverse industries, including
@@ -238,7 +238,7 @@ const Mission = () => {
 
         {/* Text Content */}
         <div ref={ref} className="relative z-5">
-          <p className="font-bold text-6xl text-center mt-20 ">
+          <p className=" container font-bold text-6xl text-center mt-20 ">
             Over{" "}
             <span className="font-bold text-6xl text-red-700 ">
               {startCount && <CountUp start={0} end={20} duration={5.0} />}+{" "}
