@@ -40,7 +40,7 @@ const Mission = () => {
   return (
     <div>
       <motion.div
-        className="flex flex-items-center text-balance text-center mb-20  "
+        className="flex flex-items-center text-balance text-center mb-10  "
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.3 }} // `once: false` allows it to animate every time it's in view
@@ -48,10 +48,10 @@ const Mission = () => {
       >
         <div
           id="missiontext"
-          className=" container text-center min-h-[40vh] mt-20 text-balance"
+          className=" container text-center min-h-[40vh] text-balance border  py-20 "
         >
           <p className="text-center  font-bold text-6xl mb-10">Who We Are </p>
-          <p className="text-lg justify-center items-center ">
+          <p className="text-lg justify-center items-center mb-20">
             We are a trusted firm offering{" "}
             <span className="font-bold text-red-900 ">audit</span>,{" "}
             <span className="font-bold text-red-900  ">tax </span> and{" "}
@@ -88,9 +88,9 @@ const Mission = () => {
         <div className="absolute inset-0  bg-opacity-25 backdrop-blur-lg z-0 "></div>
 
         {/* Text Content */}
-        <div ref={ref} className="relative z-5">
-          <p className=" container text-balance font-bold text-6xl text-white text-center mt-10 ">
-            Over{" "}
+        <div ref={ref} className=" container text-balance relative z-5">
+          <p className="  font-bold text-6xl text-white text-center mt-10 ">
+            Over {" "}
             <span className="font-bold text-6xl text-red-700 ">
               {startCount && <CountUp start={0} end={45} duration={7.0} />}+{" "}
               {/* The plus sign after the count */}
@@ -123,7 +123,7 @@ const Mission = () => {
         viewport={{ once: false, amount: 0.3 }} // `once: false` allows it to animate every time it's in view
         variants={slideIn}
       >
-        <div id="missiontext" className="text-center  ">
+        <div id="missiontext" className="text-center container text-balance ">
           <p className=" font-bold text-6xl mt-10">Our Mission</p>
           <br />
           <p className="text-lg text-balance text-center">
@@ -229,19 +229,19 @@ const Mission = () => {
         className="relative flex flex-col gap-2 bg-cover bg-center w-full min-h-[40vh] py-5"
         id="about-us"
         style={{
-          backgroundImage: "url('/images/bg.jpg')", // Replace with the path to your image
+          backgroundImage: "url('/images/bg2.jpeg')", // Replace with the path to your image
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
       >
         {/* Background Blur Overlay */}
-        <div className="absolute inset-0  bg-opacity-25 backdrop-blur-lg z-0 "></div>
+        <div className="absolute inset-0  bg-opacity-25 backdrop-blur-md z-0 "></div>
 
         {/* Text Content */}
-        <div ref={ref} className="relative z-5">
-          <p className=" container text-balance  font-bold text-6xl text-center mt-20 ">
-            Over{" "}
+        <div ref={ref} className="relative z-5 container text-balance ">
+          <p className=" container text-balance   text-white font-bold text-6xl text-center mt-20 ">
+            In collaboration with{" "}
             <span className="font-bold text-6xl text-red-700 ">
               {startCount && <CountUp start={0} end={20} duration={5.0} />}+{" "}
               {/* The plus sign after the count */}
@@ -250,7 +250,7 @@ const Mission = () => {
           </p>
           <br />
 
-          <p className=" text-black text-lg text-balance text-center">
+          <p className=" text-white text-lg text-balance text-center">
             Our diverse team of professionals brings expertise across a wide
             range of services. Each team member is dedicated to offering
             innovative, practical solutions to complex business challenges.
