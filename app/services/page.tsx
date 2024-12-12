@@ -14,7 +14,7 @@ const services = [
       "Statutory Audits",
       "Project Audits",
       "Governance audit",
-      "Special audit and investigations",
+      "Special Audits",
       "Acquisition review and corporate financial advice",
       "Forensic Audits",
       "Environmental impact audits",
