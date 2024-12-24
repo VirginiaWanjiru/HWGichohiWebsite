@@ -10,8 +10,8 @@ import Footer from "@/components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "H. W. Gichohi & Company ",
-  description: "Description of the company",
+  title: "Top Audit Firm in Kenya, H. W. Gichohi & Company ",
+  description: "Top Audit Firm in Kenya , Top Audit Firm in Africa, Best Audit and Accounting Firm in Kenya ",
 };
 
 export default function RootLayout({

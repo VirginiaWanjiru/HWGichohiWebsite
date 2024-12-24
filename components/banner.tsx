@@ -20,14 +20,14 @@ const Banner: React.FC = () => {
   const slides: Slide[] = [
     {
       image: "/images/nairobi3.webp",
-      text: "Reliable and Timely Audit and Assurance Services",
+      text: "Best Audit Firm in Kenya ",
       name: "H.W. Gichohi & Co. CPA(K)",
       buttonText: "Contact Us",
       buttonLink: "/contact",
     },
     {
       image: "/images/nairobi5.webp",
-      text: "Tailored Financial Solutions for Your Business",
+      text: "Tailored Internal & External Audit Services for Your Business",
       name: "H.W. Gichohi & Co. CPA(K)",
       buttonText: "Contact Us",
       buttonLink: "/contact",
@@ -41,7 +41,7 @@ const Banner: React.FC = () => {
     },
     {
       image: "/images/nairobi.webp",
-      text: "Trusted Advisors, Committed to Your Success",
+      text: "Trusted leading audit advisors ",
       name: "H.W. Gichohi & Co. CPA(K)",
       buttonText: "Contact Us",
       buttonLink: "/contact",
