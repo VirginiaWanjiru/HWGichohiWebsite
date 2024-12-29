@@ -20,7 +20,7 @@ const Banner: React.FC = () => {
   const slides: Slide[] = [
     {
       image: "/images/nairobi3.webp",
-      text: "Best Audit Firm in Kenya ",
+      text: "Building Trust through Professional Audit & Accounting services  ",
       name: "H.W. Gichohi & Co. CPA(K)",
       buttonText: "Contact Us",
       buttonLink: "/contact",
