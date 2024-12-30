@@ -20,7 +20,7 @@ const Banner: React.FC = () => {
   const slides: Slide[] = [
     {
       image: "/images/nairobi3.webp",
-      text: "Building Trust through Professional Audit & Accounting services  ",
+      text: "CPAK Firm Commited to Exellence,Value Creation & Integrity  ",
       name: "H.W. Gichohi & Co. CPA(K)",
       buttonText: "Contact Us",
       buttonLink: "/contact",
