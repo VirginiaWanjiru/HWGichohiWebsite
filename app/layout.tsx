@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import Head from 'next/head';
 
 
 
@@ -21,6 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+
+<Head>
+    <link rel="icon" href="/logo.ico"/>
+  </Head>
       
 
       <body className={inter.className}>
