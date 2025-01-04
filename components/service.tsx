@@ -81,10 +81,10 @@ const Service = () => {
   };
 
   return (
-    <div className="mt-40 md:m-10">
-      <h2 className="text-2xl md:text-3xl ml-4 md:ml-10 font-bold mb-10">
-        Our Services
-      </h2>
+    <div className="mt-20 md:m-10">
+      <p className="text-2xl mt-20 mb-20 md:text-3xl font-bold text-center ">
+        OUR SERVICES
+      </p>
       <Slider {...settings}>
         {services.map((service) => (
           <div

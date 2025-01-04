@@ -59,15 +59,10 @@ export default function Kariuki() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-white">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
       {/* Navbar */}
       <nav className="flex items-center justify-center mt-28 z-15 font-bold relative w-full">
-        {/* Back Icon */}
-        <a href="/">
-          <p className="absolute left-0 ml-4 text-red-900 text-lg px-4 flex items-center">
-            <FaArrowLeft className="mr-2" /> Back
-          </p>
-        </a>
+        
 
         {/* Navbar Links */}
         <a href="/profile/Kiragu">

@@ -43,16 +43,18 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-0 z-10 w-full flex justify-between items-center px-12 py-2 transition-all duration-300 text-lg ${
-          isScrolled ? "bg-white text-black" : "bg-transparent text-white"
+        className={`fixed top-0 z-10 w-full flex justify-between items-center px-12 py-2 transition-all duration-300 text-lg rounded-b-2xl   ${
+          isScrolled ? "bg-white text-black" : "bg-white bg-opacity-30 text-black"
         }`}
       >
-        <Link href={"/"} id="logo" className="flex align-middle">
+        <div className="mb-1"> 
+        <Link href={"/"} id="logo" >
           <Logo />
         </Link>
+        </div>
 
         {/* Desktop navigation - Aligning links to the right */}
-        <ul className="pt-6 list-none hidden md:flex gap-10 text-lg font-bold ml-auto mr-10">
+        <ul className="pt-2 list-none hidden md:flex gap-10 text-lg font-bold ml-auto mr-10">
           {navItems.map((item, index) => (
             <li
               key={item.name}

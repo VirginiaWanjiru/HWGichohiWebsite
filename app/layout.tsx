@@ -15,8 +15,8 @@ export const metadata: Metadata = {
   description: "H.W Gichohi Audit Firm",
   icons: {
     icon: [
-      { rel: 'icon', url: '/logo.ico', sizes: '128x128' },
-      { rel: 'icon', url: '/logo.ico', sizes: '128x128' },
+      { rel: 'icon', url: '/logo.ico', sizes: '512x512' },
+      
     ],
   },
 };

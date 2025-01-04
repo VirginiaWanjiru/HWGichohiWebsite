@@ -81,7 +81,7 @@ const TeamMember = ({ member }: any) => {
 export default function Team() {
   return (
     <div className="mt-40 md:m-10 flex flex-col gap-10" id="about-us">
-      <p className="text-2xl md:text-3xl ml-4 md:ml-10 font-bold">
+      <p className="text-2xl md:text-3xl  md:ml-10 font-bold text-center">
         OUR PARTNERS
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-0 mt-10">
