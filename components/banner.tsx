@@ -41,7 +41,7 @@ const Banner: React.FC = () => {
     },
     {
       image: "/images/nairobi.webp",
-      text: "Trusted leading audit advisors ",
+      text: "Trusted Leading Audit Advisors ",
       name: "H.W. Gichohi & Co. CPA(K)",
       buttonText: "Contact Us",
       buttonLink: "/contact",
