@@ -18,6 +18,7 @@
     "@mui/material": "^5.16.7",
     "@popperjs/core": "^2.11.8",
     "@preline/dropdown": "^2.4.1",
+    "@vercel/speed-insights": "^1.2.0",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "express": "^4.21.1",

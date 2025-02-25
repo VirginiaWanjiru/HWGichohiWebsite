@@ -1,5 +1,6 @@
 
 import Home from "@/app/home/home";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 export const metadata = {
