@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
         {/* Section 2 */}
         <div className="flex-1 flex flex-col justify-start space-y-2 py-4 md:py-0 md:px-4">
           <h3 className="font-semibold mb-2">Contact Us</h3>
-          <p className="text-sm">Email: hwgichohiandcompany@gmail.com </p>
+          <p className="text-sm">Email: info@hwgichohi.com </p>
           <p className="text-sm">Phone: +(254) 713 324 558</p>
           <p className="text-sm">Address: Allimex Plaza, 4th Floor Off MSA Road </p>
           <p className="text-sm">Opening Hours: Monday-Fridays 8:00 am - 5:00 pm </p>
